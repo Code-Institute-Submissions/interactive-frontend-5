@@ -1,0 +1,49 @@
+
+.bg-color {
+    background: rgb(19, 58, 24);
+    height: 100vh;
+}
+
+#navbar {
+    background: rgb(153, 23, 6);
+    color: #fff; 
+    z-index: 1;
+    padding: 10px;
+}
+
+img {
+    width:70px;
+    height: 100px;
+}
+
+p {
+    color: #FFB570;
+}
+
+/* https://www.geeksforgeeks.org/make-a-div-horizontally-scrollable-using-css/*/
+.scroll-cards {   
+    width: 400px;
+    overflow: auto; 
+    white-space: nowrap; 
+    padding: 4px; 
+}
+
+/* SCROLLBAR */
+.scroll-cards::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+.scroll-cards::-webkit-scrollbar-track {
+    background: rgb(0,0,0);
+    border: 4px solid transparent;
+    background-clip: content-box;   /* THIS IS IMPORTANT */
+}
+
+/* Handle */
+.scroll-cards::-webkit-scrollbar-thumb {
+    background: rgb(25,25,25);
+    border: 1px solid rgb(0,0,0);
+}
+
+
