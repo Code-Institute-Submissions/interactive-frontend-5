@@ -28,6 +28,7 @@ p {
     padding: 4px; 
 }
 
+/*https://stackoverflow.com/questions/26493446/change-size-of-scrollbar-thumb-with-css*/
 /* SCROLLBAR */
 .scroll-cards::-webkit-scrollbar {
     width: 10px;
@@ -45,5 +46,19 @@ p {
     background: rgb(25,25,25);
     border: 1px solid rgb(0,0,0);
 }
+
+.card-container {
+    display: block;
+    border: 2px solid white;
+    width: 70px;
+    height: 100px;
+
+}
+
+.nr {
+    color: white;
+    padding-top: 25px;
+}
+
 
 
