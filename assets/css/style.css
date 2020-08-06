@@ -95,4 +95,16 @@ p {
     visibility:hidden;
 }
 
+@media screen and (max-width: 500px) {
+    .card-container {
+        height: 70px;
+        width: 40px;
+    }
+    
+    .card-meaning {
+        font-size: 5px;
+    }
+
+}
+
 
