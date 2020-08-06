@@ -54,30 +54,40 @@ p {
 
 /*-----card-containers----*/
 
-.card-container {
-    display: block;
-    border: 2px solid white;
-    width: 70px;
-    height: 100px;
-    margin-bottom: 40px;
+.card-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 500px;
+  margin: 100px auto;
+  border: 2px solid black;
+  justify-content: center;
+  align-items: center;
+}
 
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-container {
+  height: 100px;
+  width: 70px;
+  border: 2px solid white;
+  margin-bottom: 40px;
 }
 
 .card-nr {
     color: white;
-    padding-top: 27px;
-}
-
-
-.all-card-containers {
-    margin: 100px;
-    position: relative;
-}
-
-p {
-    padding-top: 5px;
-    font-size: 10px;
+    font-size: 28px;
+    padding-top: 20px;
     font-weight: bold;
+}
+
+.card-meaning {
+  padding-top: 25px;
+  font-weight: bold;
+  font-size: 10px;
 }
 
 
