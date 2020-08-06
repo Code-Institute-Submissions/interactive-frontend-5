@@ -91,4 +91,8 @@ p {
   font-size: 10px;
 }
 
+.hidden-card {
+    visibility:hidden;
+}
+
 
