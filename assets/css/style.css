@@ -60,7 +60,6 @@ p {
   flex-wrap: wrap;
   width: 500px;
   margin: 0 auto;
-  border: 2px solid black;
   justify-content: center;
   align-items: center;
 }
@@ -89,6 +88,7 @@ p {
   padding-top: 25px;
   font-weight: bold;
   font-size: 10px;
+  letter-spacing: 1px;
 }
 
 .hidden-card {
