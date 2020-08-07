@@ -96,14 +96,28 @@ p {
 
 @media screen and (max-width: 500px) {
     .card-container {
-        height: 70px;
-        width: 40px;
+        height: 80px;
+        width: 50px;
     }
     
     .card-meaning {
-        font-size: 5px;
+        font-size: 7px;
+        padding-top: 8px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+
+    .column {
+        margin: 0;
     }
 
+    .column {
+        margin-right: 8px;
+        margin-bottom: 10px;
+    }
 }
+
+
 
 
