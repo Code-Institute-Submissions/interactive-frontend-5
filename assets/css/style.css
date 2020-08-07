@@ -58,7 +58,6 @@ p {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  width: 500px;
   margin: 0 auto;
   justify-content: center;
   align-items: center;
