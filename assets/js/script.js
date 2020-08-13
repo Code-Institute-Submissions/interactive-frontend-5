@@ -91,11 +91,12 @@ function getRandomCard() {
 //keeps track of what turn the user is on when a card is clicked 
 let playerTurn = 1;
 
+//updates the div with a random front-card image after a back-card image is clicked
 $(document).ready(function() {
     $("img.card-back").on({
     click: function(){
         $(this).fadeOut("slow"),
-    $("#" + playerTurn).html(getRandomCard()) //updates the div with a random front-card image after a back-card image is clicked
+    $("#" + playerTurn).html(getRandomCard()).removeClass("card-nr").next().removeClass("card-meaning").addClass("card-meaning2")
         playerTurn++;
     }
   });

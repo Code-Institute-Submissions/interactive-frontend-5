@@ -90,6 +90,12 @@ p {
   letter-spacing: 1px;
 }
 
+.card-meaning2 {
+    font-weight: bold;
+    font-size: 10px;
+    margin-top: -7px;
+}
+
 .hidden-card {
     visibility:hidden;
 }
