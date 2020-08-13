@@ -80,7 +80,12 @@ let frontCard = [
     '<img src="assets/images/WeAreTheWorld-name.jpg" alt="card-front">'
     ];
 
-  
-
+  //returns a random front-card image after the user clicks a back-card
+  function getRandomCard() {
+    let randomNum = Math.floor(Math.random() * frontCard.length);
+    let randomCard = frontCard[randomNum]; // gets random card from the array
+    frontCard.splice(frontCard.indexOf(frontCard[randomNum]), 1) //removes the same card from the array
+    return randomCard;
+}
     
    
