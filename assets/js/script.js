@@ -88,4 +88,16 @@ let frontCard = [
     return randomCard;
 }
     
+//keeps track of what turn the user is on when a card is clicked 
+let playerTurn = 1;
+
+$(document).ready(function() {
+    $("img.back").on({
+    click: function(){
+        $(this).hide(),
+        $("#" + playerTurn).html(getRandomCard()) //updates the div with a random front-card image after a back-card image is clicked
+        playerTurn++;
+        }
+    });
+});
    
