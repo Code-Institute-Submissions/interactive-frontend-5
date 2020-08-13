@@ -96,7 +96,7 @@ $(document).ready(function() {
     $("img.card-back").on({
     click: function(){
         $(this).fadeOut("slow"),
-    $("#" + playerTurn).html(getRandomCard()).removeClass("card-nr").next().removeClass("card-meaning").addClass("card-meaning2")
+    $("#" + playerTurn).html(getRandomCard()).removeClass("card-nr").next().removeClass("card-meaning").addClass("card-meaning2").parent().removeClass("card-container").addClass("card-container2")
         playerTurn++;
     }
   });
