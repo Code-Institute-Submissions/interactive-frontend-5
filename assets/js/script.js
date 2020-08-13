@@ -80,8 +80,8 @@ let frontCard = [
     '<img src="assets/images/WeAreTheWorld-name.jpg" alt="card-front">'
     ];
 
-  //returns a random front-card image after the user clicks a back-card
-  function getRandomCard() {
+//returns a random front-card image from frontCard array and then removes it
+function getRandomCard() {
     let randomNum = Math.floor(Math.random() * frontCard.length);
     let randomCard = frontCard[randomNum]; // gets random card from the array
     frontCard.splice(frontCard.indexOf(frontCard[randomNum]), 1) //removes the same card from the array
@@ -92,12 +92,12 @@ let frontCard = [
 let playerTurn = 1;
 
 $(document).ready(function() {
-    $("img.back").on({
+    $("img.card-back").on({
     click: function(){
         $(this).hide(),
-        $("#" + playerTurn).html(getRandomCard()) //updates the div with a random front-card image after a back-card image is clicked
+    $("#" + playerTurn).html(getRandomCard()) //updates the div with a random front-card image after a back-card image is clicked
         playerTurn++;
-        }
-    });
+    }
+  });
 });
    
