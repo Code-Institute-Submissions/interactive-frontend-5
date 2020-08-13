@@ -94,7 +94,7 @@ let playerTurn = 1;
 $(document).ready(function() {
     $("img.card-back").on({
     click: function(){
-        $(this).hide(),
+        $(this).fadeOut("slow"),
     $("#" + playerTurn).html(getRandomCard()) //updates the div with a random front-card image after a back-card image is clicked
         playerTurn++;
     }
