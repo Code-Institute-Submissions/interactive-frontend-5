@@ -89,15 +89,14 @@ img {
 .card-nr {
     color: rgb(177, 80, 16);
     font-size: 26px;
-    padding-top: 30px;
+    padding-top: 31px;
     font-weight: bold;
 }
 
 .card-meaning {
-  padding-top: 25px;
+  padding-top: 22px;
   font-weight: bold;
   font-size: 10px;
-  letter-spacing: 1px;
 }
 
 /*for jQuery DOM*/
@@ -105,7 +104,6 @@ img {
     font-weight: bold;
     font-size: 10px;
     margin-top: -7px;
-    color: #FFB570;
 }
 
 .hidden-card {
