@@ -102,3 +102,46 @@ $(document).ready(function() {
   });
 });
    
+
+//keeps track of what turn the user is on  
+let playerTurn = 1;
+
+//to pass the cards position to the descriptionClick(1)
+let counter = 0;
+
+//so that I can access cards info later by index 
+let storeRandomCards = [];
+
+//this is to retrive the card info from the object array 
+function descriptionClick(index) {
+  const clickedCard = storeRandomCards[index]
+  console.log(clickedCard.name)
+  console.log(clickedCard.description)
+  console.log(clickedCard.imgPath)
+  document.querySelector("#info").innerHTML = clickedCard.description;
+  document.querySelector("#image").innerHTML = `<img src="${clickedCard.imgPath}">`
+}
+ 
+//returns a random front-card image after the user clicks a back-card
+ function getRandomCard() {
+    let randomNum = Math.floor(Math.random() * cards.length);
+    let randomCard = cards[randomNum]; // gets random card from the array 
+    storeRandomCards.push(randomCard) 
+    cards.splice(cards.indexOf(randomCard), 1) //removes the same card from the array
+
+     return `<img onclick="descriptionClick(${counter})" src="${randomCard.imgPath}" />`
+}  
+
+//to get a random front-card displayed to a div when one of the back-cards are clicked 
+$(document).ready(function() {
+$("img.back").on({
+  click: function(){
+  $(this).fadeOut("slow"),
+ //updates the div with a random front-card and changes the styling
+ $("#" + playerTurn).html(getRandomCard()).removeClass("card-nr").next().removeClass("card-meaning").addClass("card-meaning2")
+    playerTurn++;
+    counter++;
+    }
+  });
+});
+  
