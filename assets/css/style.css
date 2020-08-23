@@ -159,8 +159,8 @@ background-size: 870px 800px;
 
 /*-----description-containers----*/
 
-#info, 
-#image {
+.info, 
+.image {
     border: solid 1px white;
     height: 600px;
     width: 400px;
