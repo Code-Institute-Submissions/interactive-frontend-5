@@ -172,3 +172,7 @@ button.btn.btn-warning {
   display: flex;
   margin: 0 auto;
 }
+
+.space {
+    justify-content: space-between;
+}
