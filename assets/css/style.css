@@ -158,8 +158,7 @@ background-size: 870px 800px;
 
 
 /*-----description-containers----*/
-
-.info, 
+ 
 .image {
     border: solid 1px white;
     height: 600px;
@@ -167,12 +166,22 @@ background-size: 870px 800px;
     color: white;
 }
 
+.info {
+    height: 600px;
+    width: 450px;  
+    color: white;
+}
+
+.info, 
+.image {
+   
+      margin: 0 auto;
+ 
+  
+}
 /*buttons*/
 button.btn.btn-warning {
   display: flex;
   margin: 0 auto;
 }
 
-.space {
-    justify-content: space-between;
-}
