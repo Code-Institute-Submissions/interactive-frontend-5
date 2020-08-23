@@ -10,11 +10,13 @@ let storeRandomCards = [];
 //this is to retrive the card info from the array of objects
 function descriptionClick(index) {
   const clickedCard = storeRandomCards[index]
-  console.log(clickedCard.name)
-  console.log(clickedCard.description)
-  console.log(clickedCard.imgPath)
-  document.querySelector("#info").innerHTML = clickedCard.description;
-  document.querySelector("#image").innerHTML = `<img src="${clickedCard.imgPath}" alt="front-card">`
+
+  $(".btn-warning").removeClass("d-none")
+  $(".game").addClass('col-lg-4');
+  $(".col-12").removeClass("d-none");
+  document.querySelector(".info").innerHTML = clickedCard.description;
+  document.querySelector("#card-name").innerHTML = clickedCard.name;
+  document.querySelector(".image").innerHTML = `<img src="${clickedCard.imgPath}" alt="front-card">`
 }
  
 //returns a random front-card image after the user clicks a back-card
