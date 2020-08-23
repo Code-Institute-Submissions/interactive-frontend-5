@@ -1324,10 +1324,8 @@ only take you out, outwards. All journeys are outward journeys, there is no inwa
 journey. How can you journey inwards? You are already there, there is no point in going. 
 When going stops, journeying disappears; when desiring is no more clouding your mind, 
 you are in. This is called turning in. But it is not a turning at all, it is simply 
-not going out.
-
-`,
-    imgPath: "assets/images/Turning In-name.jpg"
+not going out.`,
+    imgPath: "assets/images/TurningIn-name.jpg"
   },
        {
     name: "Understanding",
