@@ -113,13 +113,14 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 game">
-                    <!--back to reading button-->
+                
+                    <!---back to reading button--->
                     <div class="row">  
                         <div class="col-12">
                             <button type="button" onclick="backToReading()" class="btn btn-warning d-none">Back To Reading</button>
                         </div>
                     </div>
-                    <!--card-row-1-->
+                    <!---card-row-1--->
                     <div class="card-row text-center">
                         <div class="column">                           
                             <div class="card-container hidden-card">
@@ -153,7 +154,7 @@
                         </div>
                     </div>
 
-                    <!--card-row-2-->
+                    <!---card-row-2--->
                     <div class="card-row text-center">
                         <div class="column">                           
                             <div class="card-container hidden-card">
@@ -187,36 +188,31 @@
                         </div>
                     </div>
 
-                    <!--card-row-3-->
+                    <!---card-row-3--->
                     <div class="card-row text-center">
                         <div class="column">                           
                             <div class="card-container">
                                 <p class="card-nr" id="5">5</p>
                                 <p class="card-meaning">5.OLD HABITS</p>
-                            </div>
-                                
+                            </div>        
                         </div>
                         <div class="column">
                             <div class="card-container">
                                 <p class="card-nr" id="1">1</p>
                                 <p class="card-meaning">1.THE TOPIC</p>
-                             </div>
-                            
-                           
+                             </div>               
                         </div>
                         <div class="column">
                             <div class="card-container">
                                 <p class="card-nr" id="2">2</p>
                                 <p class="card-meaning">2.DARKENING/ OBSTRUCTING</p>  
-                            </div> 
-                                                             
+                            </div>                                  
                         </div>                                                                       
                         <div class="column">
                             <div class="card-container">
                                 <p class="card-nr" id="6">6</p>
                                 <p class="card-meaning">6.NEW HABITS</p>
-                            </div>
-                               
+                            </div>  
                         </div>
                         <div class="column">
                             <div class="card-container">
@@ -226,8 +222,8 @@
                         </div>
                     </div>
 
-                    <!--card-row-4-->
-                    <div class="card-row text-center">
+                    <!---card-row-4--->
+                     <div class="card-row text-center">
                         <div class="column">                           
                             <div class="card-container hidden-card">
                                 <p class="card-nr">...</p>
@@ -259,22 +255,24 @@
                             </div>
                         </div>
                     </div>
+                </div><!---/col_1--->
 
-                </div><!--col-->
+                <!---description of the cards--->
+                <div class="col-12 col-lg-4 d-none card-info">
+                    <div class="text-center"><p id="card-name"></p>
+                    </div>
+                    <div class="card-container card-row text-center info">
+                        <p class="card-nr card-holder" id="info">1</p>
+                    </div>
+                </div><!---/col_2--->
+                <div class="col-12 col-lg-4 d-none card-image">
+                    <div class="card-container card-row text-center image">
+                        <p class="card-nr card-holder" id="image">2</p>
+                    </div>
+                </div><!---/col_3--->
+
             </div><!--row-->
-        </div><!--container-->
-
-    <div class="container">
-       <div class="row">
-            <div class="col-6">
-                <div id="image"></div>
-            </div>
-            <div class="col-6">
-                <div id="info"></div>
-            </div>
-        </div>
-    </div>
-        
+        </div><!--container-->   
     </div><!--/bg-color-->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
