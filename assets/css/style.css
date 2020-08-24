@@ -179,9 +179,11 @@ background-size: 870px 800px;
  
   
 }
-/*buttons*/
+/*-----buttons-----*/
 button.btn.btn-warning {
   display: flex;
   margin: 0 auto;
 }
+
+
 

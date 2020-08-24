@@ -43,7 +43,7 @@ $("img.card-back").on({
 });
 
 function backToReading() {
-  $(".btn-warning").addClass("d-none")
+  $(".btn-warning").addClass("d-none");
   $(".game").removeClass("col-lg-4");
   $(".card-info").addClass("d-none");
   $(".card-image").addClass("d-none");

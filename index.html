@@ -5,14 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Game - Osho Zen Tarot</title>
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
 </head>
 <body>
 
-  <div class="bg-color">
-    <div id="navbar">
-        <h5 class="text-left">OSHO Zen Tarot</h5>
-    </div>
+    <div class="bg-color">
+        <div id="navbar">
+            <h5 class="text-left">OSHO Zen Tarot</h5>
+        </div>
+
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col- text-center">
+                    <div class="btn-group" role="group">
+                        <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Change Game
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                            <a class="dropdown-item" href="#">Dropdown link</a>
+                            <a class="dropdown-item" href="#">Dropdown link</a>
+                        </div>
+                    </div>
+                </div><!---col-->
+            </div><!---/row-->
+        </div><!--/container-->
    
         <div class="container">
             <div class="row">
@@ -23,7 +39,7 @@
         </div>
 
         <div class="container">
-            <div class="row justify-content-between">
+            <div class="row">
                 <div class="col-12 scroll-cards height-col">
                     <div class="back-cards"> 
                         <img src="assets/images/Abundance-back.jpg" class="card-back" alt="card-back">
@@ -276,7 +292,12 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script type="text/javascript" src="assets/js/data.js"></script>
     <script type="text/javascript" src="assets/js/script.js"></script>
-    
+
+
+    <!---Bootstrap js---->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+   
 
 </body>
 </html>
