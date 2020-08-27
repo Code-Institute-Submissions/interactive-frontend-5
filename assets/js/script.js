@@ -91,7 +91,8 @@ function windowClick(e) {
  /*-----------------Send EmailJS-------------*/
 
  function sendEmail() {
-    $("#success").addClass("sent-message");
+    //a "Sending..." message when the user waits for the message to get loaded & sent
+    $("#success").addClass("sent-message"); 
     $("#success").css("background-color", "orange").html("Sending...");
 
     emailjs.send("gmail", "template_TKAjL7PE", { 
@@ -101,6 +102,7 @@ function windowClick(e) {
 })
     .then(
         function(response) {
+            //conifirms that the user's message has been sent
            $("#success").css("background-color", "blue").html("Your message was sent successfully!");
            console.log("SUCCESS", response);
         },
