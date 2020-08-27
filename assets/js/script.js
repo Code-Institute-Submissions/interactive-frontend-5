@@ -56,15 +56,17 @@ function backToReading() {
 
 /*----------------------CHANGE GAME BUTTON---------------------*/
 
-//on clicking "The Diamond" link, the cards containers are like this:
+//on clicking "The Diamond" link, the cards containers are positioned like this:
 $(document).ready(function() {
     $(".the-diamond").click(function(){
-    $(".diamond-dnone").addClass("d-none") 
+    $(".diamond-dnone").addClass("d-none")
+    $("#2").html("1").next().html("1.THE THEME")
+    $("#1").html("2").next().html("2.UNCONCIOUS INTERNAL INFLUENCE") 
+    $("#6").html("3").next().html("3.CONCIOUS EXTERNAL INFLUENCE")
+    $("#3").html("4").next().html("4.WHAT IS NEEDED FOR A SOLUTION")
+    $("#4").html("5").next().html("5.THE SOLUTION: UNDERSTANDING")
   });
 });
-
-
-
 
 /*----------------------- CONTACT POP-UP MODAL------------------*/
 
