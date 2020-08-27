@@ -1,4 +1,4 @@
-/*-----------------THE TAROT GAME & CARDS DESCRIPTIONS-------------*/
+/*-----------------------THE TAROT GAME & CARDS DESCRIPTIONS------------------*/
 
 //keeps track of what turn the user is on  
 let playerTurn = 1;
@@ -12,7 +12,7 @@ let storeRandomCards = [];
 //this is to retrive the card info from the array of objects by index
 function descriptionClick(index) {
   const clickedCard = storeRandomCards[index]
-  //when the user clicks on a card this gets displayed: 
+  //when the user clicks on a card the description & its image gets displayed: 
   $(".btn-warning").removeClass("d-none")
   $(".game").addClass('col-lg-4');
   $(".col-12").removeClass("d-none");
@@ -44,7 +44,7 @@ $("img.card-back").on({
   });
 });
 
-/*-----------------BACK TO READING BUTTON-------------*/
+/*------------------------BACK TO READING BUTTON---------------------*/
 
 //takes the user back to only display the reading 
 function backToReading() {
@@ -54,7 +54,7 @@ function backToReading() {
   $(".card-image").addClass("d-none");
 }
 
-/*-----------------CHANGE GAME BUTTON-------------*/
+/*----------------------CHANGE GAME BUTTON---------------------*/
 
 //when the user clicks on "The Diamond" link, the cards position are displayed like this:
 $(document).ready(function() {
@@ -63,7 +63,7 @@ $(document).ready(function() {
   });
 });
 
-/*----------------- CONTACT POP-UP MODAL-------------*/
+/*----------------------- CONTACT POP-UP MODAL------------------*/
 
 //pops-up the modal
 function popModal() {
@@ -115,7 +115,7 @@ function windowClick(e) {
 }
 
 
- /*-----------------VALIDATION CODE FOR CHECKING INPUT ON FORM-------------*/
+ /*-----------------VALIDATION CODE FOR CHECKING INPUT ON CONTACT MODAL-------------*/
 
 function checkRegEx() {
   
