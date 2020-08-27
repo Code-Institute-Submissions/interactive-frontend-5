@@ -201,6 +201,15 @@ textarea {
   box-shadow: 1px 1px 3px;
 }
 
+input:active, 
+textarea:active,
+input:focus, 
+textarea:focus {
+  border: 1px solid lightblue;
+  border-radius: 3px;
+  outline: none;
+}
+
 
 
 
