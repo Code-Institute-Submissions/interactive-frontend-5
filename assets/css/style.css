@@ -185,6 +185,11 @@ button.btn.btn-warning {
   margin: 0 auto;
 }
 
+.btn.btn-danger {
+  margin-top: 7px;
+  margin-bottom: 15px;
+}
+
 /*-----------------------Contact pop-up Modal --------------------*/
 
 .pop-box > form > input,
@@ -221,6 +226,18 @@ form {
   height: 67%;
   width: 70%;
 }
+
+#x {
+  position: absolute;
+  top: 0;
+  padding-bottom: 40px;
+  right: 10px;
+  font-weight: bold;
+  padding: 5px;
+  cursor: pointer;
+}
+
+
 
 
 
