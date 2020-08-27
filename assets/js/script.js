@@ -145,4 +145,11 @@ function checkRegEx() {
     $("#valid-message").addClass("validation").css("background-color", "red").html("Wrong message");
   } 
 
+  if (nameRegex.test(name) && emailRegex.test(email) && (message.length > 10)) {
+    $("#success").removeClass("d-none");
+    sendEmail(); 
+  } else {
+    $("#success").addClass("d-none");
+  }  
+
 }
