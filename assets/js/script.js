@@ -86,3 +86,28 @@ function windowClick(e) {
      $(".pop-bg").addClass("d-none");
     }
  }
+
+
+ /*-----------------Send EmailJS-------------*/
+
+ function sendEmail() {
+    $("#success").addClass("sent-message");
+    $("#success").css("background-color", "orange").html("Sending...");
+
+    emailjs.send("gmail", "template_TKAjL7PE", { 
+    "from_name": document.querySelector("#name").value,
+    "message_html": document.querySelector("#message").value,
+    "from_email": document.querySelector("#email").value
+})
+    .then(
+        function(response) {
+           $("#success").css("background-color", "blue").html("Your message was sent successfully!");
+           console.log("SUCCESS", response);
+        },
+        function(error) {
+           $("#success").css("background-color", "blue").html("Failed to send message. Try again later!");
+            console.log("FAILED", error);
+        }
+    );
+    return false;  // To block from loading a new page
+}
