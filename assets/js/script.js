@@ -63,5 +63,26 @@ $(document).ready(function() {
   });
 });
 
-/*-----------------Contact button-------------*/
+/*-----------------Contact button for pop-up Modal-------------*/
 
+//pops-up the modal
+function popModal() {
+  $(".pop-bg").removeClass("d-none");
+}
+
+//closes the modal
+function exit() {
+  $(".pop-bg").addClass("d-none");
+}
+
+//gets the modal and its background
+var popUp = document.querySelector(".pop-bg");
+
+addEventListener("click", windowClick);
+
+//closes the modal when user clicks outside
+function windowClick(e) {
+  if(e.target == popUp) { 
+     $(".pop-bg").addClass("d-none");
+    }
+ }
