@@ -132,6 +132,17 @@ function checkRegEx() {
   } else {
     $("#valid-name").addClass("validation").css("background-color", "red").html("Wrong name");
   }
+
+    if (emailRegex.test(email)) {
+    $("#valid-email").addClass("validation").css("background-color", "green").html("Correct email");
+  } else {
+    $("#valid-email").addClass("validation").css("background-color", "red").html("Wrong email");
+  }
       
+  if (message.length > 10 ) {
+    $("#valid-message").addClass("validation").css("background-color", "green").html("Correct message");
+  } else {
+    $("#valid-message").addClass("validation").css("background-color", "red").html("Wrong message");
+  } 
 
 }
