@@ -56,12 +56,15 @@ function backToReading() {
 
 /*----------------------CHANGE GAME BUTTON---------------------*/
 
-//when the user clicks on "The Diamond" link, the cards position are displayed like this:
+//on clicking "The Diamond" link, the cards containers are like this:
 $(document).ready(function() {
     $(".the-diamond").click(function(){
-    $(".5, .8,  .10").addClass("d-none") 
+    $(".diamond-dnone").addClass("d-none") 
   });
 });
+
+
+
 
 /*----------------------- CONTACT POP-UP MODAL------------------*/
 
