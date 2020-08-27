@@ -210,6 +210,18 @@ textarea:focus {
   outline: none;
 }
 
+form {
+  background: white;
+  position: relative;
+  top: 30px;
+  background: white;
+  margin: 0 auto;
+  border: 1px solid white;
+  border-radius: 5px;
+  height: 67%;
+  width: 70%;
+}
+
 
 
 
