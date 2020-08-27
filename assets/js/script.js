@@ -1,4 +1,4 @@
-/*-----------------The Tarot game & The cards descriptions-------------*/
+/*-----------------THE TAROT GAME & CARDS DESCRIPTIONS-------------*/
 
 //keeps track of what turn the user is on  
 let playerTurn = 1;
@@ -44,7 +44,7 @@ $("img.card-back").on({
   });
 });
 
-/*-----------------Back to Reading button-------------*/
+/*-----------------BACK TO READING BUTTON-------------*/
 
 //takes the user back to only display the reading 
 function backToReading() {
@@ -54,7 +54,7 @@ function backToReading() {
   $(".card-image").addClass("d-none");
 }
 
-/*-----------------Change Game button-------------*/
+/*-----------------CHANGE GAME BUTTON-------------*/
 
 //when the user clicks on "The Diamond" link, the cards position are displayed like this:
 $(document).ready(function() {
@@ -63,7 +63,7 @@ $(document).ready(function() {
   });
 });
 
-/*-----------------Contact button for pop-up Modal-------------*/
+/*----------------- CONTACT POP-UP MODAL-------------*/
 
 //pops-up the modal
 function popModal() {
@@ -88,7 +88,7 @@ function windowClick(e) {
  }
 
 
- /*-----------------Send EmailJS-------------*/
+ /*-------------------------SEND EMAILJS---------------------*/
 
  function sendEmail() {
     //a "Sending..." message when the user waits for the message to get loaded & sent
@@ -115,7 +115,7 @@ function windowClick(e) {
 }
 
 
- /*-----------------Validation for the contact form for checking RegEx-------------*/
+ /*-----------------VALIDATION CODE FOR CHECKING INPUT ON FORM-------------*/
 
 function checkRegEx() {
   
@@ -151,5 +151,4 @@ function checkRegEx() {
   } else {
     $("#success").addClass("d-none");
   }  
-
 }
