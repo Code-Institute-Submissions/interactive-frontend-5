@@ -251,6 +251,18 @@ h5 {
   padding-bottom: 10px;
 }
 
+/*for jQuery*/
+.validation {
+  text-align: center;
+  color: white;
+  display: flex;
+  margin: 0 auto;
+  width: 85%; 
+  justify-content: center;
+  margin-bottom: 5px;
+  border-radius: 3px;
+}
+
 
 
 
