@@ -60,7 +60,7 @@ img {
     border: 1px solid rgb(0,0,0);
 }
 
-/*-----card-containers----*/
+/*----------------------card-containers--------------------*/
 
 .card-row {
   display: flex;
@@ -141,7 +141,7 @@ img {
 }
 
 
-/*-----start-page----*/
+/*---------------------start-page-----------------------*/
 
 #start-bg {
 background-color: blueviolet;
@@ -157,7 +157,7 @@ background-size: 870px 800px;
 }
 
 
-/*-----description-containers----*/
+/*---------------------description-containers-----------------------*/
  
 .image {
     border: solid 1px white;
@@ -179,11 +179,29 @@ background-size: 870px 800px;
  
   
 }
-/*-----buttons-----*/
+/*---------------------------buttons------------------------*/
 button.btn.btn-warning {
   display: flex;
   margin: 0 auto;
 }
+
+/*-----------------------Contact pop-up Modal --------------------*/
+
+.pop-box > form > input,
+.pop-box > form > textarea { 
+   display: flex;
+   margin: 0 auto;
+   width: 85%; 
+}
+
+input,
+textarea {
+  border: 1px gray solid;
+  border-radius: 3px;
+  box-shadow: 1px 1px 3px;
+}
+
+
 
 
 
