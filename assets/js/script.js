@@ -1,3 +1,5 @@
+/*-----------------The Tarot game & The cards descriptions-------------*/
+
 //keeps track of what turn the user is on  
 let playerTurn = 1;
 
@@ -7,16 +9,16 @@ let counter = 0;
 //so that I can access cards info later by index 
 let storeRandomCards = [];
 
-//this is to retrive the card info from the array of objects
+//this is to retrive the card info from the array of objects by index
 function descriptionClick(index) {
   const clickedCard = storeRandomCards[index]
-
+  //when the user clicks on a card this gets displayed: 
   $(".btn-warning").removeClass("d-none")
   $(".game").addClass('col-lg-4');
   $(".col-12").removeClass("d-none");
-  document.querySelector(".info").innerHTML = clickedCard.description;
-  document.querySelector("#card-name").innerHTML = clickedCard.name;
-  document.querySelector(".image").innerHTML = `<img src="${clickedCard.imgPath}" alt="front-card">`
+  document.querySelector(".info").innerHTML = clickedCard.description; //gets the clicked card's descripton
+  document.querySelector("#card-name").innerHTML = clickedCard.name;  //gets the clicked card's name
+  document.querySelector(".image").innerHTML = `<img src="${clickedCard.imgPath}" alt="front-card">` //gets the clicked card's image
 }
  
 //returns a random front-card image after the user clicks a back-card
@@ -42,10 +44,24 @@ $("img.card-back").on({
   });
 });
 
+/*-----------------Back to Reading button-------------*/
+
+//takes the user back to only display the reading 
 function backToReading() {
   $(".btn-warning").addClass("d-none");
   $(".game").removeClass("col-lg-4");
   $(".card-info").addClass("d-none");
   $(".card-image").addClass("d-none");
 }
+
+/*-----------------Change Game button-------------*/
+
+//when the user clicks on "The Diamond" link, the cards position are displayed like this:
+$(document).ready(function() {
+    $(".the-diamond").click(function(){
+    $(".5, .8,  .10").addClass("d-none") 
+  });
+});
+
+/*-----------------Contact button-------------*/
 
