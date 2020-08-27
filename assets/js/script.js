@@ -127,4 +127,11 @@ function checkRegEx() {
   var emailRegex =  /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
   var nameRegex = /[a-z]/gmi;
 
+  if (nameRegex.test(name)) {
+    $("#valid-name").addClass("validation").css("background-color", "green").html("Correct name");
+  } else {
+    $("#valid-name").addClass("validation").css("background-color", "red").html("Wrong name");
+  }
+      
+
 }
