@@ -113,3 +113,18 @@ function windowClick(e) {
     );
     return false;  // To block from loading a new page
 }
+
+
+ /*-----------------Validation for the contact form for checking RegEx-------------*/
+
+function checkRegEx() {
+  
+  //gets the user input from the form fields
+  var name = document.querySelector("#name").value;
+  var email = document.querySelector("#email").value;
+  var message = document.querySelector("#message").value;
+
+  var emailRegex =  /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+  var nameRegex = /[a-z]/gmi;
+
+}
