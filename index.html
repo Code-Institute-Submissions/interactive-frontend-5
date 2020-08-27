@@ -5,13 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Game - Osho Zen Tarot</title>
     <link rel="stylesheet" href="assets/css/style.css">
-     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init("user_AVWl7AxkQOq582h8jglh3");
+        })();
+    </script>
 </head>
 <body>
 
     <div class="bg-color">
         <div id="navbar">
             <h5 class="text-left">OSHO Zen Tarot</h5>
+             <button type="button" class="btn btn-light text-right" onclick="popModal()" >Contact</button>
         </div>
 
         <div class="container">
@@ -22,7 +30,7 @@
                             Change Game
                         </button>
                         <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-                            <a class="dropdown-item" href="#">Dropdown link</a>
+                            <a class="dropdown-item the-diamond" href="#">The Diamond</a>
                             <a class="dropdown-item" href="#">Dropdown link</a>
                         </div>
                     </div>
@@ -162,7 +170,7 @@
                                 <p class="card-meaning">...</p>
                             </div>
                         </div>
-                        <div class="column">
+                        <div class="column 10">
                             <div class="card-container">
                                 <p class="card-nr" id="10">10</p>
                                 <p class="card-meaning">10.THE RESULT/ KEY</p>
@@ -196,7 +204,7 @@
                                 <p class="card-meaning">...</p>
                             </div>
                         </div>
-                        <div class="column">
+                        <div class="column 9">
                             <div class="card-container">
                                 <p class="card-nr" id="9">9</p>
                                 <p class="card-meaning">9.WISHES/ REFLECTIONS</p>
@@ -206,7 +214,7 @@
 
                     <!---card-row-3--->
                     <div class="card-row text-center">
-                        <div class="column">                           
+                        <div class="column 5">                           
                             <div class="card-container">
                                 <p class="card-nr" id="5">5</p>
                                 <p class="card-meaning">5.OLD HABITS</p>
@@ -230,7 +238,7 @@
                                 <p class="card-meaning">6.NEW HABITS</p>
                             </div>  
                         </div>
-                        <div class="column">
+                        <div class="column 8">
                             <div class="card-container">
                                 <p class="card-nr" id="8">8</p>
                                 <p class="card-meaning">6.EXTERNAL ATTRACTION</p>
@@ -264,7 +272,7 @@
                                 <p class="card-meaning">...</p>
                             </div>
                         </div>
-                        <div class="column">
+                        <div class="column 7">
                             <div class="card-container">
                                 <p class="card-nr" id="7">7</p>
                                 <p class="card-meaning">7.PERSONAL FEELINGS</p>
