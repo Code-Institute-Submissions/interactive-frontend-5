@@ -59,22 +59,22 @@ function backToReading() {
 //"The Diamond" game. 
 $(document).ready(function() {
     $(".the-diamond").click(function(){
-    $(".column").hide()//hides all card containers so that each new game is reset
-    $(".diamond").show()//shows the cards positions of the Diamond game
+    $(".column").hide()//hides all card containers to reset each game
+    $(".diamond").show()//shows the Diamond game
 
     $('.card-nr').removeAttr('id')
-    
-    /*$("#2").html("1").next().html("1.THE THEME")
-    $("#1").html("2").next().html("2.UNCONCIOUS INTERNAL INFLUENCE") 
-    $("#6").html("3").next().html("3.CONCIOUS EXTERNAL INFLUENCE")
-    $("#3").html("4").next().html("4.WHAT IS NEEDED FOR A SOLUTION")
-    $("#4").html("5").next().html("5.THE SOLUTION: UNDERSTANDING")*/
 
-    $(".diamond1").attr("id","1");
+    $(".diamond1").attr("id","1"); 
     $(".diamond2").attr("id","2");
     $(".diamond3").attr("id","3");
     $(".diamond4").attr("id","4");
     $(".diamond5").attr("id","5");
+    
+    $("#1").html("1").next().html("1.THE THEME")
+    $("#2").html("2").next().html("2.UNCONCIOUS INTERNAL INFLUENCE") 
+    $("#3").html("3").next().html("3.CONCIOUS EXTERNAL INFLUENCE")
+    $("#4").html("4").next().html("4.WHAT IS NEEDED FOR A SOLUTION")
+    $("#5").html("5").next().html("5.THE SOLUTION: UNDERSTANDING")
   });
 });
 
