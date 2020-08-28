@@ -56,20 +56,29 @@ function backToReading() {
 
 /*----------------------CHANGE GAME BUTTON---------------------*/
 
-//on clicking "The Diamond" link, to change the cards positions and meanings. 
+//"The Diamond" game. 
 $(document).ready(function() {
     $(".the-diamond").click(function(){
-    $(".column").hide()
-    $(".diamond").show()
-    $("#2").html("1").next().html("1.THE THEME")
+    $(".column").hide()//hides all card containers so that each new game is reset
+    $(".diamond").show()//shows the cards positions of the Diamond game
+
+    $('.card-nr').removeAttr('id')
+    
+    /*$("#2").html("1").next().html("1.THE THEME")
     $("#1").html("2").next().html("2.UNCONCIOUS INTERNAL INFLUENCE") 
     $("#6").html("3").next().html("3.CONCIOUS EXTERNAL INFLUENCE")
     $("#3").html("4").next().html("4.WHAT IS NEEDED FOR A SOLUTION")
-    $("#4").html("5").next().html("5.THE SOLUTION: UNDERSTANDING")
+    $("#4").html("5").next().html("5.THE SOLUTION: UNDERSTANDING")*/
+
+    $(".diamond1").attr("id","1");
+    $(".diamond2").attr("id","2");
+    $(".diamond3").attr("id","3");
+    $(".diamond4").attr("id","4");
+    $(".diamond5").attr("id","5");
   });
 });
 
-//on clicking "The Key" link, to change the cards positions and meanings. 
+//"The Key game". 
 $(document).ready(function() {
     $(".the-key").click(function(){
     $(".column").hide()
@@ -81,12 +90,12 @@ $(document).ready(function() {
 
 /*----------------------- CONTACT POP-UP MODAL------------------*/
 
-//pops-up the modal
+//pops-up the modal and its background
 function popModal() {
   $(".pop-bg").removeClass("d-none");
 }
 
-//closes the modal
+//closes the modal and its background
 function exit() {
   $(".pop-bg").addClass("d-none");
 }
@@ -96,7 +105,7 @@ var popUp = document.querySelector(".pop-bg");
 
 addEventListener("click", windowClick);
 
-//closes the modal when user clicks outside
+//closes the modal when user clicks outside 
 function windowClick(e) {
   if(e.target == popUp) { 
      $(".pop-bg").addClass("d-none");
