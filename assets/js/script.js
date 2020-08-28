@@ -12,7 +12,7 @@ let storeRandomCards = [];
 //this is to retrive the card info from the array of objects by index
 function descriptionClick(index) {
   const clickedCard = storeRandomCards[index]
-  //when the user clicks on a card the description & its image gets displayed: 
+  //when the user clicks on a card the description & its image gets displayed like this: 
   $(".btn-warning").removeClass("d-none")
   $(".game").addClass('col-lg-4');
   $(".col-12").removeClass("d-none");
@@ -56,7 +56,7 @@ function backToReading() {
 
 /*----------------------CHANGE GAME BUTTON---------------------*/
 
-//on clicking "The Diamond" link, the cards containers are positioned like this:
+//on clicking "The Diamond" link, to change the cards positions and meanings. 
 $(document).ready(function() {
     $(".the-diamond").click(function(){
     $(".diamond-dnone").addClass("d-none")
@@ -65,6 +65,16 @@ $(document).ready(function() {
     $("#6").html("3").next().html("3.CONCIOUS EXTERNAL INFLUENCE")
     $("#3").html("4").next().html("4.WHAT IS NEEDED FOR A SOLUTION")
     $("#4").html("5").next().html("5.THE SOLUTION: UNDERSTANDING")
+  });
+});
+
+//on clicking "The Key" link, to change the cards positions and meanings. 
+$(document).ready(function() {
+    $(".the-key").click(function(){
+    $(".diamond-dnone, .key-dnone").addClass("d-none")
+    $(".key-hide").removeClass("hidden-card")
+    $(".key-hide2").addClass("hidden-card")
+
   });
 });
 
