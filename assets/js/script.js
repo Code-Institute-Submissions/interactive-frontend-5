@@ -59,7 +59,8 @@ function backToReading() {
 //on clicking "The Diamond" link, to change the cards positions and meanings. 
 $(document).ready(function() {
     $(".the-diamond").click(function(){
-    $(".diamond-dnone").addClass("d-none")
+    $(".column").hide()
+    $(".diamond").show()
     $("#2").html("1").next().html("1.THE THEME")
     $("#1").html("2").next().html("2.UNCONCIOUS INTERNAL INFLUENCE") 
     $("#6").html("3").next().html("3.CONCIOUS EXTERNAL INFLUENCE")
@@ -71,10 +72,10 @@ $(document).ready(function() {
 //on clicking "The Key" link, to change the cards positions and meanings. 
 $(document).ready(function() {
     $(".the-key").click(function(){
-    $(".diamond-dnone, .key-dnone").addClass("d-none")
+    $(".column").hide()
+    $(".k").show()
     $(".key-hide").removeClass("hidden-card")
     $(".key-hide2").addClass("hidden-card")
-
   });
 });
 
