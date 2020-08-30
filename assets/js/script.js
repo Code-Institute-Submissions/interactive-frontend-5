@@ -36,7 +36,7 @@ $(document).ready(function() {
 $("img.card-back").on({
   click: function(){
   $(this).fadeOut("slow"),
- //updates the div with a random front-card and changes the styling
+ //to update the div with a random front-card and change the styling
  $("#" + playerTurn).html(getRandomCard()).removeClass("card-nr").next().removeClass("card-meaning").addClass("card-meaning2").parent().removeClass("card-container").addClass("card-container2")
     playerTurn++;
     counter++;
@@ -46,7 +46,7 @@ $("img.card-back").on({
 
 /*------------------------BACK TO READING BUTTON---------------------*/
 
-//takes the user back to only display the reading 
+//for taking the user back to only see the reading 
 function backToReading() {
   $(".btn-warning").addClass("d-none");
   $(".game").removeClass("col-lg-4");
@@ -58,18 +58,20 @@ function backToReading() {
 
 //"The Diamond" game. 
 $(document).ready(function() {
-    $(".the-diamond").click(function(){
-    $(".column").hide()//hides all card containers to reset each game
-    $(".diamond").show()//shows the Diamond game
-
+    $(".the-diamond").click(function() {
+    
+    $(".column").hide()//to reset each game
+    $(".diamond").show()//to only show the cards positions for the Diamond game
+    
+    //to give new nr id to card containers 
     $('.card-nr').removeAttr('id')
-
     $(".diamond1").attr("id","1"); 
     $(".diamond2").attr("id","2");
     $(".diamond3").attr("id","3");
     $(".diamond4").attr("id","4");
     $(".diamond5").attr("id","5");
     
+    //to give new meaning to card containers
     $("#1").html("1").next().html("1.THE THEME")
     $("#2").html("2").next().html("2.UNCONCIOUS INTERNAL INFLUENCE") 
     $("#3").html("3").next().html("3.CONCIOUS EXTERNAL INFLUENCE")
@@ -81,10 +83,30 @@ $(document).ready(function() {
 //"The Key game". 
 $(document).ready(function() {
     $(".the-key").click(function(){
-    $(".column").hide()
-    $(".k").show()
-    $(".key-hide").removeClass("hidden-card")
-    $(".key-hide2").addClass("hidden-card")
+    $(".column").hide()//to reset each game
+    $(".key").show().children().removeClass("hidden-card")//to only show cards containers for " the Key" game
+    $(".hidekey").addClass("hidden-card")
+
+    //to give new nr id to card containers
+    $('.card-nr').removeAttr('id')
+    $(".key1").attr("id","1"); 
+    $(".key2").attr("id","2");
+    $(".key3").attr("id","3");
+    $(".key4").attr("id","4");
+    $(".key5").attr("id","5");
+    $(".key6").attr("id","6");
+    $(".key7").attr("id","7");
+    $(".key8").attr("id","8");
+
+    //to give new meaning to card containers
+    $("#1").html("1").next().html("1.WHAT IS REPRESSED")
+    $("#2").html("2").next().html("2.YING, YOUR FEMININE (PASSIVE) ASPECT") 
+    $("#3").html("3").next().html("3.YANG, YOUR MASCULINE (ACTIVE) ASPECT")
+    $("#4").html("4").next().html("4.MEDITATION")
+    $("#5").html("5").next().html("5.INNER VISION REGARDING THE BODY")
+    $("#6").html("6").next().html("6.INNER VISION REGARDING THE HEART")
+    $("#7").html("7").next().html("7.INNER VISION REGARDING THE BEING")
+    $("#8").html("8").next().html("8.AWARNESS (UNDERSTANDING)")
   });
 });
 
@@ -113,7 +135,7 @@ function windowClick(e) {
  }
 
 
- /*-------------------------SEND EMAILJS---------------------*/
+ /*-------------------------SEND EMAIL JS---------------------*/
 
  function sendEmail() {
     //a "Sending..." message when the user waits for the message to get loaded & sent
@@ -144,7 +166,7 @@ function windowClick(e) {
 
 function checkRegEx() {
   
-  //gets the user input from the form fields
+  //to get the user input from the form fields
   var name = document.querySelector("#name").value;
   var email = document.querySelector("#email").value;
   var message = document.querySelector("#message").value;
