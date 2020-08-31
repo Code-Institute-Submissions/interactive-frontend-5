@@ -1,9 +1,11 @@
 /*-----------------------THE DEFAULT TAROT GAME(THE CELTIC CROSS) & CARDS DESCRIPTIONS------------------*/
 
+var cardsCopy = [].concat(cards);
+
 //to keep track of what turn the user is on  
 let playerTurn = 1;
 
-//to pass the cards position to the descriptionClick(1)
+//to pass the cards position to the descriptionClick(counter)
 let counter = 0;
 
 //so that I can access cards info later by index 
@@ -20,12 +22,14 @@ function descriptionClick(index) {
   document.querySelector(".image").innerHTML = `<img src="${clickedCard.imgPath}" alt="front-card">` 
 }
  
-//returns a random front-card image after the user clicks a back-card
+//returns a random front-card image after the user clicks a back-card and attaches an onclick on it
+// & modifies the array of objects(the cards in data.js) by removing the chosen card from the array
+//so that the user cannot choose the same card twice
 function getRandomCard() {
-    let randomNum = Math.floor(Math.random() * cards.length);
-    let randomCard = cards[randomNum]; // gets random card from the array 
-    storeRandomCards.push(randomCard) 
-    cards.splice(cards.indexOf(randomCard), 1) //removes the same card from the array
+    let randomNum = Math.floor(Math.random() * cardsCopy.length);
+    let randomCard = cardsCopy[randomNum]; // gets random card from the array 
+    storeRandomCards.push(randomCard) //so the chosen cards can be accessed later with the descriptionClick(counter)
+    cardsCopy.splice(cardsCopy.indexOf(randomCard), 1) //removes the same card from the array
 
      return `<img onclick="descriptionClick(${counter})" src="${randomCard.imgPath}" alt="front-card">`
 }  
@@ -57,9 +61,11 @@ function backToReading() {
 
 //to reset each game
 function resetGame() {
+    cardsCopy = [].concat(cards);
     counter = 0
     playerTurn = 1
     storeRandomCards = [];
+
    $(".card-container2").addClass("card-container").removeClass("card-container2")
    $(".card-meaning2").addClass("card-meaning").removeClass("card-meaning2").prev().addClass("card-nr")
    $('img:hidden').show();
@@ -151,7 +157,6 @@ function windowClick(e) {
      $(".pop-bg").addClass("d-none");
     }
  }
-
 
  /*-------------------------SEND EMAIL JS---------------------*/
 
