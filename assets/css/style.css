@@ -117,7 +117,8 @@ img {
 }
 
 @media screen and (max-width: 500px) {
-    .card-container {
+    .card-container,
+    .card-back {
         height: 80px;
         width: 50px;
     }
@@ -139,7 +140,6 @@ img {
         margin-bottom: 10px;
     }
 }
-
 
 /*---------------------start-page-----------------------*/
 
@@ -188,6 +188,13 @@ button.btn.btn-warning {
 .btn.btn-danger {
   margin-top: 7px;
   margin-bottom: 15px;
+}
+
+.btn.btn-light{
+    position: absolute;
+    top: 10px;
+    right: 7px;
+    margin: 0;
 }
 
 /*-----------------------Contact pop-up Modal --------------------*/
@@ -274,6 +281,16 @@ h5 {
   margin-bottom: 7px;
   border-radius: 3px;
   padding: 10px;;
+}
+
+#navbar {
+    height: 60px;
+}
+
+.logo { 
+  position: absolute;
+  top: 0;
+  margin: 0;
 }
 
 
