@@ -1,4 +1,4 @@
-/*-----------------------THE DEFAULT TAROT GAME & CARDS DESCRIPTIONS------------------*/
+/*-----------------------THE DEFAULT TAROT GAME(THE CELTIC CROSS) & CARDS DESCRIPTIONS------------------*/
 
 //to keep track of what turn the user is on  
 let playerTurn = 1;
@@ -36,7 +36,7 @@ $("img.card-back").on({
   click: function(){
   $(this).fadeOut("slow"),
  //to update the div with a random front-card and change the styling
- $("#" + playerTurn).html(getRandomCard()).removeClass("card-nr").next().removeClass("card-meaning").addClass("card-meaning2").parent().removeClass("card-container").addClass("card-container2")
+ $("#" + playerTurn).html(getRandomCard()).next().removeClass("card-meaning").addClass("card-meaning2").parent().removeClass("card-container").addClass("card-container2")
     playerTurn++;
     counter++;
     }
@@ -60,16 +60,16 @@ function resetGame() {
     counter = 0
     playerTurn = 1
     storeRandomCards = [];
+   $(".card-container2").addClass("card-container").removeClass("card-container2")
+   $(".card-meaning2").addClass("card-meaning").removeClass("card-meaning2")
+   $('img:hidden').show();
 }
 
 
-
-//for resetting "The Celtic Cross" default game by reloading the page
+//TO reset "The Celtic Cross" default game by reloading the page
 $(document).ready(function() {
     $(".celtic-cross").click(function() {
-        location.reload()
-        window.onload = 
-             $('.the-diamond').click();   
+        location.reload()  
     });
 })
 
