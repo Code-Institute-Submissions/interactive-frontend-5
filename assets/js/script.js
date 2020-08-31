@@ -36,7 +36,7 @@ $("img.card-back").on({
   click: function(){
   $(this).fadeOut("slow"),
  //to update the div with a random front-card and change the styling
- $("#" + playerTurn).html(getRandomCard()).next().removeClass("card-meaning").addClass("card-meaning2").parent().removeClass("card-container").addClass("card-container2")
+ $("#" + playerTurn).html(getRandomCard()).removeClass("card-nr").next().removeClass("card-meaning").addClass("card-meaning2").parent().removeClass("card-container").addClass("card-container2")
     playerTurn++;
     counter++;
     }
@@ -61,12 +61,12 @@ function resetGame() {
     playerTurn = 1
     storeRandomCards = [];
    $(".card-container2").addClass("card-container").removeClass("card-container2")
-   $(".card-meaning2").addClass("card-meaning").removeClass("card-meaning2")
+   $(".card-meaning2").addClass("card-meaning").removeClass("card-meaning2").prev().addClass("card-nr")
    $('img:hidden').show();
 }
 
 
-//TO reset "The Celtic Cross" default game by reloading the page
+//To reset "The Celtic Cross" default game by reloading the page
 $(document).ready(function() {
     $(".celtic-cross").click(function() {
         location.reload()  
