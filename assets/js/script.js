@@ -1,6 +1,6 @@
-/*-----------------------THE TAROT GAME & CARDS DESCRIPTIONS------------------*/
+/*-----------------------THE DEFAULT TAROT GAME & CARDS DESCRIPTIONS------------------*/
 
-//keeps track of what turn the user is on  
+//to keep track of what turn the user is on  
 let playerTurn = 1;
 
 //to pass the cards position to the descriptionClick(1)
@@ -12,13 +12,12 @@ let storeRandomCards = [];
 //this is to retrive the card info from the array of objects by index
 function descriptionClick(index) {
   const clickedCard = storeRandomCards[index]
-  //when the user clicks on a card the description & its image gets displayed like this: 
-  $(".btn-warning").removeClass("d-none")
-  $(".game").addClass('col-lg-4');
-  $(".col-12").removeClass("d-none");
-  document.querySelector(".info").innerHTML = clickedCard.description; //gets the clicked card's descripton
-  document.querySelector("#card-name").innerHTML = clickedCard.name;  //gets the clicked card's name
-  document.querySelector(".image").innerHTML = `<img src="${clickedCard.imgPath}" alt="front-card">` //gets the clicked card's image
+  $(".btn-warning").removeClass("d-none")//to show back to reading button
+  $(".game").addClass('col-lg-4'); 
+  $(".col-12").removeClass("d-none"); // adds new cols for card image and description 
+  document.querySelector(".info").innerHTML = clickedCard.description; 
+  document.querySelector("#card-name").innerHTML = clickedCard.name;  
+  document.querySelector(".image").innerHTML = `<img src="${clickedCard.imgPath}" alt="front-card">` 
 }
  
 //returns a random front-card image after the user clicks a back-card
@@ -56,12 +55,30 @@ function backToReading() {
 
 /*----------------------CHANGE GAME BUTTON---------------------*/
 
-//"The Diamond" game. 
+//to reset each game
+function resetGame() {
+    counter = 0
+    playerTurn = 1
+    storeRandomCards = [];
+}
+
+
+
+//for resetting "The Celtic Cross" default game by reloading the page
+$(document).ready(function() {
+    $(".celtic-cross").click(function() {
+        location.reload()
+        window.onload = 
+             $('.the-diamond').click();   
+    });
+})
+
+//"THE DIAMOND" GAME 
 $(document).ready(function() {
     $(".the-diamond").click(function() {
-    
-    $(".column").hide()//to reset each game
-    $(".diamond").show()//to only show the cards positions for the Diamond game
+    resetGame()
+    $(".column").hide()//hides all card containers
+    $(".diamond").show()//shows the cards containers for "The Diamond" game
     
     //to give new nr id to card containers 
     $('.card-nr').removeAttr('id')
@@ -77,14 +94,15 @@ $(document).ready(function() {
     $("#3").html("3").next().html("3.CONCIOUS EXTERNAL INFLUENCE")
     $("#4").html("4").next().html("4.WHAT IS NEEDED FOR A SOLUTION")
     $("#5").html("5").next().html("5.THE SOLUTION: UNDERSTANDING")
-  });
+  })
 });
 
-//"The Key game". 
+//"THE KEY" GAME
 $(document).ready(function() {
     $(".the-key").click(function(){
-    $(".column").hide()//to reset each game
-    $(".key").show().children().removeClass("hidden-card")//to only show cards containers for " the Key" game
+    resetGame()
+    $(".column").hide()//hides all card containers
+    $(".key").show().children().removeClass("hidden-card")//shows the cards containers for "The Key" game
     $(".hidekey").addClass("hidden-card")
 
     //to give new nr id to card containers
