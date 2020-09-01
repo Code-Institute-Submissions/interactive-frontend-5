@@ -75,6 +75,7 @@ function resetGame() {
    $(".card-container2").addClass("card-container").removeClass("card-container2")
    $(".card-meaning2").addClass("card-meaning").removeClass("card-meaning2").prev().addClass("card-nr")
    $('img:hidden').show();
+   $(".mirrorhide").parent().show().removeClass("hidden-card") 
 }
 
 //To reset "The Celtic Cross" default game by reloading the page
@@ -145,6 +146,9 @@ $(document).ready(function() {
     resetGame()
     $(".column").hide()//hides all card containers
     $(".mirror").show().children().removeClass("hidden-card")//shows the cards containers for "The Mirror" game
+    $(".mirrorhide").parent().show().addClass("hidden-card")
+    $(".mirrornone").removeClass("d-none")
+
 
     //to give new nr id to card containers
     $('.card-nr').removeAttr('id')
@@ -188,8 +192,7 @@ function popModal() {
 function exit() {
   $(".pop-bg").addClass("d-none");
   $("#form")[0].reset();
-  $(".clear").empty();
-  
+  $(".clear").empty(); 
 }
 
 //gets the modal and its background
@@ -205,7 +208,6 @@ function windowClick(e) {
      $(".clear").empty();
     }
  }
-
 
  /*-------------------------SEND EMAIL JS---------------------*/
 
@@ -237,8 +239,6 @@ function windowClick(e) {
  /*-----------------VALIDATION CODE FOR CHECKING INPUT ON CONTACT MODAL-------------*/
 
 function checkRegEx() {
-  
-  //to get the user input from the form fields
   var name = document.querySelector("#name").value;
   var email = document.querySelector("#email").value;
   var message = document.querySelector("#message").value;
