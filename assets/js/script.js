@@ -1,5 +1,6 @@
 /*-----------------------THE DEFAULT TAROT GAME(THE CELTIC CROSS) & CARDS DESCRIPTIONS------------------*/
 
+//copies the cards array object in data.js
 var cardsCopy = [].concat(cards);
 
 //to keep track of what turn the user is on  
@@ -13,7 +14,7 @@ let storeRandomCards = [];
 
 //this is to retrive the card info from the array of objects by index
 function descriptionClick(index) {
-  const clickedCard = storeRandomCards[index]
+  const clickedCard = storeRandomCards[index] 
   $(".btn-warning").removeClass("d-none")//to show back to reading button
   $(".game").addClass('col-lg-4'); 
   $(".col-12").removeClass("d-none"); // adds new cols for card image and description 
@@ -22,27 +23,33 @@ function descriptionClick(index) {
   document.querySelector(".image").innerHTML = `<img src="${clickedCard.imgPath}" alt="front-card">` 
 }
  
-//returns a random front-card image after the user clicks a back-card and attaches an onclick on it
-// & modifies the array of objects(the cards in data.js) by removing the chosen card from the array
-//so that the user cannot choose the same card twice
+//for selecting a random card from the array
 function getRandomCard() {
     let randomNum = Math.floor(Math.random() * cardsCopy.length);
     let randomCard = cardsCopy[randomNum]; // gets random card from the array 
-    storeRandomCards.push(randomCard) //so the chosen cards can be accessed later with the descriptionClick(counter)
+    storeRandomCards.push(randomCard) //so the selected cards info can be accessed later with the descriptionClick(counter)
     cardsCopy.splice(cardsCopy.indexOf(randomCard), 1) //removes the same card from the array
 
-     return `<img onclick="descriptionClick(${counter})" src="${randomCard.imgPath}" alt="front-card">`
+     return `<img onclick="descriptionClick(${counter})" src="${randomCard.imgPath}" alt="front-card">` 
 }  
 
-//to get a random front-card displayed to a div when one of the back-cards are clicked 
+//for playing a sound when cards are selected
+let mySound = document.getElementById("bounce");
+
+function playSound() { 
+    mySound.play(); 
+}
+
+//when one of the back-cards are clicked 
 $(document).ready(function() {
 $("img.card-back").on({
-  click: function(){
+  click: function() {
   $(this).fadeOut("slow"),
  //to update the div with a random front-card and change the styling
  $("#" + playerTurn).html(getRandomCard()).removeClass("card-nr").next().removeClass("card-meaning").addClass("card-meaning2").parent().removeClass("card-container").addClass("card-container2")
     playerTurn++;
     counter++;
+    playSound()
     }
   });
 });
