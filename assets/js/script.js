@@ -72,12 +72,10 @@ function resetGame() {
     counter = 0
     playerTurn = 1
     storeRandomCards = [];
-
    $(".card-container2").addClass("card-container").removeClass("card-container2")
    $(".card-meaning2").addClass("card-meaning").removeClass("card-meaning2").prev().addClass("card-nr")
    $('img:hidden').show();
 }
-
 
 //To reset "The Celtic Cross" default game by reloading the page
 $(document).ready(function() {
@@ -138,6 +136,44 @@ $(document).ready(function() {
     $("#6").html("6").next().html("6.INNER VISION REGARDING THE HEART")
     $("#7").html("7").next().html("7.INNER VISION REGARDING THE BEING")
     $("#8").html("8").next().html("8.AWARNESS (UNDERSTANDING)")
+  });
+});
+
+//"THE MIRROR" GAME
+$(document).ready(function() {
+    $(".the-mirror").click(function(){
+    resetGame()
+    $(".column").hide()//hides all card containers
+    $(".mirror").show().children().removeClass("hidden-card")//shows the cards containers for "The Mirror" game
+
+    //to give new nr id to card containers
+    $('.card-nr').removeAttr('id')
+    $(".mirror1").attr("id","1"); 
+    $(".mirror2").attr("id","2");
+    $(".mirror3").attr("id","3");
+    $(".mirror4").attr("id","4");
+    $(".mirror5").attr("id","5");
+    $(".mirror6").attr("id","6");
+    $(".mirror7").attr("id","7");
+    $(".mirror8").attr("id","8");
+    $(".mirror9").attr("id","9");
+    $(".mirror10").attr("id","10");
+    $(".mirror11").attr("id","11");
+    $(".mirror12").attr("id","12");
+
+    //to give new meaning to card containers
+    $("#1").html("1").next().html("1.THE BODY ---> You now")
+    $("#2").html("2").next().html("2.THE HEART") 
+    $("#3").html("3").next().html("3.THE MIND")
+    $("#4").html("4").next().html("4.THE BODY ---> Your partner now")
+    $("#5").html("5").next().html("5.THE HEART")
+    $("#6").html("6").next().html("6.INNER VISION REGARDING THE HEART")
+    $("#7").html("7").next().html("7.MELTING & MERGING ---> Outer manifestation of partnership")
+    $("#8").html("8").next().html("8.THE ALCHEMY OF TOGETHERNESS")
+    $("#9").html("9").next().html("9.THE BLESSINGS")
+    $("#10").html("10").next().html("10.DISSOLVE AND UNITE")
+    $("#11").html("11").next().html("11.THE ALCHEMY OF UNION")
+    $("#12").html("12").next().html("12.THE BLESSINGS ---> Internal dynamics")
   });
 });
 
