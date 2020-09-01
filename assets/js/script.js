@@ -144,6 +144,9 @@ function popModal() {
 //closes the modal and its background
 function exit() {
   $(".pop-bg").addClass("d-none");
+  $("#form")[0].reset();
+  $(".clear").empty();
+  
 }
 
 //gets the modal and its background
@@ -155,8 +158,11 @@ addEventListener("click", windowClick);
 function windowClick(e) {
   if(e.target == popUp) { 
      $(".pop-bg").addClass("d-none");
+     $("#form")[0].reset();
+     $(".clear").empty();
     }
  }
+
 
  /*-------------------------SEND EMAIL JS---------------------*/
 
