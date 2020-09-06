@@ -292,13 +292,22 @@ h5 {
 .start-content {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; 
+}
+
+ 
+.start-button {
+    position: relative;
+    top: 100px;
+    margin: -30px;
 }
 
 #play {
-    position: absolute;
-    display: flex;
-    justify-content: center;
+    padding: 5px;
+    border-radius: 2px;
+    border: 3px solid #343030;
+    width: 325px;
+    background: #63fcaa;
 }
 
-
+ 
