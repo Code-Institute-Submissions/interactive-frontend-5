@@ -282,23 +282,23 @@ h5 {
 #start-bg {
     background-color: blueviolet;
     height: 100vh;
-    position: fixed;
-    top: 0;
 }
 
-#cover-img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 100px;
-    margin-top: 100px;
-    width: 80%;
-    height: 300px;
+#cover-container {
+    width: 1100px;
+    height: 100vh;
 }
 
+.start-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-
-
-
+#play {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+}
 
 
