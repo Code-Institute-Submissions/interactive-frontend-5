@@ -1,4 +1,4 @@
-let cards = [
+const cards = [
   {
     name: "Abundance",
     description: `In the East people have condemned the body, condemned matter, called matter 
