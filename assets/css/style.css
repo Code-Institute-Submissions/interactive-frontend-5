@@ -141,22 +141,6 @@ img {
     }
 }
 
-/*---------------------start-page-----------------------*/
-
-#start-bg {
-background-color: blueviolet;
-height: 100vh;
-}
-
-#cover-img { 
-background: url("../images/cover.jpg");
-background-position: center;
-background-repeat: no-repeat;
-background-size: 870px 800px;
-
-}
-
-
 /*---------------------description-containers-----------------------*/
  
 .image {
@@ -292,6 +276,27 @@ h5 {
   top: 0;
   margin: 0;
 }
+
+/*---------------------start-page-----------------------*/
+
+#start-bg {
+    background-color: blueviolet;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+}
+
+#cover-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+    margin-top: 100px;
+    width: 80%;
+    height: 300px;
+}
+
+
 
 
 
