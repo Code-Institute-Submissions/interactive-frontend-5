@@ -6,7 +6,7 @@
 }
 
 .bg-color {
-    background: linear-gradient(#00331A, #300000);
+    background: linear-gradient(#092468,#b94eac, #fcbccd);
     background-image: url("../images/space.jpg");
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -284,8 +284,10 @@ h5 {
 /*---------------------index.html-----------------------*/
 
 #start-bg {
-    background-color: #b42127;
-    height: 100vh;
+    background: linear-gradient(#b94eac, #fcbccd);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 #cover-container {
@@ -311,7 +313,7 @@ h5 {
     border-radius: 2px;
     border: 3px solid #343030;
     width: 260px;
-    background: violet;
+    background: #fcbccd;
 }
 
 #play > a {
