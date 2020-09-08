@@ -271,3 +271,22 @@ function checkRegEx() {
     $("#success").addClass("d-none");
   }  
 }
+
+
+ /*-------------------------MEDIA QUERY FOR INDEX.HTML---------------------*/
+
+ /*https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_matchmedia*/
+
+const mediaQuery = window.matchMedia("(max-width: 800px)")
+
+function changeImage(mediaQuery) {
+  if (mediaQuery.matches) { // If media query matches
+    $("#cover-container").html('<img src="assets/images/mobilecover.png" alt="book-cover">');
+  } else {
+      $("#cover-container").html('<img src="assets/images/cover.jpg" alt="book-cover">');
+  }
+}
+
+mediaQuery.addListener(changeImage) // Attach listener function on state changes
+changeImage(mediaQuery) // Call listener function at run time
+
