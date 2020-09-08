@@ -7,7 +7,11 @@
 
 .bg-color {
     background: linear-gradient(#00331A, #300000);
-    height: 350vh;
+    background-image: url("../images/space.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 #navbar {
@@ -307,11 +311,11 @@ h5 {
     border-radius: 2px;
     border: 3px solid #343030;
     width: 260px;
-    background: #6de94a;
+    background: violet;
 }
 
 #play > a {
-    color: black;
+    color: darkred;
     text-decoration: none;
     background-color: transparent;
     letter-spacing: 2px;
