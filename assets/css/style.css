@@ -277,10 +277,10 @@ h5 {
   margin: 0;
 }
 
-/*---------------------start-page-----------------------*/
+/*---------------------index.html-----------------------*/
 
 #start-bg {
-    background-color: blueviolet;
+    background-color: #b42127;
     height: 100vh;
 }
 
@@ -298,7 +298,7 @@ h5 {
  
 .start-button {
     position: relative;
-    top: 100px;
+    top: 70px;
     margin: -30px;
 }
 
@@ -307,7 +307,7 @@ h5 {
     border-radius: 2px;
     border: 3px solid #343030;
     width: 260px;
-    background: #63fcaa;
+    background: #6de94a;
 }
 
 #play > a {
@@ -318,4 +318,34 @@ h5 {
     font-weight: bold;
     font-size: 25px;
 }
- 
+
+
+@media screen and (max-width: 800px) {
+    #cover-container { 
+        display: none;
+    }
+
+    #start-bg {
+        background-image: url("../images/mobilecover.png");
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }   
+}
+
+
+ @media (min-height: 1366px) and (min-width: 1024px), /*for ipad Pro*/
+ (max-width: 700px) {
+       #cover-container { 
+        display: none;
+    }
+
+    #start-bg {
+        background-image: url("../images/mobilecover.png");
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    } 
+}
