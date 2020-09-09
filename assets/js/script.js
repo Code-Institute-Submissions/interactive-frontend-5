@@ -199,6 +199,31 @@ $(document).ready(function () {
   });
 });
 
+//All Cards 
+$(document).ready(function () {
+  $(".all-cards").click(function () {
+    resetGame();
+    $(".column, .back-cards > img").hide(); //hides all card containers & back-cards
+    
+    const div = document.querySelector('.back-cards')
+
+    //My mentor created this code for me & I edited it for my own needs
+    function handleClick(index) {
+        const selectedCard = cards[index]
+        console.log(selectedCard.name)
+        console.log(selectedCard.description)
+        console.log(selectedCard.imgPath)
+    }
+
+    //My mentor created this code for me & I edited it for my own needs
+    for (const [index, card] of cards.entries()) {
+        div.innerHTML += `<img onclick="handleClick(${index})" src="${card.imgPath}" width="70" height="100"/>`
+    }
+  });
+});
+
+
+
 /*----------------------- CONTACT POP-UP MODAL------------------*/
 
 //pops-up the modal and its background
