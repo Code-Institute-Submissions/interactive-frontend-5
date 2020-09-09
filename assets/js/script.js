@@ -12,7 +12,7 @@ let counter = 0;
 //so that I can access cards info later by index
 let storeRandomCards = [];
 
-//this is to retrive the card info from the array of objects by index
+//this is to retrive the card info from the cards array by index
 function descriptionClick(index) {
   const clickedCard = storeRandomCards[index];
   $(".btn-warning").removeClass("d-none"); //to show back to reading button
@@ -82,6 +82,8 @@ function resetGame() {
   counter = 0;
   playerTurn = 1;
   storeRandomCards = [];
+
+  $(".front-card").addClass("d-none")
   $(".card-container2")
     .addClass("card-container")
     .removeClass("card-container2");
@@ -203,11 +205,13 @@ $(document).ready(function () {
 $(document).ready(function () {
   $(".all-cards").click(function () {
     resetGame();
-    $(".column, .back-cards > img").hide(); //hides all card containers & back-cards
-    
-    const div = document.querySelector('.back-cards')
+    $(".column, img.card-back").hide(); //hides all card containers & back-cards
+     $(".front-card:hidden").show()
+
+     const div = document.querySelector('.back-cards')
 
     //My mentor created this code for me & I edited it for my own needs
+    //This it to retrive the card info from the cards array
     function handleClick(index) {
         const selectedCard = cards[index]
         console.log(selectedCard.name)
@@ -215,9 +219,13 @@ $(document).ready(function () {
         console.log(selectedCard.imgPath)
     }
 
-    //My mentor created this code for me & I edited it for my own needs
+    //My mentor created this code for me 
+    //This is to display the front cards on the scroll bar
     for (const [index, card] of cards.entries()) {
-        div.innerHTML += `<img onclick="handleClick(${index})" src="${card.imgPath}" width="70" height="100"/>`
+        div.innerHTML += `<img class="front-card" onclick="handleClick(${index})" src="${card.imgPath}"/>`
+        $("img.front-card").css('height','100');
+        $("img.front-card").css('width','70');
+        $("img.front-card").css('padding','4px');
     }
   });
 });
