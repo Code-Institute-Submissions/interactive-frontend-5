@@ -6,12 +6,13 @@
 }
 
 .bg-color {
-    background: linear-gradient(#092468,#b94eac, #fcbccd);
+    background: linear-gradient(#092468, #fcbccd);
     background-image: url("../images/space.jpg");
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    height: 250vh;
 }
 
 #navbar {
@@ -284,7 +285,7 @@ h5 {
 /*---------------------index.html-----------------------*/
 
 #start-bg {
-    background: linear-gradient(#b94eac, #fcbccd);
+    background: linear-gradient(#092468, #fcbccd);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -313,7 +314,7 @@ h5 {
     border-radius: 2px;
     border: 3px solid #343030;
     width: 260px;
-    background: #fcbccd;
+    background: #fedcd2;
 }
 
 #play > a {
@@ -355,3 +356,4 @@ h5 {
         background-size: cover;
     } 
 }
+
