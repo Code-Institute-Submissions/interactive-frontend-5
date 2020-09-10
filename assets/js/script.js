@@ -92,6 +92,7 @@ function resetGame() {
   playerTurn = 1;
   storeRandomCards = [];
   
+  //to reset styling on the card containers 
   $(".front-card").addClass("d-none")
   $(".card-container2")
     .addClass("card-container")
@@ -101,8 +102,13 @@ function resetGame() {
     .removeClass("card-meaning2")
     .prev()
     .addClass("card-nr");
-  $("img:hidden").show();
+  $("img:hidden").show(); // to put back the hidden back cards
   $(".mirrorhide").parent().show().removeClass("hidden-card");
+
+  //to remove Back to Reading button, big card image & card info
+  $(".btn-warning").addClass("d-none"); 
+  $(".game").removeClass("col-lg-4");
+  $(".card-image, .card-info").addClass("d-none"); 
 
   if (selectedGame == "All Cards") {  //this is to put back the click event on back cards that got removed when clicking the "All Cards" link
     clickBackCards();
