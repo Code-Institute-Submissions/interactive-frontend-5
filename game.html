@@ -24,7 +24,19 @@
     <div class="bg-color">
         <div id="navbar">
             <h5 class="text-left logo"> <a href="index.html">OSHO Zen Tarot</a></h5> 
-            <button type="button" class="btn btn-light" onclick="popModal()">Contact</button>  
+              <div class="btn-group" role="group">
+                        <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Change Game
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                            <a class="dropdown-item the-diamond" href="#">The Diamond</a>
+                            <a class="dropdown-item the-key" href="#">The Key</a>
+                            <a class="dropdown-item the-mirror" href="#">The Mirror</a>
+                            <a class="dropdown-item celtic-cross" href="#">The Celtic Cross</a>
+                            <a class="dropdown-item all-cards" href="#">All Cards</a>
+                        </div>
+                    </div>
+            
         </div>
 
     <!------contact-modal--------->
@@ -47,24 +59,9 @@
         </div>
     </div>
 
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-12 text-center">
-                    <div class="btn-group" role="group">
-                        <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Change Game
-                        </button>
-                        <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-                            <a class="dropdown-item the-diamond" href="#">The Diamond</a>
-                            <a class="dropdown-item the-key" href="#">The Key</a>
-                            <a class="dropdown-item the-mirror" href="#">The Mirror</a>
-                            <a class="dropdown-item celtic-cross" href="#">The Celtic Cross</a>
-                            <a class="dropdown-item all-cards" href="#">All Cards</a>
-                        </div>
-                    </div>
-                </div><!---col-->
-            </div><!---/row-->
-        </div><!--/container-->
+
+                  
+ 
    
         <div class="container">
             <div class="row">
@@ -404,6 +401,11 @@
             </div><!--row-->
         </div><!--container-->   
     </div><!--/bg-color-->
+
+    <footer class="text-center">
+      <h4>Any Questions?</h4>
+      <button type="button" class="btn btn-light" onclick="popModal()">Contact</button>  
+    </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script type="text/javascript" src="assets/js/data.js"></script>
