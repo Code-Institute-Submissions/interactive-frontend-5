@@ -12,6 +12,11 @@ let counter = 0;
 //so that I can access cards info later by index
 let storeRandomCards = [];
 
+//for checking when the user clicks the "All Cards" link to later put back the 
+//click event on the back cards. Because when clicking the "All Cards" link
+//the click event gets removed on the back cards. 
+let selectedGame; 
+
 //this is to retrive the card info from the cards array by index
 function descriptionClick(index) {
   const clickedCard = storeRandomCards[index];
@@ -42,8 +47,8 @@ function playSound() {
   mySound.play();
 }
 
-//when one of the back-cards are clicked
-$(document).ready(function () {
+function clickBackCards() { 
+  //when one of the back-cards are clicked
   $("img.card-back").on({
     click: function () {
       $(this).fadeOut("slow"),
@@ -60,9 +65,13 @@ $(document).ready(function () {
       playerTurn++;
       counter++;
       playSound();
-    },
+    }
   });
-});
+}
+
+$(document).ready(function () {
+    clickBackCards()
+ });
 
 /*------------------------BACK TO READING BUTTON---------------------*/
 
@@ -82,7 +91,7 @@ function resetGame() {
   counter = 0;
   playerTurn = 1;
   storeRandomCards = [];
-
+  
   $(".front-card").addClass("d-none")
   $(".card-container2")
     .addClass("card-container")
@@ -94,6 +103,10 @@ function resetGame() {
     .addClass("card-nr");
   $("img:hidden").show();
   $(".mirrorhide").parent().show().removeClass("hidden-card");
+
+  if (selectedGame == "All Cards") {  //this is to put back the click event on back cards that got removed when clicking the "All Cards" link
+    clickBackCards();
+  }
 }
 
 //To reset "The Celtic Cross" default game by reloading the page
@@ -107,6 +120,7 @@ $(document).ready(function () {
 $(document).ready(function () {
   $(".the-diamond").click(function () {
     resetGame();
+    selectedGame = "The Diamond"
     $(".column").hide(); //hides all card containers
     $(".diamond").show(); //shows the cards containers for "The Diamond" game
 
@@ -131,6 +145,7 @@ $(document).ready(function () {
 $(document).ready(function () {
   $(".the-key").click(function () {
     resetGame();
+    selectedGame = "The Key"
     $(".column").hide(); //hides all card containers
     $(".key").show().children().removeClass("hidden-card"); //shows the cards containers for "The Key" game
     $(".hidekey").addClass("hidden-card");
@@ -162,6 +177,7 @@ $(document).ready(function () {
 $(document).ready(function () {
   $(".the-mirror").click(function () {
     resetGame();
+    selectedGame = "The Mirror"
     $(".column").hide(); //hides all card containers
     $(".mirror").show().children().removeClass("hidden-card"); //shows the cards containers for "The Mirror" game
     $(".mirrorhide").parent().show().addClass("hidden-card");
@@ -201,26 +217,26 @@ $(document).ready(function () {
   });
 });
 
-//All Cards 
-$(document).ready(function () {
-  $(".all-cards").click(function () {
-    resetGame();
-    $(".column, img.card-back").hide(); //hides all card containers & back-cards
-     $(".front-card:hidden").show()
-
-     const div = document.querySelector('.back-cards')
-
-    //My mentor created this code for me & I edited it for my own needs
-    //This it to retrive the card info from the cards array
-    function handleClick(index) {
+//ALL CARDS
+//this is to retrive the card info on the front cards from the cards array
+  function handleClick(index) { //My mentor created this function for getting card info by index, & I added more code within the function 
         const selectedCard = cards[index]
         console.log(selectedCard.name)
         console.log(selectedCard.description)
         console.log(selectedCard.imgPath)
     }
 
-    //My mentor created this code for me 
-    //This is to display the front cards on the scroll bar
+$(document).ready(function () {
+  $(".all-cards").click(function () {
+    resetGame();
+    selectedGame = "All Cards"
+    $(".column, img.card-back").hide(); //hides all card containers & back-cards
+    $(".front-card:hidden").show()
+
+     const div = document.querySelector('.back-cards')
+
+    //My mentor created this loop for me & and I added some code to it
+    //This is to display the front cards in the "All Cards" 
     for (const [index, card] of cards.entries()) {
         div.innerHTML += `<img class="front-card" onclick="handleClick(${index})" src="${card.imgPath}"/>`
         $("img.front-card").css('height','100');
@@ -229,7 +245,6 @@ $(document).ready(function () {
     }
   });
 });
-
 
 
 /*----------------------- CONTACT POP-UP MODAL------------------*/
@@ -275,7 +290,7 @@ function sendEmail() {
     })
     .then(
       function (response) {
-        //conifirms that the user's message has been sent
+        //a conformation message that the user's message has been sent
         $("#success")
           .css("background-color", "blue")
           .html("Your message was sent successfully!");
