@@ -1,7 +1,7 @@
 /*-----------------------THE DEFAULT TAROT GAME(THE CELTIC CROSS) & CARDS DESCRIPTIONS------------------*/
 
 //copies the cards array object in data.js
-var cardsCopy = [].concat(cards);
+let cardsCopy = [].concat(cards);
 
 //to keep track of what turn the user is on
 let playerTurn = 1;
@@ -19,13 +19,13 @@ let selectedGame;
 
 //this is to retrive the card info from the cards array by index
 function descriptionClick(index) {
-  const clickedCard = storeRandomCards[index];
-  $(".btn-warning").removeClass("d-none"); //to show back to reading button
-  $(".game").addClass("col-lg-4");
-  $(".col-12").removeClass("d-none"); // adds new cols for card image and description
-  document.querySelector(".info").innerHTML = clickedCard.description;
-  document.querySelector("#card-name").innerHTML = clickedCard.name;
-  document.querySelector(
+    const clickedCard = storeRandomCards[index];
+    $(".btn-warning").removeClass("d-none"); //to show back to reading button
+    $(".game").addClass("col-lg-4");
+    $(".col-12").removeClass("d-none"); // adds new cols for card image and description
+    document.querySelector(".info").innerHTML = clickedCard.description;
+    document.querySelector("#card-name").innerHTML = clickedCard.name;
+    document.querySelector(
     ".image"
   ).innerHTML = `<img src="${clickedCard.imgPath}" alt="front-card">`;
 }
@@ -225,12 +225,13 @@ $(document).ready(function () {
 
 //ALL CARDS
 //this is to retrive the card info on the front cards from the cards array
-  function handleClick(index) { //My mentor created this function for getting card info by index, & I added more code within the function 
-        const selectedCard = cards[index]
-        console.log(selectedCard.name)
-        console.log(selectedCard.description)
-        console.log(selectedCard.imgPath)
-    }
+function handleClick(index) { //My mentor created this function for getting card info by index, & I added more code within the function 
+    const selectedCard = cards[index]
+    $(".col-12").removeClass("d-none"); // adds new cols for card image and description
+    document.querySelector(".info").innerHTML = selectedCard .description;
+    document.querySelector("#card-name").innerHTML = selectedCard .name;
+    document.querySelector(".image").innerHTML = `<img src="${selectedCard .imgPath}" alt="front-card">`;
+}
 
 $(document).ready(function () {
   $(".all-cards").click(function () {
