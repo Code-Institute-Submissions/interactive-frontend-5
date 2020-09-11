@@ -1,6 +1,6 @@
 /*-----------------------THE DEFAULT TAROT GAME(THE CELTIC CROSS) & CARDS DESCRIPTIONS------------------*/
 
-//copies the cards array object in data.js
+//copies the cards array in data.js
 let cardsCopy = [].concat(cards);
 
 //to keep track of what turn the user is on
@@ -144,6 +144,9 @@ $(document).ready(function () {
     $("#3").html("3").next().html("3.CONCIOUS EXTERNAL INFLUENCE");
     $("#4").html("4").next().html("4.WHAT IS NEEDED FOR A SOLUTION");
     $("#5").html("5").next().html("5.THE SOLUTION: UNDERSTANDING");
+
+    //to change text on About card spread
+    $("#about").html("'The Diamond' spread can be helpful in bringing more clarity to a specific issue.")
   });
 });
 
@@ -155,6 +158,7 @@ $(document).ready(function () {
     $(".column").hide(); //hides all card containers
     $(".key").show().children().removeClass("hidden-card"); //shows the cards containers for "The Key" game
     $(".hidekey").addClass("hidden-card");
+    $(".key-row").removeClass("d-none");
 
     //to give new nr id to card containers
     $(".card-nr").removeAttr("id");
@@ -176,6 +180,9 @@ $(document).ready(function () {
     $("#6").html("6").next().html("6.INNER VISION REGARDING THE HEART");
     $("#7").html("7").next().html("7.INNER VISION REGARDING THE BEING");
     $("#8").html("8").next().html("8.AWARNESS (UNDERSTANDING)");
+
+     //to change text on About card spread
+    $("#about").html("'The Key' spread can open the door to insights regarding hidden, unconscious aspects of a particular issue. It may also be used as a general reading for an insight into your interiority here and now.")
   });
 });
 
@@ -220,6 +227,9 @@ $(document).ready(function () {
     $("#10").html("10").next().html("10.DISSOLVE AND UNITE");
     $("#11").html("11").next().html("11.THE ALCHEMY OF UNION");
     $("#12").html("12").next().html("12.THE BLESSINGS ---> Internal dynamics");
+  
+     //to change text on About card speard
+    $("#about").html("'The Mirror' spread is a more in depth approach to gaining insights into your relating with the other, whether the boss, the lover, the friend, the sister, the parent…. It offers an understanding of the life processes of each individual, as well as insights into what is happening between you.")
   });
 });
 
@@ -239,6 +249,7 @@ $(document).ready(function () {
     selectedGame = "All Cards"
     $(".column, img.card-back").hide(); //hides all card containers & back-cards
     $(".front-card:hidden").show()
+    $("#about").html("")
 
      const div = document.querySelector('.back-cards')
 
