@@ -4,8 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Game - Osho Zen Tarot</title>
+
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js">
     </script>
     <script type="text/javascript">
@@ -13,33 +16,34 @@
             emailjs.init("user_AVWl7AxkQOq582h8jglh3");
         })();
     </script>
+
 </head>
 <body>
 
-    <!------sound for game play--------->
+    <!---Sound for Game Play--->
      <audio id="bounce">
         <source src="assets/sound/bounce.mp3" type="audio/mp3"> 
     </audio>
 
     <div class="bg-color">
-        <div id="navbar">
+    <!---Nav--->
+        <nav id="navbar">
             <h5 class="text-left logo"> <a href="index.html">OSHO Zen Tarot</a></h5> 
-              <div class="btn-group" role="group">
-                        <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Change Game
-                        </button>
-                        <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-                            <a class="dropdown-item the-diamond" href="#">The Diamond</a>
-                            <a class="dropdown-item the-key" href="#">The Key</a>
-                            <a class="dropdown-item the-mirror" href="#">The Mirror</a>
-                            <a class="dropdown-item celtic-cross" href="#">The Celtic Cross</a>
-                            <a class="dropdown-item all-cards" href="#">All Cards</a>
-                        </div>
-                    </div>
-            
-        </div>
+            <div class="btn-group" role="group">
+                <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Change Game
+                </button>
+                <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                    <a class="dropdown-item the-diamond" href="#">The Diamond</a>
+                    <a class="dropdown-item the-key" href="#">The Key</a>
+                    <a class="dropdown-item the-mirror" href="#">The Mirror</a>
+                    <a class="dropdown-item celtic-cross" href="#">The Celtic Cross</a>
+                    <a class="dropdown-item all-cards" href="#">All Cards</a>
+                </div>
+            </div>  
+        </nav>
 
-    <!------contact-modal--------->
+    <!---Contact Modal--->
     <div class="pop-bg d-none">
         <div class="pop-box">
             <form id="form">
@@ -59,18 +63,18 @@
         </div>
     </div>
 
-
-                  
- 
-   
+        <!---Instructions--->
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <p><strong>Instructions:</strong> <em>Click the cards you want to choose. When all cards are chosen, click the cards to view the meaning.</em></p>
+                    <p><strong>Instructions:</strong> 
+                    <em>Click the cards you want to choose. Then, 
+                    click the cards to view the meaning.</em></p>
                 </div>
             </div>
         </div>
 
+        <!---Back Cards in Scroll--->
         <div class="container">
             <div class="row">
                 <div class="col-12 scroll-cards height-col">
@@ -159,17 +163,19 @@
             </div>
         </div>
 
+        <!---The Game--->
         <div class="container-fluid">
             <div class="row justify-content-center">
                 <div class="col-12 game">
 
-                    <!---back to reading button--->
+                    <!---Back to Reading Button--->
                     <div class="row">  
                         <div class="col-12">
                             <button type="button" onclick="backToReading()" class="btn btn-warning d-none">Back To Reading</button>
                         </div>
                     </div>
-                    <!---card-row-1--->
+
+                    <!---Card Row 1--->
                     <div class="card-row text-center">
                         <div class="column">                           
                             <div class="card-container hidden-card">
@@ -203,7 +209,7 @@
                         </div>
                     </div>
 
-                    <!---card-row-2--->
+                    <!---Card Row 2--->
                     <div class="card-row text-center">
                         <div class="column">                           
                             <div class="card-container hidden-card">
@@ -237,7 +243,7 @@
                         </div>
                     </div>
 
-                    <!---card-row-3--->
+                    <!---Card Row 3--->
                     <div class="card-row text-center">
                         <div class="column">                           
                             <div class="card-container">
@@ -271,7 +277,7 @@
                         </div>
                     </div>
 
-                    <!---card-row-4--->
+                    <!---Card Row 4--->
                      <div class="card-row text-center">
                         <div class="column">                           
                             <div class="card-container hidden-card">
@@ -305,7 +311,7 @@
                         </div>
                     </div>
 
-                     <!---card-row-5--->
+                     <!---Card Row 5--->
                      <div class="card-row text-center">
                         <div class="column">                           
                             <div class="card-container hidden-card">
@@ -339,7 +345,7 @@
                         </div>
                     </div>
 
-                     <!---card-row-6--->
+                     <!---Card Row 6--->
                      <div class="card-row text-center mirrornone d-none">
                         <div class="column">
                             <div class="card-container hidden-card">
@@ -361,7 +367,7 @@
                         </div>
                     </div>
 
-                    <!---card-row-7--->
+                    <!---Card Row 7--->
                      <div class="card-row text-center mirrornone d-none">
                         <div class="column">
                             <div class="card-container hidden-card">
@@ -382,26 +388,36 @@
                             </div>
                         </div>
                     </div>
-
+                    <!---About Game--->
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <p>This traditional spread is used to find clarity
+                                    on a specific topic and also for general reading.
+                                    In the Osho Zen Tarot, the positions of the cards
+                                    have the following meaning:
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div><!---/col_1--->
 
-                <!---bigger card image.-->
+                <!---Big Card image--->
                 <div class="col-12 col-lg-4 d-none card-image">
-                    <div class="card-container image">
-                    </div>
+                    <div class="card-container image"></div>
                 </div><!---/col_2--->
-                 <!---description of the cards--->
+
+                 <!---Description of the Cards--->
                 <div class="col-12 col-lg-4 d-none card-info">
-                    <div class="text-center"><p  id="card-name"></p>
-                    </div>
-                    <div class="card-container info" id="info-right">
-                    </div>
+                    <div class="text-center"><p  id="card-name"></p></div>
+                    <div class="card-container info" id="info-right"></div>
                 </div><!---/col_3--->
 
-            </div><!--row-->
-        </div><!--container-->   
-    </div><!--/bg-color-->
+            </div><!---/row--->
+        </div><!---/container--->   
+    </div><!---/bg-color--->
 
+    <!---Footer--->
     <footer class="text-center">
       <h4>Any Questions?</h4>
       <button type="button" class="btn btn-light" onclick="popModal()">Contact</button>  
@@ -411,11 +427,9 @@
     <script type="text/javascript" src="assets/js/data.js"></script>
     <script type="text/javascript" src="assets/js/script.js"></script>
 
-
     <!---Bootstrap js---->
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
    
-
 </body>
 </html>

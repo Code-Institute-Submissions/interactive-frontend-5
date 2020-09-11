@@ -5,6 +5,8 @@
     box-sizing: border-box;
 }
 
+/*----------------------game.html--------------------*/
+
 .bg-color {
     background: linear-gradient(#092468, #fcbccd);
     background-image: url("../images/space.jpg");
@@ -32,6 +34,8 @@ img {
     height:100%; 
     object-fit:cover; 
 }
+
+/*----------------------card in scroll--------------------*/
 
 .card-back {
     width: 70px;
