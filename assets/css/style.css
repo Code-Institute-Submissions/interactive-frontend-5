@@ -25,9 +25,27 @@
     margin-bottom: 15px;
 }
 
-p {
-    color: #FFB570;
+p > span, 
+#about,
+.card-meaning {
+  font-weight: bold;
+  color: #060606;
+  text-shadow: .5px .5px #da411d;
+  background: #ffffff61;
+  border-radius: 4px;
+  box-shadow: 1px 1px 5px #000000;
 }
+
+p > span {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+p { 
+ text-align: center;
+}
+
+
 
 img {
     width:100%; 
@@ -35,7 +53,7 @@ img {
     object-fit:cover; 
 }
 
-/*----------------------card in scroll--------------------*/
+/*----------------------cards in scroll--------------------*/
 
 .card-back {
     width: 70px;
@@ -69,7 +87,7 @@ img {
     border: 1px solid rgb(0,0,0);
 }
 
-/*----------------------card-containers--------------------*/
+/*----------------------card-containers --------------------*/
 
 .card-row {
   display: flex;
@@ -89,8 +107,10 @@ img {
 .card-container {
   height: 100px;
   width: 70px;
-  border: 1px solid rgb(177, 80, 16);
   margin-bottom: 30px;
+  background:#ffffff61;
+  box-shadow: 1px 1px 5px #000000;
+  border-radius: 4px;
 }
 
 /*for jQuery DOM*/
@@ -109,8 +129,7 @@ img {
 }
 
 .card-meaning {
-  padding-top: 22px;
-  font-weight: bold;
+  margin-top: 35px;
   font-size: 10px;
 }
 
