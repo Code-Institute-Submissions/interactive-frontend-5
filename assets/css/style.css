@@ -47,8 +47,9 @@ a.dropdown-item  {
 
 p > span, 
 #about,
-.card-meaning {
-  font-weight: bold;
+.card-meaning,
+.info {
+  font-weight: 500;
   color: #060606;
   text-shadow: .5px .5px #da411d;
   background: #ffffff61;
@@ -198,25 +199,32 @@ img {
 /*---------------------description-containers-----------------------*/
  
 .image {
-    border: solid 1px white;
+    border: solid 10px black;
     height: 600px;
     width: 400px;
-    color: white;
 }
 
 .info {
     height: 600px;
-    width: 450px;  
-    color: white;
+    width: 470px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
-.info, 
-.image {
-   
-      margin: 0 auto;
- 
-  
+.info,
+.image,
+#card-name {
+      margin: 0 auto; 
 }
+
+#card-name {
+    background: #0000009f;
+    color: white;
+    width: 470px !important; 
+    border-radius: 5px; 
+    font-size: 20px;
+}
+
 /*---------------------------buttons------------------------*/
 button.btn.btn-warning {
   display: flex;
