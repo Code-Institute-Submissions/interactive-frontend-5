@@ -73,6 +73,7 @@ $(document).ready(function () {
     clickBackCards()
  });
 
+
 /*------------------------BACK TO READING BUTTON---------------------*/
 
 //for taking the user back to only see the reading
