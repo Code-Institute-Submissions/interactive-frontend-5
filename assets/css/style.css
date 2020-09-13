@@ -238,9 +238,11 @@ img {
 }
 
 /*---------------------------buttons------------------------*/
-button.btn.btn-warning {
+button.btn.btn-light {
   display: flex;
   margin: 0 auto;
+  background: #07ff6f;
+  border: 1px solid #0a7738;
 }
 
 .btn.btn-danger {
@@ -248,11 +250,18 @@ button.btn.btn-warning {
   margin-bottom: 15px;
 }
 
+button#btnGroupDrop1.btn.btn-secondary.dropdown-toggle,
+button.btn.btn-light {
+    font-weight: bold;
+    box-shadow: 2px 2px 10px black;
+}
+
+
 button#btnGroupDrop1.btn.btn-secondary.dropdown-toggle {
     flex: none;
     background: #07ffec;
+    border: 1px solid #034b45;
     color:#571455;
-    font-weight: bold;
     margin-left: 20px;
 }
 

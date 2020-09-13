@@ -20,7 +20,7 @@ let selectedGame;
 //this is to retrive the card info from the cards array by index
 function descriptionClick(index) {
     const clickedCard = storeRandomCards[index];
-    $(".btn-warning").removeClass("d-none"); //to show back to reading button
+    $(".btn-light").removeClass("d-none"); //to show back to reading button
     $(".game").addClass("col-lg-4");
     $(".col-12").removeClass("d-none"); // adds new cols for card image and description
     document.querySelector(".info").innerHTML = clickedCard.description;
@@ -77,7 +77,7 @@ $(document).ready(function () {
 
 //for taking the user back to only see the reading
 function backToReading() {
-  $(".btn-warning").addClass("d-none");
+  $(".btn-light").addClass("d-none");
   $(".game").removeClass("col-lg-4");
   $(".card-info").addClass("d-none");
   $(".card-image").addClass("d-none");
@@ -106,11 +106,11 @@ function resetGame() {
   $(".mirrorhide").parent().show().removeClass("hidden-card");
 
   //to remove Back to Reading button, big card image & card info
-  $(".btn-warning").addClass("d-none"); 
+  $(".btn-light").addClass("d-none"); 
   $(".game").removeClass("col-lg-4");
   $(".card-image, .card-info").addClass("d-none"); 
 
-  if (selectedGame == "All Cards") {  //this is to put back the click event on back cards that got removed when clicking the "All Cards" link
+  if (selectedGame == "All Cards") {  //to put back the click event on the back cards that got removed when clicking the "All Cards" link
     clickBackCards();
   }
 }
