@@ -23,6 +23,15 @@ function descriptionClick(index) {
     $(".btn-light").removeClass("d-none"); //to show back to reading button
     $(".game").addClass("col-lg-4");
     $(".col-12").removeClass("d-none"); // adds new cols for card image and description
+    $(".card-container").addClass("card-container3").removeClass("card-container2");
+    $(".card-container2").addClass("card-container3");
+    $(".card-meaning").addClass("card-meaning3");
+    $(".card-meaning2").addClass("card-meaning3");
+    $(".card-meaning3").addClass("card-meaning");
+    $(".card-meaning3").removeClass("card-meaning2");
+    $(".card-container").removeClass("card-container2");
+    
+
     document.querySelector(".info").innerHTML = clickedCard.description;
     document.querySelector("#card-name").innerHTML = clickedCard.name;
     document.querySelector(
@@ -78,10 +87,12 @@ $(document).ready(function () {
 
 //for taking the user back to only see the reading
 function backToReading() {
-  $(".btn-light").addClass("d-none");
+  $(".btn-light").addClass("d-none"); 
   $(".game").removeClass("col-lg-4");
-  $(".card-info").addClass("d-none");
+  $(".card-info").addClass("d-none"); 
   $(".card-image").addClass("d-none");
+  $(".card-container2").addClass("card-container");
+  $(".card-container").removeClass("card-container2 card-container3")
 }
 
 /*----------------------CHANGE GAME BUTTON---------------------*/
