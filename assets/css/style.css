@@ -59,9 +59,9 @@ p > span,
   font-weight: 500;
   color: #060606;
   text-shadow: .5px .5px #da411d;
-  background: #ffffff61;
+  background: rgb(238, 212, 238);
   border-radius: 4px;
-  box-shadow: 1px 1px 5px #000000;
+  box-shadow: 1px 1px 5px black;
 }
 
 p > span {
@@ -110,7 +110,7 @@ img {
     width: 10px;
 }
 
-/* copied code for making track smaller than thumb  https://stackoverflow.com/questions/26493446/change-size-of-scrollbar-thumb-with-css*/
+/* copied this code for making track smaller than thumb https://stackoverflow.com/questions/26493446/change-size-of-scrollbar-thumb-with-css*/
 /* Track */
 .scroll-cards::-webkit-scrollbar-track,
 .info::-webkit-scrollbar-track {
@@ -167,6 +167,18 @@ img {
   border-radius: 4px;
 }
 
+.hidden-card {
+    visibility:hidden;
+}
+
+.card-meaning {
+    position: relative;
+    top: 190px;
+    font-size: 14px;
+    cursor: pointer;
+    background: rgb(238, 212, 238);
+}
+
 /*for jQuery, when clicking on back cards*/
 .card-container2 {
     height: 220px;
@@ -178,14 +190,6 @@ img {
     height: 100px;
     width: 70px;
     margin-bottom: 33px;
-}
-
-.card-meaning {
-    position: relative;
-    top: 190px;
-    font-size: 14px;
-    cursor: pointer;
-    background: rgb(238, 212, 238);
 }
 
 /*for jQuery when selecting a back card*/
@@ -204,21 +208,18 @@ img {
     background: rgb(238, 212, 238);
 }
 
+/*for jQuery for further correcting meaning position*/
 .margin-meaning {
     margin-top: -120px; 
 }
 
-
+/*for jQuery to add focus to card meanings*/
 .card-meaning3:focus {
     font-size: 14px;
     outline: none;
     width: 110px;
     background: rgb(238, 212, 238);
     margin-left: -20px;
-}
-
-.hidden-card {
-    visibility:hidden;
 }
 
 @media screen and (max-width: 500px) {   
@@ -265,37 +266,22 @@ img {
 
 /*---------------------description-containers-----------------------*/
  
-.image {
-    border: solid 10px black;
-    height: 600px;
-    width: 400px;
-    background: black;
-    border-radius: 10px;
-}
 
 .image > img {
     cursor: context-menu;
+    width: fit-content;
+    height: fit-content;
 }
 
 .info {
-    height: 600px;
-    width: 470px;
     padding-left: 10px;
     padding-right: 10px;
     overflow-y: scroll;  
 }
 
-
-.info,
-.image,
-#card-name {
-      margin: 0 auto; 
-}
-
 #card-name {
     background: #0000009f;
     color: white;
-    width: 470px !important; 
     border-radius: 5px; 
     font-size: 20px;
 }
@@ -414,11 +400,6 @@ h5 {
   padding: 10px;;
 }
 
-/*for All Cards*/
-#about {
-   background: transparent;
-   box-shadow: none;  
-}
 
 /*---------------------index.html-----------------------*/
 

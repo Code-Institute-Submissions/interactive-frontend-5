@@ -124,6 +124,10 @@ function resetGame() {
   $(".btn-light").addClass("d-none"); 
   $(".game").removeClass("col-lg-4");
   $(".card-image, .card-info").addClass("d-none"); 
+  //to restore container & meaning size on viewing card description
+  $(".card-container").removeClass("card-container3");
+  $(".card-meaning").removeClass("card-meaning3 margin-meaning");
+  $("#about").html("").css({"background":"rgb(238, 212, 238)", "box-shadow":"1px 1px 5px black"}); //to restore bg on about text
 
   if (selectedGame == "All Cards") {  //to put back the click event on the back cards that got removed when clicking the "All Cards" link
     clickBackCards();
@@ -265,7 +269,7 @@ $(document).ready(function () {
     selectedGame = "All Cards"
     $(".column, img.card-back").hide(); //hides all card containers & back-cards
     $(".front-card:hidden").show()
-    $("#about").html("")
+    $("#about").html("").css({"background":"transparent", "box-shadow":"none"});
 
      const div = document.querySelector('.back-cards')
 
