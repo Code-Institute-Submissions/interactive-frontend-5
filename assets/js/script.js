@@ -15,22 +15,20 @@ let storeRandomCards = [];
 //for checking when the user clicks the "All Cards" link to later put back the 
 //click event on the back cards. Because when clicking the "All Cards" link
 //the click event gets removed on the back cards. 
-let selectedGame; 
+let selectedGame;
 
-//this is to retrive the card info from the cards array by index
-function descriptionClick(index) {
+//when clicking the front cards to view description
+function descriptionClick(index) { //this is to retrive the card info from the cards array by index
     const clickedCard = storeRandomCards[index];
     $(".btn-light").removeClass("d-none"); //to show back to reading button
     $(".game").addClass("col-lg-4");
     $(".col-12").removeClass("d-none"); // adds new cols for card image and description
-    $(".card-container").addClass("card-container3").removeClass("card-container2");
     $(".card-container2").addClass("card-container3");
-    $(".card-meaning").addClass("card-meaning3");
     $(".card-meaning2").addClass("card-meaning3");
-    $(".card-meaning3").addClass("card-meaning");
-    $(".card-meaning3").removeClass("card-meaning2");
-    $(".card-container").removeClass("card-container2");
-    
+    //for making the other empty card-containers & their meanings smaller 
+    $(".card-container").addClass("card-container3");
+    $(".card-meaning").addClass("card-meaning3");
+    $(".card-meaning").addClass("margin-meaning");//for meaning position that have empty card-containers
 
     document.querySelector(".info").innerHTML = clickedCard.description;
     document.querySelector("#card-name").innerHTML = clickedCard.name;
@@ -66,7 +64,7 @@ function clickBackCards() {
           .html(getRandomCard())
           .removeClass("card-nr")
           .next()
-          .removeClass("card-meaning")
+          .removeClass("card-meaning margin-meaning")
           .addClass("card-meaning2")
           .parent()
           .removeClass("card-container")
@@ -91,13 +89,18 @@ function backToReading() {
   $(".game").removeClass("col-lg-4");
   $(".card-info").addClass("d-none"); 
   $(".card-image").addClass("d-none");
-  $(".card-container2").addClass("card-container");
-  $(".card-container").removeClass("card-container2 card-container3")
+  $(".card-container2").removeClass("card-container3");
+  $(".card-meaning2").removeClass("card-meaning3");
+  //for making the empty card-containers & their meanings bigger 
+  $(".card-container").removeClass("card-container2");
+  $(".card-container").removeClass("card-container3");
+  $(".card-meaning").removeClass("card-meaning2 margin-meaning");
+  $(".card-meaning").removeClass("card-meaning3");
 }
 
-/*----------------------CHANGE GAME BUTTON---------------------*/
+/*----------------------CHANGE SPREAD BUTTON---------------------*/
 
-//to reset each game
+//to reset each game/spread
 function resetGame() {
   cardsCopy = [].concat(cards);
   counter = 0;
@@ -140,7 +143,7 @@ $(document).ready(function () {
     resetGame();
     selectedGame = "The Diamond"
     $(".column").hide(); //hides all card containers
-    $(".diamond").show(); //shows the cards containers for "The Diamond" game
+    $(".diamond").show(); //shows the card containers for "The Diamond" game
 
     //to give new nr id to card containers
     $(".card-nr").removeAttr("id");
@@ -223,6 +226,7 @@ $(document).ready(function () {
     $(".mirror11").attr("id", "11");
     $(".mirror12").attr("id", "12");
 
+    //to give new meaning to card containers
     //to give new meaning to card containers
     $("#1").html("1").next().html("1.THE BODY ---> You now");
     $("#2").html("2").next().html("2.THE HEART");

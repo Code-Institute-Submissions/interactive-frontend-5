@@ -140,6 +140,14 @@ img {
   margin-bottom: 59px
 }
 
+.card-nr {
+    color: rgb(177, 80, 16);
+    font-size: 26px;
+    position: relative;
+    top: 80px;
+    font-weight: bold;
+}
+
 .card-container {
   height: 220px;
   width: 150px;
@@ -148,55 +156,51 @@ img {
   border-radius: 4px;
 }
 
-/*for jQuery, when images appear in the divs*/
+/*for jQuery, when clicking on back cards*/
 .card-container2 {
     height: 220px;
     width: 150px;
 }
 
-/*for jQuery, when clicking the images*/
+/*for jQuery, when clicking the cards for description*/
 .card-container3 {
     height: 100px;
     width: 70px;
-    margin-bottom: 30px;
-}
-
-.card-nr {
-    color: rgb(177, 80, 16);
-    font-size: 26px;
-    padding-top: 31px;
-    font-weight: bold;
+    margin-bottom: 33px;
 }
 
 .card-meaning {
-  margin-top: 150px;
-  font-size: 14px;
-  cursor: pointer;
-  background: rgb(238, 212, 238);
+    position: relative;
+    top: 190px;
+    font-size: 14px;
+    cursor: pointer;
+    background: rgb(238, 212, 238);
 }
 
-/*for jQuery*/
+/*for jQuery when selecting a back card*/
 .card-meaning2  {
-  margin-top: 6px;
-  font-size: 14px;
-  cursor: pointer;
-  background: rgb(238, 212, 238);
+    margin-top: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    background: rgb(238, 212, 238);
 }
 
-/*for jQuery*/
+/*for jQuery when clicking on card for description*/
 .card-meaning3 {
-  margin-top: 36px;
-  font-size: 10px;
-  cursor: pointer;
-  background: rgb(238, 212, 238);
+    margin-top: 10px;
+    font-size: 10px;
+    cursor: pointer;
+    background: rgb(238, 212, 238);
+}
+
+.margin-meaning {
+    margin-top: -120px; 
 }
 
 
 .card-meaning3:focus {
     font-size: 14px;
     outline: none;
-    position: relative;
-    z-index: 5;
     width: 110px;
     background: rgb(238, 212, 238);
     margin-left: -20px;
