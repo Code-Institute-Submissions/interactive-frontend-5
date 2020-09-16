@@ -6,7 +6,10 @@
     box-sizing: border-box;
 }
 
-/*----------------------game.html--------------------*/
+/*----------------------tarot game.html--------------------*/
+
+
+
 
 .bg-color {
     background: linear-gradient(#092468, #fcbccd);
@@ -61,7 +64,6 @@ p > span,
   text-shadow: .5px .5px #da411d;
   background: rgb(238, 212, 238);
   border-radius: 4px;
-  box-shadow: 1px 1px 5px black;
 }
 
 p > span {
@@ -92,7 +94,6 @@ img {
     width: 70px;
     height: 100px;
     border-radius: 5px;
-    box-shadow: 2px 2px 10px black;
 }
 
 
@@ -148,14 +149,14 @@ img {
   display: flex;
   flex-direction: column;
   margin: 10px;
-  margin-bottom: 59px
+  margin-bottom: 59px;
 }
 
 .card-nr {
     color: rgb(177, 80, 16);
     font-size: 26px;
     position: relative;
-    top: 80px;
+    top: 90px;
     font-weight: bold;
 }
 
@@ -163,8 +164,8 @@ img {
   height: 220px;
   width: 150px;
   background:#ffffff61;
-  box-shadow: 1px 1px 5px #000000;
   border-radius: 4px;
+  box-shadow: 2px 2px 5px black;
 }
 
 .hidden-card {
@@ -177,6 +178,7 @@ img {
     font-size: 14px;
     cursor: pointer;
     background: rgb(238, 212, 238);
+    z-index: 10;
 }
 
 /*for jQuery, when clicking on back cards*/
@@ -220,23 +222,39 @@ img {
     width: 110px;
     background: rgb(238, 212, 238);
     margin-left: -20px;
+    z-index: 10;
 }
 
 @media screen and (max-width: 500px) {   
-    .card-meaning {
-        font-size: 7px;
-        margin-top: 17px;
+    .card-meaning,
+    .card-meaning2 {
+        font-size: 10px;
+        margin-top: -130px;
+        cursor: pointer;
     }
 
+    .card-nr {
+        top: 30px;
+    }
+
+    .card-meaning:focus,
+    .card-meaning2:focus {
+    font-size: 14px;
+    outline: none;
+    width: 110px;
+    background: rgb(238, 212, 238);
+    margin-left: -20px;
+}
+
     .card-container,
+    .card-container2,
     .card-back {
-        height: 88px;
+        height: 97px;
         width: 67px;
     }
 }
 
 @media screen and (max-width: 320px) {
-    .card-container,
     .card-back {
         height: 80px;
         width: 50px;
@@ -244,14 +262,11 @@ img {
 }
 
 @media screen and (max-width: 360px) {
-    .card-container,
     .card-back {
         height: 80px;
         width: 58px;
     }
 }
-
-
 
 @media screen and (max-width: 415px) {
     .column {
@@ -475,4 +490,37 @@ h5 {
         background-size: cover;
     } 
 }
+
+/*-------------------hover effects-----------------------------*/
+
+/* Grow */
+.card-back,
+.card-container2 img,
+.card-meaning,
+.card-meaning2 {
+    display: inline-block;
+    vertical-align: middle;
+    transform: translateZ(0);
+    backface-visibility: hidden;
+    box-shadow: 2px 2px 5px black;
+    -moz-osx-font-smoothing: grayscale;
+    transition-duration: 0.3s;
+    transition-property: transform;
+}
+
+.card-meaning2:hover,
+.card-meaning2:focus,
+.card-meaning2:active,
+.card-meaning:hover,
+.card-meaning:focus,
+.card-meaning:active,
+.card-container2 img:hover,
+.card-container2 img:focus,
+.card-container2 img:active,
+.card-back:hover,
+.card-back:focus,
+.card-back:active {
+    transform: scale(1.1);
+}
+
 
