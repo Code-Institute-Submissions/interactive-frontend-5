@@ -26,10 +26,10 @@
     color: rgb(247, 226, 168); 
     z-index: 1;
     padding: 10px;
-    margin-bottom: 15px;
     height: 60px;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 50px;
 }
 
 
@@ -52,6 +52,7 @@ p > span,
 .card-meaning,
 .info {
     font-size: 18px;
+    outline: none;
 }
 
 p > span, 
@@ -64,11 +65,13 @@ p > span,
   text-shadow: .5px .5px #da411d;
   background: rgb(238, 212, 238);
   border-radius: 4px;
+  outline: none;
 }
 
 p > span {
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-shadow: 2px 2px 5px black;
 }
 
 .logo {
@@ -77,6 +80,8 @@ p > span {
 
 p { 
  text-align: center;
+ padding-left: 10px;
+ padding-right: 10px;
 }
 
 
@@ -87,6 +92,7 @@ img {
     border-radius: 5px;
     cursor: pointer;
 }
+
 
 /*----------------------cards in scroll--------------------*/
 
@@ -102,6 +108,8 @@ img {
     overflow: auto; 
     white-space: nowrap; 
     padding: 10px; 
+    margin-bottom: 50px;
+    margin-top: 20px;
 }
 
 
@@ -181,6 +189,15 @@ img {
     z-index: 10;
 }
 
+.about-spread {
+    margin-top: 50px;
+}
+
+/*for jQuery to position card-nr*/
+.card-nr2 {
+    top: 30px;
+}
+
 /*for jQuery, when clicking on back cards*/
 .card-container2 {
     height: 220px;
@@ -212,7 +229,9 @@ img {
 
 /*for jQuery for further correcting meaning position*/
 .margin-meaning {
-    margin-top: -120px; 
+    margin-top: -220px;
+    padding-left: 3px;
+    padding-right: 3px; 
 }
 
 /*for jQuery to add focus to card meanings*/
@@ -225,12 +244,14 @@ img {
     z-index: 10;
 }
 
-@media screen and (max-width: 500px) {   
+@media screen and (max-width: 541px) {   
     .card-meaning,
     .card-meaning2 {
         font-size: 10px;
-        margin-top: -130px;
+        margin-top: -225px;
         cursor: pointer;
+        padding-left: 1px;
+        padding-right: 1px;
     }
 
     .card-nr {
@@ -244,6 +265,7 @@ img {
     width: 110px;
     background: rgb(238, 212, 238);
     margin-left: -20px;
+    margin-top: -25px;
 }
 
     .card-container,
@@ -261,10 +283,23 @@ img {
     }
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 376px) {
     .card-back {
         height: 80px;
+        width: 61px;
+    }
+}
+
+@media screen and (max-width: 361px) {
+    .card-back,
+    .card-container,
+    .card-container2 {
+        height: 90px;
         width: 58px;
+    }
+
+    .card-meaning {
+        font-size: 8.8px;
     }
 }
 
@@ -275,7 +310,7 @@ img {
 
     .column {
         margin-right: 8px;
-        margin-bottom: 10px;
+        margin-bottom: 59px;
     }
 }
 
