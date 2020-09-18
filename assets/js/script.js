@@ -92,17 +92,15 @@ function resetGame() {
   counter = 0;
   playerTurn = 1;
   storeRandomCards = [];
-  
-  //to reset styling on the card containers 
-  $(".front-card").addClass("d-none")
-  $("img:hidden").show(); // to put back the hidden back cards
 
+  $("img:hidden").show(); // to put back the hidden back cards
   //to remove Back to Reading button, big card image & card info
   $(".btn-light").addClass("d-none"); 
   $(".game").removeClass("col-xl-4");
   $(".image, .card-info").addClass("d-none"); 
-  //to restore container & meaning size on viewing card description
+  //to restore card container, meaning size & styling
   $(".card-container").removeClass("card-container3");
+  $('#card-container2').removeAttr('id');
   $(".card-meaning").removeClass("card-meaning3");
   $("#about").html("").css({"background":"rgb(238, 212, 238)", "box-shadow":"1px 1px 5px black"}); //to restore bg on about text
 
@@ -123,9 +121,9 @@ $(document).ready(function () {
   $(".the-diamond").click(function () {
     resetGame();
     selectedGame = "The Diamond"
-    $(".column").hide(); //hides all card containers
+    $(".card-container, .card-meaning").hide(); //hides all card containers
     $(".diamond").show(); //shows the card containers for "The Diamond" game
-
+    
     //to give new nr id to card containers
     $(".card-nr").removeAttr("id");
     $(".diamond1").attr("id", "1");
@@ -135,11 +133,16 @@ $(document).ready(function () {
     $(".diamond5").attr("id", "5");
 
     //to give new meaning to card containers
-    $("#1").html("1").next().html("1.THE THEME");
-    $("#2").html("2").next().html("2.UNCONCIOUS INTERNAL INFLUENCE");
-    $("#3").html("3").next().html("3.CONCIOUS EXTERNAL INFLUENCE");
-    $("#4").html("4").next().html("4.WHAT IS NEEDED FOR A SOLUTION");
-    $("#5").html("5").next().html("5.THE SOLUTION: UNDERSTANDING");
+    $("#1").html("1");
+    $(".diamond-p1").html("1.THE THEME");
+    $("#2").html("2");
+    $(".diamond-p2").html("2.UNCONCIOUS INTERNAL INFLUENCE");
+    $("#3").html("3"); 
+    $(".diamond-p3").html("3.CONCIOUS EXTERNAL INFLUENCE");
+    $("#4").html("4"); 
+    $(".diamond-p4").html("4.WHAT IS NEEDED FOR A SOLUTION");
+    $("#5").html("5"); 
+    $(".diamond-p5").html("5.THE SOLUTION: UNDERSTANDING");
 
     //to change text on About card spread
     $("#about").html("'The Diamond' spread can be helpful in bringing more clarity to a specific issue.")
