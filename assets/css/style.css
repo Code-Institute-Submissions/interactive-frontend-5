@@ -148,7 +148,6 @@ img {
 }
 
 .card-meaning {
-  background-color: #f1f1f1;
   width: 70px;
   height: 50px;
   margin-left: 10px;
@@ -156,7 +155,6 @@ img {
   font-weight: bold;
   text-align: center;
   padding-top: 5px;
-  background:#ffffff61;
   border-radius: 4px;
   box-shadow: 2px 2px 5px black;
   flex-shrink: 0;
@@ -171,13 +169,19 @@ img {
     margin-top: 50px;
 }
 
+/*for jQuery when clicking the back-cards*/
+#card-container2 {
+    border: 2px solid black;
+    background: black;
+}
+
 /*for jQuery, when clicking the cards for description*/
 .card-container3 {
     height: 100px;
     width: 70px;
 }
 
-/*for jQuery when clicking on card for description*/
+/*for jQuery when clicking the cards for description*/
 .card-meaning3 {
     font-size: 10px;
     cursor: pointer;

@@ -57,7 +57,7 @@ function clickBackCards() {
     click: function () {
         $(this).fadeOut("slow"),
         //to update the div with a random front-card and change the styling
-        $("#" + playerTurn).html(getRandomCard())
+        $("#" + playerTurn).html(getRandomCard()).attr("id","card-container2");
             playerTurn++;
             counter++;
         playSound();
@@ -74,13 +74,14 @@ $(document).ready(function () {
 
 //for taking the user back to only see the reading
 function backToReading() {
-  $(".btn-light").addClass("d-none"); 
-  $(".game").removeClass("col-xl-4");
-  $(".card-info").addClass("d-none"); 
-  $(".image").addClass("d-none");
-  //for making the empty card-containers & their meanings bigger 
-  $(".card-container").removeClass("card-container3");
-  $(".card-meaning").removeClass("card-meaning3");
+    $(".btn-light").addClass("d-none"); 
+    $(".game").removeClass("col-xl-4");
+    $(".card-info").addClass("d-none"); 
+    $(".image").addClass("d-none");
+    //for making the empty card-containers & their meanings bigger 
+    $(".card-container").removeClass("card-container3");
+    $(".card-meaning").removeClass("card-meaning3");
+    $("#thumb").removeAttr('id');
 }
 
 /*----------------------CHANGE SPREAD BUTTON---------------------*/
