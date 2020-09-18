@@ -176,34 +176,35 @@
                             <button type="button" onclick="backToReading()" class="btn btn-light d-none">Back To Reading</button>
                         </div>
                     </div>
-
-                    <div class="column">
-                        <div class="card-container card-nr hidden-card">1</div>
-                        <div class="card-container card-nr hidden-card">2</div>
-                        <div class="card-container card-nr key key8 mirror mirror12 hidden-card">12</div>
-                        <div class="card-container card-nr hidden-card">4</div>
-                        <div class="card-container card-nr">10</div>
-                    </div>
-
+                    
                     <!---card row 1--->
                     <div class="column">
-                        <p class="card-meaning hidden-card" tabindex="0">JOY</p>
-                        <p class="card-meaning hidden-card" tabindex="0">WONDER</p>
+                        <div class="card-container card-nr hidden-card">...</div>
+                        <div class="card-container card-nr hidden-card">...</div>
+                        <div class="card-container card-nr key key8 mirror mirror12 hidden-card">...</div>
+                        <div class="card-container card-nr hidden-card">...</div>
+                        <div class="card-container card-nr" id="10">10</div>
+                    </div>
+
+                    <!---meaning row 1--->
+                    <div class="column">
+                        <p class="card-meaning hidden-card" tabindex="0">...</p>
+                        <p class="card-meaning hidden-card" tabindex="0">...</p>
                         <p class="card-meaning key key-p8 mirror mirror-p12 hidden-card" tabindex="0">12.MIRROR</p>
-                        <p class="card-meaning hidden-card" tabindex="0">FREEDOM</p>
+                        <p class="card-meaning hidden-card" tabindex="0">...</p>
                         <p class="card-meaning" tabindex="0">10.THE RESULT/ KEY</p>
                     </div>
 
                     <!---card row 2-->
                     <div class="column">
-                        <div class="card-container card-nr hidden-card">1</div>
-                        <div class="card-container card-nr key key5 hidden-card">5</div>
-                        <div class="card-container card-nr diamond diamond5 key key6 mirror mirror11">4</div>
-                        <div class="card-container card-nr key key7 hidden-card">7</div>
-                        <div class="card-container card-nr">9</div>
+                        <div class="card-container card-nr hidden-card">...</div>
+                        <div class="card-container card-nr key key5 hidden-card">...</div>
+                        <div class="card-container card-nr diamond diamond5 key key6 mirror mirror11" id="4">4</div>
+                        <div class="card-container card-nr key key7 hidden-card">...</div>
+                        <div class="card-container card-nr" id="9">9</div>
                     </div>
 
-                    <!---card row 2--->
+                    <!---meaning row 2--->
                     <div class="column">
                         <p class="card-meaning hidden-card" tabindex="0">...</p>
                         <p class="card-meaning key key-p5 hidden-card" tabindex="0">...</p>
@@ -214,11 +215,11 @@
 
                     <!---card row 3--->
                     <div class="column">
-                        <div class="card-container card-nr">5</div>
-                        <div class="card-container card-nr diamond diamond2 mirror mirror3">1</div>
-                        <div class="card-container card-nr diamond diamond1 key key4 mirror mirror10">2</div>
-                        <div class="card-container card-nr diamond diamond3 mirror mirror6">6</div>
-                        <div class="card-container card-nr">8</div>
+                        <div class="card-container card-nr" id="5">5</div>
+                        <div class="card-container card-nr diamond diamond2 mirror mirror3" id="1">1</div>
+                        <div class="card-container card-nr diamond diamond1 key key4 mirror mirror10" id="2">2</div>
+                        <div class="card-container card-nr diamond diamond3 mirror mirror6" id="6">6</div>
+                        <div class="card-container card-nr" id="8">8</div>
                     </div>
 
                     <!---meaning row 3--->
@@ -234,9 +235,9 @@
                     <div class="column">
                         <div class="card-container card-nr hidden-card">...</div>
                         <div class="card-container card-nr mirror mirror2 hidden-card">...</div>
-                        <div class="card-container card-nr diamond4 key key2">3</div>
+                        <div class="card-container card-nr diamond4 key key2" id="3">3</div>
                         <div class="card-container card-nr key key3 mirror mirror5 hidden-card">...</div>
-                        <div class="card-container card-nr">7</div>
+                        <div class="card-container card-nr" id="7">7</div>
                     </div>
 
                     <!---meaning row 4--->
@@ -317,7 +318,7 @@
                 </div><!---/col_1--->
 
                 <!---Big Card image--->
-                <div class="col-12 col-lg-3 col-md-6 d-none card-image image text-center">
+                <div class="col-12 col-lg-3 col-md-6 d-none image text-center">
                 </div><!---/col_2--->
 
                  <!---Description of the Cards--->

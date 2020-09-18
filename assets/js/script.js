@@ -21,15 +21,12 @@ let selectedGame;
 function descriptionClick(index) { //this is to retrive the card info from the cards array by index
     const clickedCard = storeRandomCards[index];
     $(".btn-light").removeClass("d-none"); //to show back to reading button
-    $(".game").addClass("col-lg-4");
+    $(".game").addClass("col-xl-4");
     $(".col-12").removeClass("d-none"); // adds new cols for card image and description
-    $(".card-container2").addClass("card-container3");
-    $(".card-meaning2").addClass("card-meaning3");
     //for making the other empty card-containers & their meanings smaller 
     $(".card-container").addClass("card-container3");
     $(".card-meaning").addClass("card-meaning3");
-    $(".card-meaning").addClass("margin-meaning");//for meaning position that have empty card-containers
-
+    
     document.querySelector(".info").innerHTML = clickedCard.description;
     document.querySelector("#card-name").innerHTML = clickedCard.name;
     document.querySelector(
@@ -58,22 +55,14 @@ function clickBackCards() {
   //when one of the back-cards are clicked
   $("img.card-back").on({
     click: function () {
-      $(this).fadeOut("slow"),
+        $(this).fadeOut("slow"),
         //to update the div with a random front-card and change the styling
-        $("#" + playerTurn)
-          .html(getRandomCard())
-          .removeClass("card-nr")
-          .next()
-          .removeClass("card-meaning margin-meaning")
-          .addClass("card-meaning2")
-          .parent()
-          .removeClass("card-container")
-          .addClass("card-container2");
-      playerTurn++;
-      counter++;
-      playSound();
-    }
-  });
+        $("#" + playerTurn).html(getRandomCard())
+            playerTurn++;
+            counter++;
+        playSound();
+        }
+    });
 }
 
 $(document).ready(function () {
@@ -86,15 +75,11 @@ $(document).ready(function () {
 //for taking the user back to only see the reading
 function backToReading() {
   $(".btn-light").addClass("d-none"); 
-  $(".game").removeClass("col-lg-4");
+  $(".game").removeClass("col-xl-4");
   $(".card-info").addClass("d-none"); 
-  $(".card-image").addClass("d-none");
-  $(".card-container2").removeClass("card-container3");
-  $(".card-meaning2").removeClass("card-meaning3");
+  $(".image").addClass("d-none");
   //for making the empty card-containers & their meanings bigger 
-  $(".card-container").removeClass("card-container2");
   $(".card-container").removeClass("card-container3");
-  $(".card-meaning").removeClass("card-meaning2 margin-meaning");
   $(".card-meaning").removeClass("card-meaning3");
 }
 
@@ -109,24 +94,15 @@ function resetGame() {
   
   //to reset styling on the card containers 
   $(".front-card").addClass("d-none")
-  $(".card-container2")
-    .addClass("card-container")
-    .removeClass("card-container2");
-  $(".card-meaning2")
-    .addClass("card-meaning")
-    .removeClass("card-meaning2")
-    .prev()
-    .addClass("card-nr");
   $("img:hidden").show(); // to put back the hidden back cards
-  $(".mirrorhide").parent().show().removeClass("hidden-card");
 
   //to remove Back to Reading button, big card image & card info
   $(".btn-light").addClass("d-none"); 
-  $(".game").removeClass("col-lg-4");
-  $(".card-image, .card-info").addClass("d-none"); 
+  $(".game").removeClass("col-xl-4");
+  $(".image, .card-info").addClass("d-none"); 
   //to restore container & meaning size on viewing card description
   $(".card-container").removeClass("card-container3");
-  $(".card-meaning").removeClass("card-meaning3 margin-meaning");
+  $(".card-meaning").removeClass("card-meaning3");
   $("#about").html("").css({"background":"rgb(238, 212, 238)", "box-shadow":"1px 1px 5px black"}); //to restore bg on about text
 
   if (selectedGame == "All Cards") {  //to put back the click event on the back cards that got removed when clicking the "All Cards" link

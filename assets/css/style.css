@@ -83,7 +83,6 @@ img {
     border-radius: 5px;
 }
 
-
 .scroll-cards {   
     width: 100px;
     overflow: auto; 
@@ -92,7 +91,6 @@ img {
     margin-bottom: 50px;
     margin-top: 20px;
 }
-
 
 /* SCROLLBAR */
 .scroll-cards::-webkit-scrollbar,
@@ -115,7 +113,6 @@ img {
     background: #c84540;
     border-radius: 5px;
 }
-
 
 /* Handle on hover */
 .scroll-cards::-webkit-scrollbar-thumb:hover,
@@ -166,7 +163,6 @@ img {
   cursor: pointer;
 }
 
-
 .hidden-card {
     visibility: hidden;
 }
@@ -179,13 +175,10 @@ img {
 .card-container3 {
     height: 100px;
     width: 70px;
-    margin-bottom: 33px;
 }
-
 
 /*for jQuery when clicking on card for description*/
 .card-meaning3 {
-    margin-top: 10px;
     font-size: 10px;
     cursor: pointer;
     background: rgb(238, 212, 238);
@@ -197,8 +190,6 @@ img {
     outline: none;
     width: 110px;
     background: rgb(238, 212, 238);
-    margin-left: -20px;
-    z-index: 10;
 }
 
     .card-meaning:focus,
@@ -207,8 +198,6 @@ img {
     outline: none;
     width: 110px;
     background: rgb(238, 212, 238);
-    margin-left: -20px;
-    margin-top: -25px;
 }
 
 @media screen and (max-width: 320px) {
