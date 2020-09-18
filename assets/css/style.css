@@ -8,9 +8,6 @@
 
 /*----------------------tarot game.html--------------------*/
 
-
-
-
 .bg-color {
     background: linear-gradient(#092468, #fcbccd);
     background-image: url("../images/space.jpg");
@@ -18,7 +15,6 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 250vh;
 }
 
 #navbar {
@@ -47,43 +43,29 @@ a.dropdown-item  {
     font-weight: bold;
 }
 
-p > span, 
-#about,
+p > span,
 .card-meaning,
 .info {
-    font-size: 18px;
-    outline: none;
-}
-
-p > span, 
-#about,
-.card-meaning,
-.info,
-.card-meaning2 {
+  font-size: 18px;
+  outline: none;
   font-weight: 500;
   color: #060606;
   text-shadow: .5px .5px #da411d;
   background: rgb(238, 212, 238);
   border-radius: 4px;
-  outline: none;
+  box-shadow: 2px 2px 5px black;
 }
 
-p > span {
+p > span,
+#about {
     padding-left: 10px;
     padding-right: 10px;
-    box-shadow: 2px 2px 5px black;
 }
+
 
 .logo {
     padding-top: 10px;
 }
-
-p { 
- text-align: center;
- padding-left: 10px;
- padding-right: 10px;
-}
-
 
 img {
     width:100%; 
@@ -93,8 +75,7 @@ img {
     cursor: pointer;
 }
 
-
-/*----------------------cards in scroll--------------------*/
+/*----------------------back-cards in scroll--------------------*/
 
 .card-back {
     width: 70px;
@@ -142,66 +123,56 @@ img {
   background: #b30000; 
 }
 
-/*----------------------card-containers --------------------*/
-
-.card-row {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  margin: 0 auto;
-  justify-content: center;
-  align-items: center;
-}
+/*----------------------card-containers, meanings & about spread--------------------*/
 
 .column {
   display: flex;
-  flex-direction: column;
-  margin: 10px;
-  margin-bottom: 59px;
-}
-
-.card-nr {
-    color: rgb(177, 80, 16);
-    font-size: 26px;
-    position: relative;
-    top: 90px;
-    font-weight: bold;
-}
+  flex-direction: row;
+  justify-content: center;
+  }
 
 .card-container {
-  height: 220px;
-  width: 150px;
+  background-color: #f1f1f1;
+  color: rgb(177, 80, 16);
+  font-weight: bold;
+  width: 70px;
+  height: 100px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  font-size: 26px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
   background:#ffffff61;
   border-radius: 4px;
   box-shadow: 2px 2px 5px black;
-}
-
-.hidden-card {
-    visibility:hidden;
+  flex-shrink: 0;
 }
 
 .card-meaning {
-    position: relative;
-    top: 190px;
-    font-size: 14px;
-    cursor: pointer;
-    background: rgb(238, 212, 238);
-    z-index: 10;
+  background-color: #f1f1f1;
+  width: 70px;
+  height: 50px;
+  margin-left: 10px;
+  font-size: 10px;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 5px;
+  background:#ffffff61;
+  border-radius: 4px;
+  box-shadow: 2px 2px 5px black;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+
+
+.hidden-card {
+    visibility: hidden;
 }
 
 .about-spread {
     margin-top: 50px;
-}
-
-/*for jQuery to position card-nr*/
-.card-nr2 {
-    top: 30px;
-}
-
-/*for jQuery, when clicking on back cards*/
-.card-container2 {
-    height: 220px;
-    width: 150px;
 }
 
 /*for jQuery, when clicking the cards for description*/
@@ -211,13 +182,6 @@ img {
     margin-bottom: 33px;
 }
 
-/*for jQuery when selecting a back card*/
-.card-meaning2  {
-    margin-top: 6px;
-    font-size: 14px;
-    cursor: pointer;
-    background: rgb(238, 212, 238);
-}
 
 /*for jQuery when clicking on card for description*/
 .card-meaning3 {
@@ -225,13 +189,6 @@ img {
     font-size: 10px;
     cursor: pointer;
     background: rgb(238, 212, 238);
-}
-
-/*for jQuery for further correcting meaning position*/
-.margin-meaning {
-    margin-top: -220px;
-    padding-left: 3px;
-    padding-right: 3px; 
 }
 
 /*for jQuery to add focus to card meanings*/
@@ -244,20 +201,6 @@ img {
     z-index: 10;
 }
 
-@media screen and (max-width: 541px) {   
-    .card-meaning,
-    .card-meaning2 {
-        font-size: 10px;
-        margin-top: -225px;
-        cursor: pointer;
-        padding-left: 1px;
-        padding-right: 1px;
-    }
-
-    .card-nr {
-        top: 30px;
-    }
-
     .card-meaning:focus,
     .card-meaning2:focus {
     font-size: 14px;
@@ -266,14 +209,6 @@ img {
     background: rgb(238, 212, 238);
     margin-left: -20px;
     margin-top: -25px;
-}
-
-    .card-container,
-    .card-container2,
-    .card-back {
-        height: 97px;
-        width: 67px;
-    }
 }
 
 @media screen and (max-width: 320px) {
@@ -288,33 +223,13 @@ img {
         height: 80px;
         width: 61px;
     }
-}
-
-@media screen and (max-width: 361px) {
-    .card-back,
-    .card-container,
-    .card-container2 {
-        height: 90px;
-        width: 58px;
-    }
 
     .card-meaning {
         font-size: 8.8px;
     }
 }
 
-@media screen and (max-width: 415px) {
-    .column {
-        margin: 0;
-    }
-
-    .column {
-        margin-right: 8px;
-        margin-bottom: 59px;
-    }
-}
-
-/*---------------------description-containers-----------------------*/
+/*---------------------description-----------------------*/
  
 
 .image > img {
