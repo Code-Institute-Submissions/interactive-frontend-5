@@ -121,7 +121,7 @@ $(document).ready(function () {
   $(".the-diamond").click(function () {
     resetGame();
     selectedGame = "The Diamond"
-    $(".card-container, .card-meaning").hide(); //hides all card containers
+    $(".card-container, .card-meaning").hide(); 
     $(".diamond").show(); //shows the card containers for "The Diamond" game
     
     //to give new nr id to card containers
@@ -132,7 +132,7 @@ $(document).ready(function () {
     $(".diamond4").attr("id", "4");
     $(".diamond5").attr("id", "5");
 
-    //to give new meaning to card containers
+    //to give new meaning & nr to card containers
     $("#1").html("1");
     $(".diamond-p1").html("1.THE THEME");
     $("#2").html("2");
@@ -154,10 +154,9 @@ $(document).ready(function () {
   $(".the-key").click(function () {
     resetGame();
     selectedGame = "The Key"
-    $(".column").hide(); //hides all card containers
-    $(".key").show().children().removeClass("hidden-card"); //shows the cards containers for "The Key" game
-    $(".hidekey").addClass("hidden-card");
-    $(".key-row").removeClass("d-none");
+    $(".card-container, .card-meaning").hide(); 
+    $(".key").removeClass("hidden-card").show(); //shows the card containers & meanings for "The Key" 
+    $(".keyhide").show();
 
     //to give new nr id to card containers
     $(".card-nr").removeAttr("id");
@@ -170,15 +169,23 @@ $(document).ready(function () {
     $(".key7").attr("id", "7");
     $(".key8").attr("id", "8");
 
-    //to give new meaning to card containers
-    $("#1").html("1").next().html("1.WHAT IS REPRESSED");
-    $("#2").html("2").next().html("2.YING, YOUR FEMININE (PASSIVE) ASPECT");
-    $("#3").html("3").next().html("3.YANG, YOUR MASCULINE (ACTIVE) ASPECT");
-    $("#4").html("4").next().html("4.MEDITATION");
-    $("#5").html("5").next().html("5.INNER VISION REGARDING THE BODY");
-    $("#6").html("6").next().html("6.INNER VISION REGARDING THE HEART");
-    $("#7").html("7").next().html("7.INNER VISION REGARDING THE BEING");
-    $("#8").html("8").next().html("8.AWARNESS (UNDERSTANDING)");
+    //to give new meaning & nr to card containers
+    $("#1").html("1");
+    $(".key-p1").html("1.WHAT IS REPRESSED");
+    $("#2").html("2");
+    $(".key-p2").html("2.YING, YOUR FEMININE (PASSIVE) ASPECT");
+    $("#3").html("3"); 
+    $(".key-p3").html("3.YANG, YOUR MASCULINE (ACTIVE) ASPECT");
+    $("#4").html("4"); 
+    $(".key-p4").html("4.MEDITATION");
+    $("#5").html("5"); 
+    $(".key-p5").html("5.INNER VISION REGARDING THE BODY");
+     $("#6").html("6"); 
+    $(".key-p6").html("6.INNER VISION REGARDING THE HEART");
+     $("#7").html("7"); 
+    $(".key-p7").html("7.INNER VISION REGARDING THE BEING");
+     $("#8").html("8"); 
+    $(".key-p8").html("8.AWARNESS (UNDERSTANDING)");
 
      //to change text on About card spread
     $("#about").html("'The Key' spread can open the door to insights regarding hidden, unconscious aspects of a particular issue. It may also be used as a general reading for an insight into your interiority here and now.")
@@ -190,10 +197,10 @@ $(document).ready(function () {
   $(".the-mirror").click(function () {
     resetGame();
     selectedGame = "The Mirror"
-    $(".column").hide(); //hides all card containers
-    $(".mirror").show().children().removeClass("hidden-card"); //shows the cards containers for "The Mirror" game
-    $(".mirrorhide").parent().show().addClass("hidden-card");
-    $(".mirrornone").removeClass("d-none");
+    $(".column").removeClass("d-none");
+    $(".card-container, .card-meaning").hide(); 
+    $(".mirror").removeClass("hidden-card").show(); //shows the card containers & meanings for "The Key" 
+    $(".mirrorhide").show().addClass("hidden-card");
 
     //to give new nr id to card containers
     $(".card-nr").removeAttr("id");
@@ -210,23 +217,32 @@ $(document).ready(function () {
     $(".mirror11").attr("id", "11");
     $(".mirror12").attr("id", "12");
 
-    //to give new meaning to card containers
-    //to give new meaning to card containers
-    $("#1").html("1").next().html("1.THE BODY ---> You now");
-    $("#2").html("2").next().html("2.THE HEART");
-    $("#3").html("3").next().html("3.THE MIND");
-    $("#4").html("4").next().html("4.THE BODY ---> Your partner now");
-    $("#5").html("5").next().html("5.THE HEART");
-    $("#6").html("6").next().html("6.INNER VISION REGARDING THE HEART");
-    $("#7")
-      .html("7")
-      .next()
-      .html("7.MELTING & MERGING ---> Outer manifestation of partnership");
-    $("#8").html("8").next().html("8.THE ALCHEMY OF TOGETHERNESS");
-    $("#9").html("9").next().html("9.THE BLESSINGS");
-    $("#10").html("10").next().html("10.DISSOLVE AND UNITE");
-    $("#11").html("11").next().html("11.THE ALCHEMY OF UNION");
-    $("#12").html("12").next().html("12.THE BLESSINGS ---> Internal dynamics");
+    //to give new meaning & nr to card containers
+    $("#1").html("1");
+    $(".mirror-p1").html("1.THE BODY (You now)");
+    $("#2").html("2");
+    $(".mirror-p2").html("2.THE HEART");
+    $("#3").html("3"); 
+    $(".mirror-p3").html("3.THE MIND");
+    $("#4").html("4"); 
+    $(".mirror-p4").html("4.THE BODY (Your partner now)");
+    $("#5").html("5"); 
+    $(".mirror-p5").html("5.THE HEART");
+     $("#6").html("6"); 
+    $(".mirror-p6").html("6.THE MIND");
+     $("#7").html("7"); 
+    $(".mirror-p7").html("7.MELTING & MERGING");
+     $("#8").html("8"); 
+    $(".mirror-p8").html("8.ALCHEMY OF TOGETHERNESS");
+     $("#9").html("9"); 
+    $(".mirror-p9").html("9.THE BLESSINGS");
+     $("#10").html("10"); 
+    $(".mirror-p10").html("10.DISSOLVE & UNITE");
+     $("#11").html("11"); 
+    $(".mirror-p11").html("11.ALCHEMY OF UNION");
+     $("#12").html("12"); 
+    $(".mirror-p12").html("12.THE BLESSINGS (Internal dynamics)");
+
   
      //to change text on About card speard
     $("#about").html("'The Mirror' spread is a more in depth approach to gaining insights into your relating with the other, whether the boss, the lover, the friend, the sister, the parent…. It offers an understanding of the life processes of each individual, as well as insights into what is happening between you.")
