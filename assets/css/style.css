@@ -122,11 +122,16 @@ img {
 
 /*----------------------card-containers, meanings & about spread--------------------*/
 
+.game {
+    overflow-x: scroll;
+}
+
 .column {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items:flex-start;
+  margin-right: 10px;
   }
 
 .card-container {
@@ -178,8 +183,6 @@ img {
     color: #060606;
 }
 
-
-
 /*for jQuery when clicking the back-cards*/
 #card-container2 {
     border: 2px solid black;
@@ -201,7 +204,7 @@ img {
 
 /*for jQuery to add focus to card meanings*/
 .card-meaning3:focus {
-    font-size: 14px;
+    font-size: 12px;
     outline: none;
     width: 100px;
     background: rgb(238, 212, 238);

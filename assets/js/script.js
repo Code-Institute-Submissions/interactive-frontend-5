@@ -88,28 +88,27 @@ function backToReading() {
 
 //to reset each game/spread
 function resetGame() {
-  cardsCopy = [].concat(cards);
-  counter = 0;
-  playerTurn = 1;
-  storeRandomCards = [];
+    cardsCopy = [].concat(cards);
+    counter = 0;
+    playerTurn = 1;
+    storeRandomCards = [];
 
- $(".mirror2").addClass("hidden-card");
- $(".mirror-p2").addClass("hidden-card");
+    $("img:hidden").show(); // to put back the hidden back cards
+    //to remove Back to Reading button, big card image & card info
+    $(".btn-light").addClass("d-none"); 
+    $(".game").removeClass("col-xl-4");
+    $(".image, .card-info").addClass("d-none"); 
+    //to restore card container, meaning size & styling
+    $(".mirror2").addClass("hidden-card");
+    $(".mirror-p2").addClass("hidden-card");
+    $(".card-container").removeClass("card-container3");
+    $('#card-container2').removeAttr('id');
+    $(".card-meaning").removeClass("card-meaning3");
+    $("#about").html("").css({"background":"rgb(238, 212, 238)", "box-shadow":"1px 1px 5px black"}); //to restore bg on about text
 
-  $("img:hidden").show(); // to put back the hidden back cards
-  //to remove Back to Reading button, big card image & card info
-  $(".btn-light").addClass("d-none"); 
-  $(".game").removeClass("col-xl-4");
-  $(".image, .card-info").addClass("d-none"); 
-  //to restore card container, meaning size & styling
-  $(".card-container").removeClass("card-container3");
-  $('#card-container2').removeAttr('id');
-  $(".card-meaning").removeClass("card-meaning3");
-  $("#about").html("").css({"background":"rgb(238, 212, 238)", "box-shadow":"1px 1px 5px black"}); //to restore bg on about text
-
-  if (selectedGame == "All Cards") {  //to put back the click event on the back cards that got removed when clicking the "All Cards" link
-    clickBackCards();
-  }
+    if (selectedGame == "All Cards") {  //to put back the click event on the back cards that got removed when clicking the "All Cards" link
+        clickBackCards();
+    }
 }
 
 //To reset "The Celtic Cross" default game/spread by reloading the page
@@ -125,7 +124,7 @@ $(document).ready(function () {
     resetGame();
     selectedGame = "The Diamond"
     $(".card-container, .card-meaning").hide(); 
-    $(".diamond").show(); //shows the card containers for "The Diamond" game
+    $(".diamond").removeClass("hidden-card").show(); //shows the card containers for "The Diamond" game
     
     //to give new nr id to card containers
     $(".card-nr").removeAttr("id");
@@ -260,7 +259,7 @@ $(document).ready(function () {
 
 //ALL CARDS
 //this is to retrive the card info on the front cards from the cards array
-function handleClick(index) { //My mentor created this function for getting card info by index, & I added more code within the function 
+function handleClick(index) { //My mentor created this function for getting card info by index, & I added more code to it 
     const selectedCard = cards[index]
     $(".col-12").removeClass("d-none"); // adds new cols for card image and description
     document.querySelector(".info").innerHTML = selectedCard .description;
@@ -272,13 +271,14 @@ $(document).ready(function () {
   $(".all-cards").click(function () {
     resetGame();
     selectedGame = "All Cards"
-    $(".column, img.card-back").hide(); //hides all card containers & back-cards
-    $(".front-card:hidden").show()
+    $("img.card-back").hide(); //hides all back-cards
+    $(".card-container, .card-meaning").hide(); 
+    $(".front-card:hidden").show()//shows all front cards
     $("#about").html("").css({"background":"transparent", "box-shadow":"none"});
 
      const div = document.querySelector('.back-cards')
 
-    //My mentor created this loop for me & and I added some code to it
+    //My mentor created this loop for me & and I added more code to it
     //This is to display the front cards in the "All Cards" 
     for (const [index, card] of cards.entries()) {
         div.innerHTML += `<img class="front-card" onclick="handleClick(${index})" src="${card.imgPath}"/>`
