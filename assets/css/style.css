@@ -218,21 +218,29 @@ img {
     background: rgb(238, 212, 238);
 }
 
-@media screen and (max-width: 320px) {
-    .card-back {
-        height: 80px;
-        width: 50px;
-    }
-}
-
 @media screen and (max-width: 376px) {
-    .card-back {
-        height: 80px;
+    .card-back,
+    .card-container {
+        height: 87px;
         width: 61px;
     }
 
     .card-meaning {
         font-size: 8.8px;
+        width: 61px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .card-back,
+    .card-container {
+        height: 80px;
+        width: 53px;
+    }
+
+    .card-meaning {
+        font-size: 7px;
+        width: 53px;
     }
 }
 
