@@ -24,8 +24,8 @@ function descriptionClick(index) { //this is to retrive the card info from the c
     $(".game").addClass("col-xl-4");
     $(".col-12").removeClass("d-none"); // adds new cols for card image and description
     //for making the other empty card-containers & their meanings smaller 
-    $(".card-container").addClass("card-container3");
-    $(".card-meaning").addClass("card-meaning3");
+    $(".card-container").attr("id","card-container3");
+    $(".card-meaning").attr("id","card-meaning3");
     
     document.querySelector(".info").innerHTML = clickedCard.description;
     document.querySelector("#card-name").innerHTML = clickedCard.name;
@@ -79,9 +79,9 @@ function backToReading() {
     $(".card-info").addClass("d-none"); 
     $(".image").addClass("d-none");
     //for making the empty card-containers & their meanings bigger 
-    $(".card-container").removeClass("card-container3");
-    $(".card-meaning").removeClass("card-meaning3");
     $("#thumb").removeAttr('id');
+     $(".card-container").removeAttr("id","card-container3");
+    $(".card-meaning").removeAttr("id","card-meaning3");
 }
 
 /*----------------------CHANGE SPREAD BUTTON---------------------*/

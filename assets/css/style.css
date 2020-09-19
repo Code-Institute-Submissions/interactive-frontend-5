@@ -185,18 +185,19 @@ img {
 
 /*for jQuery when clicking the back-cards*/
 #card-container2 {
-    border: 2px solid black;
+    border: 4px solid black;
     background: black;
 }
 
 /*for jQuery, when clicking the cards for description*/
-.card-container3 {
+#card-container3 {
     height: 100px;
     width: 70px;
 }
 
 /*for jQuery when clicking the cards for description*/
-.card-meaning3 {
+#card-meaning3 {
+    width: 70px;
     font-size: 10px;
     cursor: pointer;
     background: rgb(238, 212, 238);
