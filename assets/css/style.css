@@ -126,6 +126,7 @@ img {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items:flex-start;
   }
 
 .card-container {
@@ -149,12 +150,11 @@ img {
 
 .card-meaning {
   width: 70px;
-  height: 50px;
   margin-left: 10px;
   font-size: 10px;
   font-weight: bold;
   text-align: center;
-  padding-top: 5px;
+  padding: 5px;
   border-radius: 4px;
   box-shadow: 2px 2px 5px black;
   flex-shrink: 0;
@@ -168,6 +168,17 @@ img {
 .about-spread {
     margin-top: 50px;
 }
+
+/* for jQuery for the Mirror spread*/
+.mirror-text2 {
+    background: transparent;
+    box-shadow: none;
+    font-size: 16px;
+    text-shadow: 1px 1px #da411d;
+    color: #060606;
+}
+
+
 
 /*for jQuery when clicking the back-cards*/
 #card-container2 {
@@ -192,7 +203,7 @@ img {
 .card-meaning3:focus {
     font-size: 14px;
     outline: none;
-    width: 110px;
+    width: 100px;
     background: rgb(238, 212, 238);
 }
 
@@ -200,7 +211,7 @@ img {
     .card-meaning2:focus {
     font-size: 14px;
     outline: none;
-    width: 110px;
+    width: 100px;
     background: rgb(238, 212, 238);
 }
 

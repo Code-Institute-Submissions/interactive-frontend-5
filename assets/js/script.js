@@ -93,6 +93,9 @@ function resetGame() {
   playerTurn = 1;
   storeRandomCards = [];
 
+ $(".mirror2").addClass("hidden-card");
+ $(".mirror-p2").addClass("hidden-card");
+
   $("img:hidden").show(); // to put back the hidden back cards
   //to remove Back to Reading button, big card image & card info
   $(".btn-light").addClass("d-none"); 
@@ -109,14 +112,14 @@ function resetGame() {
   }
 }
 
-//To reset "The Celtic Cross" default game by reloading the page
+//To reset "The Celtic Cross" default game/spread by reloading the page
 $(document).ready(function () {
   $(".celtic-cross").click(function () {
     location.reload();
   });
 });
 
-//"THE DIAMOND" GAME
+//"THE DIAMOND" SPREAD
 $(document).ready(function () {
   $(".the-diamond").click(function () {
     resetGame();
@@ -149,14 +152,16 @@ $(document).ready(function () {
   });
 });
 
-//"THE KEY" GAME
+//"THE KEY" SPREAD
 $(document).ready(function () {
   $(".the-key").click(function () {
     resetGame();
     selectedGame = "The Key"
+    $(".key-dnone").removeClass("d-none");
     $(".card-container, .card-meaning").hide(); 
     $(".key").removeClass("hidden-card").show(); //shows the card containers & meanings for "The Key" 
     $(".keyhide").show();
+
 
     //to give new nr id to card containers
     $(".card-nr").removeAttr("id");
@@ -192,7 +197,7 @@ $(document).ready(function () {
   });
 });
 
-//"THE MIRROR" GAME
+//"THE MIRROR" SPREAD
 $(document).ready(function () {
   $(".the-mirror").click(function () {
     resetGame();
@@ -201,6 +206,8 @@ $(document).ready(function () {
     $(".card-container, .card-meaning").hide(); 
     $(".mirror").removeClass("hidden-card").show(); //shows the card containers & meanings for "The Key" 
     $(".mirrorhide").show().addClass("hidden-card");
+    $(".mirror-text").removeClass("hidden-card");
+
 
     //to give new nr id to card containers
     $(".card-nr").removeAttr("id");
@@ -219,31 +226,33 @@ $(document).ready(function () {
 
     //to give new meaning & nr to card containers
     $("#1").html("1");
-    $(".mirror-p1").html("1.THE BODY (You now)");
+    $(".mirror-p1").html("1.THE BODY");
     $("#2").html("2");
     $(".mirror-p2").html("2.THE HEART");
     $("#3").html("3"); 
     $(".mirror-p3").html("3.THE MIND");
     $("#4").html("4"); 
-    $(".mirror-p4").html("4.THE BODY (Your partner now)");
+    $(".mirror-p4").html("4.THE BODY");
     $("#5").html("5"); 
     $(".mirror-p5").html("5.THE HEART");
-     $("#6").html("6"); 
+    $("#6").html("6"); 
     $(".mirror-p6").html("6.THE MIND");
-     $("#7").html("7"); 
+    $("#7").html("7"); 
     $(".mirror-p7").html("7.MELTING & MERGING");
-     $("#8").html("8"); 
+    $("#8").html("8"); 
     $(".mirror-p8").html("8.ALCHEMY OF TOGETHERNESS");
-     $("#9").html("9"); 
+    $("#9").html("9"); 
     $(".mirror-p9").html("9.THE BLESSINGS");
-     $("#10").html("10"); 
+    $("#10").html("10"); 
     $(".mirror-p10").html("10.DISSOLVE & UNITE");
-     $("#11").html("11"); 
+    $("#11").html("11"); 
     $(".mirror-p11").html("11.ALCHEMY OF UNION");
-     $("#12").html("12"); 
-    $(".mirror-p12").html("12.THE BLESSINGS (Internal dynamics)");
-
-  
+    $("#12").html("12"); 
+    $(".mirror-p12").html("12.THE BLESSINGS");
+    $(".mirror-text").addClass("mirror-text2");
+    $(".text1").html("Internal dynamics");
+    $(".text2").html("You now");
+    $(".text3").html("Your partner now");
      //to change text on About card speard
     $("#about").html("'The Mirror' spread is a more in depth approach to gaining insights into your relating with the other, whether the boss, the lover, the friend, the sister, the parent…. It offers an understanding of the life processes of each individual, as well as insights into what is happening between you.")
   });
