@@ -174,7 +174,15 @@ img {
     margin-top: 50px;
 }
 
-/* for jQuery for the Mirror spread*/
+.card-meaning:focus {
+    font-size: 14px;
+    outline: none;
+    width: 100px;
+    background: rgb(238, 212, 238);
+}
+
+
+/*for jQuery for the Mirror spread*/
 .mirror-text2 {
     background: transparent;
     box-shadow: none;
@@ -183,41 +191,6 @@ img {
     color: #060606;
 }
 
-/*for jQuery when clicking the back-cards*/
-#card-container2 {
-    border: 4px solid black;
-    background: black;
-}
-
-/*for jQuery, when clicking the cards for description*/
-#card-container3 {
-    height: 100px;
-    width: 70px;
-}
-
-/*for jQuery when clicking the cards for description*/
-#card-meaning3 {
-    width: 70px;
-    font-size: 10px;
-    cursor: pointer;
-    background: rgb(238, 212, 238);
-}
-
-/*for jQuery to add focus to card meanings*/
-.card-meaning3:focus {
-    font-size: 12px;
-    outline: none;
-    width: 100px;
-    background: rgb(238, 212, 238);
-}
-
-    .card-meaning:focus,
-    .card-meaning2:focus {
-    font-size: 14px;
-    outline: none;
-    width: 100px;
-    background: rgb(238, 212, 238);
-}
 
 @media screen and (min-width: 767px) {
     .card-container {
@@ -279,6 +252,7 @@ img {
 }
 
 /*---------------------------buttons------------------------*/
+
 button.btn.btn-light {
   display: flex;
   margin: 0 auto;
@@ -296,7 +270,6 @@ button.btn.btn-light {
     font-weight: bold;
     box-shadow: 2px 2px 10px black;
 }
-
 
 button#btnGroupDrop1.btn.btn-secondary.dropdown-toggle {
     flex: none;
@@ -392,7 +365,6 @@ h5 {
   padding: 10px;;
 }
 
-
 /*---------------------index.html-----------------------*/
 
 #start-bg {
@@ -412,7 +384,6 @@ h5 {
     justify-content: center;
     align-items: center; 
 }
-
  
 .start-button {
     position: relative;
@@ -437,7 +408,6 @@ h5 {
     font-size: 25px;
 }
 
-
 @media screen and (max-width: 800px) {
     #cover-container { 
         display: none;
@@ -451,7 +421,6 @@ h5 {
         background-size: cover;
     }   
 }
-
 
  @media (min-height: 1366px) and (min-width: 1024px), /*for ipad Pro*/
  (max-width: 700px) {
@@ -485,19 +454,15 @@ h5 {
     transition-property: transform;
 }
 
-.card-meaning2:hover,
-.card-meaning2:focus,
-.card-meaning2:active,
+
 .card-meaning:hover,
 .card-meaning:focus,
 .card-meaning:active,
-.card-container2 img:hover,
-.card-container2 img:focus,
-.card-container2 img:active,
+.card-container:hover,
+.card-container:focus,
+.card-container:active,
 .card-back:hover,
 .card-back:focus,
 .card-back:active {
     transform: scale(1.1);
 }
-
-

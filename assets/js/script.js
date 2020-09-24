@@ -24,14 +24,12 @@ function descriptionClick(index) { //this is to retrive the card info from the c
     $(".game").addClass("col-xl-4");
     $(".col-12").removeClass("d-none"); // adds new cols for card image and description
     //for making the other empty card-containers & their meanings smaller 
-    $(".card-container").attr("id","card-container3");
-    $(".card-meaning").attr("id","card-meaning3");
+    $(".card-container").css({"height": "100", "width": "70"});
+    $(".card-meaning").css({"width": "70", "font-size": "10px"});
     
     document.querySelector(".info").innerHTML = clickedCard.description;
     document.querySelector("#card-name").innerHTML = clickedCard.name;
-    document.querySelector(
-    ".image"
-  ).innerHTML = `<img src="${clickedCard.imgPath}" alt="front-card">`;
+    document.querySelector(".image").innerHTML = `<img src="${clickedCard.imgPath}" alt="front-card">`;
 }
 
 //for selecting a random card from the array
@@ -57,7 +55,7 @@ function clickBackCards() {
     click: function () {
         $(this).fadeOut("slow"),
         //to update the div with a random front-card and change the styling
-        $("#" + playerTurn).html(getRandomCard()).attr("id","card-container2");
+        $("#" + playerTurn).html(getRandomCard()).css({"border": "4px solid black", "background": "black"});
             playerTurn++;
             counter++;
         playSound();
@@ -78,10 +76,8 @@ function backToReading() {
     $(".game").removeClass("col-xl-4");
     $(".card-info").addClass("d-none"); 
     $(".image").addClass("d-none");
-    //for making the empty card-containers & their meanings bigger 
-    $("#thumb").removeAttr('id');
-     $(".card-container").removeAttr("id","card-container3");
-    $(".card-meaning").removeAttr("id","card-meaning3");
+    $(".card-container").css({"width": "", "height": ""});
+    $(".card-meaning").css({"width": "", "font-size": ""});
 }
 
 /*----------------------CHANGE SPREAD BUTTON---------------------*/
@@ -104,7 +100,8 @@ function resetGame() {
     $(".card-container").removeClass("card-container3");
     $('#card-container2').removeAttr('id');
     $(".card-meaning").removeClass("card-meaning3");
-    $("#about").html("").css({"background":"rgb(238, 212, 238)", "box-shadow":"1px 1px 5px black"}); //to restore bg on about text
+    $("#about").html("").css({"background":"", "box-shadow":""}); //to restore bg on about text
+    $(".card-container").css({"background": "", "border": ""}); //to restore card-container styling
 
     if (selectedGame == "All Cards") {  //to put back the click event on the back cards that got removed when clicking the "All Cards" link
         clickBackCards();
@@ -207,7 +204,6 @@ $(document).ready(function () {
     $(".mirrorhide").show().addClass("hidden-card");
     $(".mirror-text").removeClass("hidden-card");
 
-
     //to give new nr id to card containers
     $(".card-nr").removeAttr("id");
     $(".mirror1").attr("id", "1");
@@ -262,9 +258,9 @@ $(document).ready(function () {
 function handleClick(index) { //My mentor created this function for getting card info by index, & I added more code to it 
     const selectedCard = cards[index]
     $(".col-12").removeClass("d-none"); // adds new cols for card image and description
-    document.querySelector(".info").innerHTML = selectedCard .description;
-    document.querySelector("#card-name").innerHTML = selectedCard .name;
-    document.querySelector(".image").innerHTML = `<img src="${selectedCard .imgPath}" alt="front-card">`;
+    document.querySelector(".info").innerHTML = selectedCard.description;
+    document.querySelector("#card-name").innerHTML = selectedCard.name;
+    document.querySelector(".image").innerHTML = `<img src="${selectedCard.imgPath}" alt="front-card">`;
 }
 
 $(document).ready(function () {
