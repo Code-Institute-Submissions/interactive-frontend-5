@@ -28,7 +28,6 @@
     margin-bottom: 50px;
 }
 
-
 .logo > a {
     font-family: 'Hind', sans-serif;
     font-weight: 700;
@@ -71,6 +70,11 @@ img {
     object-fit: cover; 
     border-radius: 5px;
     cursor: pointer;
+}
+
+.row-game {
+    display: flex;
+    justify-content: space-evenly;
 }
 
 /*----------------------back-cards in scroll--------------------*/
@@ -120,10 +124,6 @@ img {
 
 /*----------------------card-containers, meanings & about spread--------------------*/
 
-.game {
-    overflow-x: scroll;
-}
-
 .column {
   display: flex;
   flex-direction: row;
@@ -169,14 +169,6 @@ img {
     margin-top: 50px;
 }
 
-.card-meaning:focus {
-    font-size: 14px;
-    outline: none;
-    width: 100px;
-    background: rgb(238, 212, 238);
-}
-
-
 /*for jQuery for the Mirror spread*/
 .mirror-text2 {
     background: transparent;
@@ -184,6 +176,25 @@ img {
     font-size: 16px;
     text-shadow: 1px 1px #da411d;
     color: #060606;
+    border: none;
+}
+
+/*for jQuery for changing the card-container size on description click*/
+.card-container2 {
+    width: 70px !important;
+    height: 100px !important;
+}
+
+/*for jQuery for changing the meaning size on description click*/
+.card-meaning2 {
+    width: 70px !important;
+    font-size: 10px !important;
+}
+
+.card-meaning2:focus {
+    outline: none;
+    transform: scale(1.4, 1.4) !important;
+    z-index: 10;
 }
 
 
@@ -199,29 +210,42 @@ img {
     }
 }
 
+@media screen and (max-width: 766px) {
+    .card-meaning:focus,
+    .card-meaning2:focus {
+        outline: none;
+        transform: scale(1.4, 1.4) !important;
+        z-index: 10;
+    }
+}
+
 @media screen and (max-width: 376px) {
     .card-back,
-    .card-container {
-        height: 87px;
-        width: 61px;
+    .card-container,
+    .card-container2 {
+        height: 87px !important;
+        width: 61px !important;
     }
 
-    .card-meaning {
-        font-size: 8.8px;
-        width: 61px;
+    .card-meaning,
+    .card-meaning2 {
+        font-size: 8.8px !important;
+        width: 61px !important;
     }
 }
 
 @media screen and (max-width: 320px) {
     .card-back,
-    .card-container {
-        height: 80px;
-        width: 53px;
+    .card-container,
+    .card-container2 {
+        height: 80px !important;
+        width: 53px !important;
     }
 
-    .card-meaning {
-        font-size: 7px;
-        width: 53px;
+    .card-meaning,
+    .card-meaning2 {
+        font-size: 7px !important;
+        width: 53px !important;
     }
 }
 

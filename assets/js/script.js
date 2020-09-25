@@ -24,9 +24,8 @@ function descriptionClick(index) { //this is to retrive the card info from the c
     $(".game").addClass("col-xl-4");
     $(".col-12").removeClass("d-none"); // adds new cols for card image and description
     //for making the other empty card-containers & their meanings smaller 
-    $(".card-container").css({"height": "100", "width": "70"});
-    $(".card-meaning").css({"width": "70", "font-size": "10px"});
-    
+    $(".card-container").addClass("card-container2");
+    $(".card-meaning").addClass("card-meaning2");
     document.querySelector(".info").innerHTML = clickedCard.description;
     document.querySelector("#card-name").innerHTML = clickedCard.name;
     document.querySelector(".image").innerHTML = `<img src="${clickedCard.imgPath}" alt="front-card">`;
@@ -76,8 +75,8 @@ function backToReading() {
     $(".game").removeClass("col-xl-4");
     $(".card-info").addClass("d-none"); 
     $(".image").addClass("d-none");
-    $(".card-container").css({"width": "", "height": ""});
-    $(".card-meaning").css({"width": "", "font-size": ""});
+    $(".card-container").removeClass("card-container2");
+    $(".card-meaning").removeClass("card-meaning2");
 }
 
 /*----------------------CHANGE SPREAD BUTTON---------------------*/
@@ -97,11 +96,10 @@ function resetGame() {
     //to restore card container, meaning size & styling
     $(".mirror2").addClass("hidden-card");
     $(".mirror-p2").addClass("hidden-card");
-    $(".card-container").removeClass("card-container3");
-    $('#card-container2').removeAttr('id');
-    $(".card-meaning").removeClass("card-meaning3");
+    $(".card-container").css({"background": "", "border": ""}); 
+    $(".card-container").removeClass("card-container2");
+    $(".card-meaning").removeClass("card-meaning2");
     $("#about").html("").css({"background":"", "box-shadow":""}); //to restore bg on about text
-    $(".card-container").css({"background": "", "border": ""}); //to restore card-container styling
 
     if (selectedGame == "All Cards") {  //to put back the click event on the back cards that got removed when clicking the "All Cards" link
         clickBackCards();
@@ -157,7 +155,6 @@ $(document).ready(function () {
     $(".card-container, .card-meaning").hide(); 
     $(".key").removeClass("hidden-card").show(); //shows the card containers & meanings for "The Key" 
     $(".keyhide").show();
-
 
     //to give new nr id to card containers
     $(".card-nr").removeAttr("id");
@@ -284,7 +281,6 @@ $(document).ready(function () {
     }
   });
 });
-
 
 /*----------------------- CONTACT POP-UP MODAL------------------*/
 
