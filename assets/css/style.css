@@ -284,6 +284,19 @@ button#btnGroupDrop1.btn.btn-secondary.dropdown-toggle {
     box-shadow: 2px 2px 5px #044739;
 }
 
+#play {
+    padding: 2px;
+    border-radius: 2px;
+    border: 3px solid #343030;
+    width: 260px;
+    background: #fedcd2;
+    color: darkred;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 25px; 
+}
+
+
 /*-----------------------Contact pop-up Modal --------------------*/
 
 .pop-box > form > input,
@@ -394,23 +407,6 @@ h5 {
     position: relative;
     top: 70px;
     margin: -30px;
-}
-
-#play {
-    padding: 2px;
-    border-radius: 2px;
-    border: 3px solid #343030;
-    width: 260px;
-    background: #fedcd2;
-}
-
-#play > a {
-    color: darkred;
-    text-decoration: none;
-    background-color: transparent;
-    letter-spacing: 2px;
-    font-weight: bold;
-    font-size: 25px;
 }
 
 @media screen and (max-width: 800px) {

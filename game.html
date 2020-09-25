@@ -8,12 +8,11 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover.css">
 
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js">
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js">
     </script>
-    <script type="text/javascript">
+    <script>
         (function(){
             emailjs.init("user_AVWl7AxkQOq582h8jglh3");
         })();
@@ -22,13 +21,13 @@
 </head>
 <body>
 
-    <!---Sound for Game Play--->
+    <!--Sound for Game Play-->
      <audio id="bounce">
         <source src="assets/sound/bounce.mp3" type="audio/mp3"> 
     </audio>
 
     <div class="bg-color">
-    <!---Nav--->
+    <!--Nav-->
         <nav id="navbar">
             <h5 class="text-left logo"> <a href="index.html">OSHO Zen Tarot</a></h5> 
             <div class="btn-group" role="group">
@@ -45,7 +44,7 @@
             </div>  
         </nav>
 
-    <!---Contact Modal--->
+    <!--Contact Modal-->
     <div class="pop-bg d-none">
         <div class="pop-box">
             <form id="form">
@@ -55,7 +54,7 @@
                 <p class="clear" id="valid-name"></p>
                 <input placeholder="Email" type="email" id="email" name="email">
                 <p class="clear" id="valid-email"></p>
-                <textarea rows="4" cols="50" type="text" id="message" placeholder="Message" name="message"  ></textarea>
+                <textarea rows="4" cols="50" id="message" placeholder="Message" name="message"  ></textarea>
                 <p class="clear" id="valid-message"></p>
                 <div class="text-center">
                     <button type="button" class="btn btn-danger" onclick="checkRegEx()">Send Message</button>
@@ -65,7 +64,7 @@
         </div>
     </div>
 
-        <!---Instructions--->
+        <!--Instructions-->
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -76,7 +75,7 @@
             </div>
         </div>
 
-        <!---Back Cards in Scroll--->
+        <!--Back Cards in Scroll-->
         <div class="container">
             <div class="row">
                 <div class="col-12 scroll-cards height-col">
@@ -165,19 +164,19 @@
             </div>
         </div>
 
-        <!---The Tarot Game--->
+        <!--The Tarot Game-->
         <div class="container-fluid">
             <div class="row justify-content-center">
                 <div class="col-12 game">
 
-                    <!---Back to Reading Button--->
+                    <!--Back to Reading Button-->
                     <div class="row">  
                         <div class="col-12">
                             <button type="button" onclick="backToReading()" class="btn btn-light d-none">Back To Reading</button>
                         </div>
                     </div>
                     
-                    <!---card row 1--->
+                    <!--card row 1-->
                     <div class="column">
                         <div class="card-container card-nr hidden-card">...</div>
                         <div class="card-container card-nr hidden-card mirror mirrorhide">...</div>
@@ -186,7 +185,7 @@
                         <div class="card-container card-nr" id="10">10</div>
                     </div>
 
-                    <!---meaning row 1--->
+                    <!--meaning row 1-->
                     <div class="column">
                         <p class="card-meaning hidden-card" tabindex="0">...</p>
                         <p class="card-meaning hidden-card" tabindex="0">...</p>
@@ -195,7 +194,7 @@
                         <p class="card-meaning" tabindex="0">10.THE RESULT/ KEY</p>
                     </div>
 
-                    <!---card row 2-->
+                    <!--card row 2-->
                     <div class="column">
                         <div class="card-container card-nr hidden-card">...</div>
                         <div class="card-container card-nr key key5 hidden-card">...</div>
@@ -204,7 +203,7 @@
                         <div class="card-container card-nr" id="9">9</div>
                     </div>
 
-                    <!---meaning row 2--->
+                    <!--meaning row 2-->
                     <div class="column">
                         <p class="card-meaning hidden-card" tabindex="0">...</p>
                         <p class="card-meaning key key-p5 hidden-card" tabindex="0">...</p>
@@ -213,7 +212,7 @@
                         <p class="card-meaning" tabindex="0">9.WISHES/ REFLECTIONS</p>
                     </div>
 
-                    <!---card row 3--->
+                    <!--card row 3-->
                     <div class="column">
                         <div class="card-container card-nr" id="5">5</div>
                         <div class="card-container card-nr diamond diamond2 mirror mirror3" id="1">1</div>
@@ -222,7 +221,7 @@
                         <div class="card-container card-nr" id="8">8</div>
                     </div>
 
-                    <!---meaning row 3--->
+                    <!--meaning row 3-->
                     <div class="column">
                         <p class="card-meaning" tabindex="0">5.OLD HABITS</p>
                         <p class="card-meaning diamond diamond-p2 mirror mirror-p3" tabindex="0">1.THE TOPIC</p>
@@ -231,7 +230,7 @@
                         <p class="card-meaning" tabindex="0">8.EXTERNAL ATTRACTION</p>
                     </div>
 
-                    <!---card row 4--->
+                    <!--card row 4-->
                     <div class="column">
                         <div class="card-container card-nr hidden-card">...</div>
                         <div class="card-container card-nr keyhide mirror mirror2 hidden-card">...</div>
@@ -240,7 +239,7 @@
                         <div class="card-container card-nr" id="7">7</div>
                     </div>
 
-                    <!---meaning row 4--->
+                    <!--meaning row 4-->
                     <div class="column">
                         <p class="card-meaning hidden-card" tabindex="0">...</p>
                         <p class="card-meaning mirror mirror-p2 hidden-card keyhide" tabindex="0">...</p>
@@ -249,7 +248,7 @@
                         <p class="card-meaning" tabindex="0">7.PERSONAL FEELINGS</p>
                     </div>
 
-                    <!---card row 5--->
+                    <!--card row 5-->
                     <div class="column d-none key-dnone">
                         <div class="card-container card-nr">...</div>
                         <div class="card-container card-nr mirror mirror1">...</div>
@@ -258,7 +257,7 @@
                         <div class="card-container card-nr">...</div>
                     </div>
 
-                    <!---meaning row 5--->
+                    <!--meaning row 5-->
                     <div class="column d-none key-dnone">
                         <p class="card-meaning" tabindex="0">...</p>
                         <p class="card-meaning mirror mirror-p1" tabindex="0">...</p>
@@ -267,7 +266,7 @@
                         <p class="card-meaning" tabindex="0">...</p>
                     </div>
 
-                    <!---card row 6--->
+                    <!--card row 6-->
                     <div class="column d-none">
                         <div class="card-container card-nr">...</div> 
                         <div class="card-container card-nr mirror mirror-text text2">...</div>
@@ -276,7 +275,7 @@
                         <div class="card-container card-nr">...</div>
                     </div>
 
-                    <!---meaning row 6--->
+                    <!--meaning row 6-->
                     <div class="column d-none">
                         <p class="card-meaning" tabindex="0">...</p>
                         <p class="card-meaning" tabindex="0">...</p>
@@ -285,7 +284,7 @@
                         <p class="card-meaning" tabindex="0">...</p>
                     </div>
 
-                    <!---card row 7--->
+                    <!--card row 7-->
                     <div class="column d-none">
                         <div class="card-container card-nr">...</div>
                         <div class="card-container card-nr">...</div>
@@ -294,7 +293,7 @@
                         <div class="card-container card-nr">...</div>
                     </div>
 
-                    <!---meaning row 7--->
+                    <!--meaning row 7-->
                     <div class="column d-none">
                         <p class="card-meaning" tabindex="0">...</p>
                         <p class="card-meaning" tabindex="0">...</p>
@@ -303,7 +302,7 @@
                         <p class="card-meaning" tabindex="0">...</p>
                     </div>
 
-                    <!---About card spread--->
+                    <!--About card spread-->
                     <div class="container">
                         <div class="row">
                             <div class="col-12 about-spread">
@@ -315,36 +314,32 @@
                             </div>
                         </div>
                     </div>
-                </div><!---/col_1--->
+                </div><!--/col_1-->
 
-                <!---Big Card image--->
+                <!--Big Card image-->
                 <div class="col-12 col-lg-3 col-md-6 d-none image text-center">
-                </div><!---/col_2--->
+                </div><!--/col_2-->
 
-                 <!---Description of the Cards--->
+                 <!--Description of the Cards-->
                 <div class="col-12 col-lg-4 col-md-6 d-none card-info">
-                    <h4 class="text-center" id="card-name"></h4>
+                    <p class="text-center" id="card-name"></p>
                     <p class="info" id="info-right"></p>
-                </div><!---/col_3--->
+                </div><!--/col_3-->
 
-            </div><!---/row--->
-        </div><!---/container--->   
-    </div><!---/bg-color/image--->
+            </div><!--/row-->
+        </div><!--/container-->   
+    </div><!--/bg-color/image-->
 
-    <!---Footer--->
-   
-            
-                <footer class="text-center">
-                <h4>Any Questions?</h4>
-                <button type="button" class="btn btn-warning" onclick="popModal()">Contact</button>  
-                </footer>
-     
-
+    <!--Footer-->
+    <footer class="text-center">
+        <h4>Any Questions?</h4>
+            <button type="button" class="btn btn-warning" onclick="popModal()">Contact</button>  
+    </footer>
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script type="text/javascript" src="assets/js/data.js"></script>
-    <script type="text/javascript" src="assets/js/script.js"></script>
-
-    <!---Bootstrap js---->
+    <script src="assets/js/data.js"></script>
+    <script src="assets/js/script.js"></script>
+    <!--Bootstrap js-->
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
    
