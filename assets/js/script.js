@@ -27,7 +27,7 @@ function descriptionClick(index) { //this is to retrive the card info from the c
     $(".card-container").addClass("card-container2");
     $(".card-meaning").addClass("card-meaning2");
     document.querySelector(".info").innerHTML = clickedCard.description;
-    document.querySelector("#card-name").innerHTML = `<i class="fab fa-centos"></i> &nbsp; ${clickedCard.name} &nbsp; <i class="fab fa-centos"></i>`;
+    document.querySelector("#card-name").innerHTML = `<i class="fab fa-centos"></i> &nbsp; ${clickedCard.name} `;
     document.querySelector(".image").innerHTML = `<img src="${clickedCard.imgPath}" alt="front-card">`;
 }
 
