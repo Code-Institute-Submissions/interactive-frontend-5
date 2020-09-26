@@ -36,15 +36,16 @@
     text-shadow: 1px 0px 20px #c1e2ff;
 }
 
-a.dropdown-item  {
-    color:#571455;
-    font-weight: bold;
+.logo > a:hover {
+    color: rgba(137, 188, 255, 0.788);
+    text-decoration: none;
 }
+
 
 p > span, 
 .card-meaning,
 .info {
-  font-size: 18px;
+  font-size: 16px;
   outline: none;
   font-weight: 500;
   color: #060606;
@@ -76,6 +77,21 @@ img {
     display: flex;
     justify-content: space-evenly;
 }
+
+a > i {
+    color: #744d77;
+    font-size: 12px;
+}
+
+a.dropdown-item  {
+    color:#444344;
+    font-weight: bold;
+}
+
+.dropdown-menu.show {
+    left: -16px !important;
+}
+
 
 /*----------------------back-cards in scroll--------------------*/
 
@@ -159,6 +175,10 @@ img {
   border-radius: 4px;
   flex-shrink: 0;
   cursor: pointer;
+}
+
+.card-nr {
+    text-shadow: 1.5px 1.5px #6d4210;
 }
 
 .hidden-card {
@@ -275,9 +295,13 @@ img {
 button.btn.btn-light {
   display: flex;
   margin: 0 auto;
-  background: #07ff6f;
+  background: #a9ff62;
   border: 1px solid #0a7738;
   box-shadow: 2px 2px 5px #033819;
+}
+
+button.btn.btn-light:hover {
+    background: #85c94d;
 }
 
 .btn.btn-danger {
@@ -290,21 +314,17 @@ button.btn.btn-light {
     font-weight: bold;
 }
 
-button#btnGroupDrop1.btn.btn-secondary.dropdown-toggle:hover {
-    background: #05c2b2;
-}
-
-button.btn.btn-light:hover {
-    background: #05bd52;
-}
-
 button#btnGroupDrop1.btn.btn-secondary.dropdown-toggle {
     flex: none;
-    background: #07ffec;
-    border: 1px solid #034b45;
+    background: #7cdfff; 
+    border: 1px solid #0e4b5f;
     color:#571455;
     margin-left: 20px;
-    box-shadow: 2px 2px 5px #044739;
+    box-shadow: 2px 2px 5px #042b5e;
+}
+
+button#btnGroupDrop1.btn.btn-secondary.dropdown-toggle:hover {
+    background: #69bcd8;
 }
 
 #play {
@@ -318,7 +338,6 @@ button#btnGroupDrop1.btn.btn-secondary.dropdown-toggle {
     font-weight: bold;
     font-size: 25px; 
 }
-
 
 /*-----------------------Contact pop-up Modal --------------------*/
 
@@ -489,4 +508,7 @@ p > span {
 .card-back:focus,
 .card-back:active {
     transform: scale(1.1);
+    position: relative;
+    z-index: 10;
+
 }
