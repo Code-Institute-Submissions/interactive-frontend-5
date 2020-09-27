@@ -121,11 +121,15 @@ a.dropdown-item  {
 
 /* copied this code for making track smaller than thumb https://stackoverflow.com/questions/26493446/change-size-of-scrollbar-thumb-with-css*/
 /* Track */
-.scroll-cards::-webkit-scrollbar-track,
-.info::-webkit-scrollbar-track {
-    background: #585143;
+.scroll-cards::-webkit-scrollbar-track {
+    background: #8a7f68;
     border: 10px solid transparent;
     background-clip: content-box;   /* THIS IS IMPORTANT */
+}
+
+.info::-webkit-scrollbar-track {
+    border: 10px solid #8a7f68;
+    border-radius: 5px;
 }
 
 /* Handle */
@@ -292,6 +296,7 @@ a.dropdown-item  {
     padding-right: 10px;
     overflow-y: scroll;  
     box-shadow: 2px 2px 5px rgb(82, 0, 0);
+    max-height: 550px;
 }
 
 #card-name {
