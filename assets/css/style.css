@@ -1,10 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap');
- @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=BenchNine:wght@300;400;700&display=swap');
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    letter-spacing: 1px;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -17,6 +18,7 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    min-height: 100vh;
 }
 
 #navbar {
@@ -31,18 +33,18 @@
 }
 
 .logo > a {
-    font-family: 'Hind', sans-serif;
+    font-family: 'BenchNine', sans-serif;
     font-weight: 700;
-    font-size: 25px;
+    font-size: 33px;
     color: #c1e2ff;
     text-shadow: 1px 0px 20px #c1e2ff;
+    letter-spacing: 1px;
 }
 
 .logo > a:hover {
     color: rgba(137, 188, 255, 0.788);
     text-decoration: none;
 }
-
 
 p > span, 
 .card-meaning,
@@ -94,7 +96,6 @@ a.dropdown-item  {
     left: -16px !important;
 }
 
-
 /*----------------------back-cards in scroll--------------------*/
 
 .card-back {
@@ -129,7 +130,7 @@ a.dropdown-item  {
 
 /* Handle */
 .scroll-cards::-webkit-scrollbar-thumb,
-.info::-webkit-scrollbar-track {
+.info::-webkit-scrollbar-thumb {
     background: #c84540;
     border-radius: 5px;
 }
@@ -186,7 +187,6 @@ a.dropdown-item  {
 .hidden-card {
     visibility: hidden;
 }
-
 
 .about-spread {
     margin-top: 50px;
@@ -290,13 +290,20 @@ a.dropdown-item  {
     padding-left: 10px;
     padding-right: 10px;
     overflow-y: scroll;  
+    box-shadow: 2px 2px 5px rgb(82, 0, 0);
 }
 
 #card-name {
     background: #0000009f;
     color: white;
-    border-radius: 5px; 
-    font-size: 20px;
+    border-radius: 3px;
+    padding: 2px;
+    font-size: 25px;
+    text-shadow: 1.5px 1.5px #b30000;
+    box-shadow: 1.5px 1.5px 5px rgb(82, 0, 0);
+    font-family: 'BenchNine', sans-serif;
+    letter-spacing: 1px;
+    text-transform: uppercase;
 }
 
 /*---------------------------buttons------------------------*/
@@ -489,14 +496,15 @@ h5 {
     } 
 }
 
-/*-------------------hover effects-----------------------------*/
+/*-------------------hover effects----------------------*/
 
 /* Grow */
 .card-back,
 .card-container,
 .card-meaning,
 #about,
-p > span {
+p > span,
+.front-card {
     vertical-align: middle;
     box-shadow: 2px 2px 10px rgb(15, 14, 14);
     transform: translateZ(0);
@@ -504,9 +512,11 @@ p > span {
     -moz-osx-font-smoothing: grayscale;
     transition-duration: 0.3s;
     transition-property: transform;
-    
 }
 
+.front-card:hover,
+.front-card:focus,
+.front-card:active,
 .card-meaning:hover,
 .card-meaning:focus,
 .card-meaning:active,
@@ -519,5 +529,18 @@ p > span {
     transform: scale(1.1);
     position: relative;
     z-index: 10;
+}
 
+/*in All Cards*/
+.front-card {
+    box-shadow: none;
+    padding: 4px;
+}
+
+img.front-card {
+      border-radius: 4px;
+      width: 70px;
+      height: 100px;
+      background: black;
+      margin: 3px;
 }

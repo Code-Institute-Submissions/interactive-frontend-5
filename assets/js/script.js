@@ -100,6 +100,8 @@ function resetGame() {
     $(".card-container").removeClass("card-container2");
     $(".card-meaning").removeClass("card-meaning2");
     $("#about").html("").css({"background":"", "box-shadow":""}); //to restore bg on about text
+    $(".front-card").hide();
+    $(".about-spread").parent().removeClass('d-none');
 
     if (selectedGame == "All Cards") {  //to put back the click event on the back cards that got removed when clicking the "All Cards" link
         clickBackCards();
@@ -267,17 +269,14 @@ $(document).ready(function () {
     $("img.card-back").hide(); //hides all back-cards
     $(".card-container, .card-meaning").hide(); 
     $(".front-card:hidden").show()//shows all front cards
-    $("#about").html("").css({"background":"transparent", "box-shadow":"none"});
+    $(".about-spread").parent().addClass('d-none');
 
      const div = document.querySelector('.back-cards')
 
     //My mentor created this loop for me & and I added more code to it
-    //This is to display the front cards in the "All Cards" 
+    //This is to display the front cards in the "All Cards" scroll
     for (const [index, card] of cards.entries()) {
         div.innerHTML += `<img class="front-card" onclick="handleClick(${index})" src="${card.imgPath}"/>`
-        $("img.front-card").css('height','100');
-        $("img.front-card").css('width','70');
-        $("img.front-card").css('padding','4px');
     }
   });
 });
