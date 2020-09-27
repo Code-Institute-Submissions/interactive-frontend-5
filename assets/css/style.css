@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=BenchNine:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap');
 
 * {
     margin: 0;
@@ -33,9 +33,9 @@
 }
 
 .logo > a {
-    font-family: 'BenchNine', sans-serif;
+    font-family: 'Oswald', sans-serif;
     font-weight: 700;
-    font-size: 33px;
+    font-size: 27px;
     color: #c1e2ff;
     text-shadow: 1px 0px 20px #c1e2ff;
     letter-spacing: 1px;
@@ -307,18 +307,21 @@ a.dropdown-item  {
     overflow-y: scroll;  
     box-shadow: 2px 2px 5px rgb(82, 0, 0);
     max-height: 550px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 #card-name {
     background: #0000009f;
+    font-family: 'Oswald', sans-serif;
     color: white;
     border-radius: 3px;
     padding: 2px;
-    font-size: 20px;
+    font-size: 23px;
     text-shadow: 1.5px 1.5px #b30000;
     box-shadow: 1.5px 1.5px 5px rgb(82, 0, 0);
     letter-spacing: 1px;
-    font-weight: 700;
+    font-weight: 600;
 }
 
 .image, 
@@ -343,7 +346,14 @@ button.btn.btn-light:hover {
 
 .btn.btn-danger {
   margin-top: 7px;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
+  font-size: 18px;
+  text-transform: uppercase;
+  background-color: #9f4d97;
+  border-color: #49047b;
+  width: 85%;
+  font-family: "Oswald", "sans-serif";
+  text-shadow: 1.5px 1.5px #571455;
 }
 
 button#btnGroupDrop1.btn.btn-secondary.dropdown-toggle,
@@ -372,8 +382,9 @@ button#btnGroupDrop1.btn.btn-secondary.dropdown-toggle:hover {
     background: #fedcd2;
     color: darkred;
     letter-spacing: 2px;
-    font-weight: bold;
-    font-size: 25px; 
+    font-weight: 700;
+    font-size: 25px;
+    font-family: 'Oswald', sans-serif;   
 }
 
 /*-----------------------Contact pop-up Modal --------------------*/
@@ -382,21 +393,22 @@ button#btnGroupDrop1.btn.btn-secondary.dropdown-toggle:hover {
 .pop-box > form > textarea { 
    display: flex;
    margin: 0 auto;
-   width: 85%; 
+   width: 85%;
+   margin-top: 10px; 
 }
 
 input,
 textarea {
   border: 1px gray solid;
   border-radius: 3px;
-  box-shadow: 1px 1px 3px;
+  height: 40px;
 }
 
 input:active, 
 textarea:active,
 input:focus, 
 textarea:focus {
-  border: 1px solid lightblue;
+  border: 2px solid rgb(255, 96, 96);
   border-radius: 3px;
   outline: none;
 }
@@ -407,10 +419,13 @@ form {
   top: 30px;
   background: white;
   margin: 0 auto;
-  border: 1px solid white;
-  border-radius: 5px;
+  border: 4px solid #be6cab;
+  border-radius: 3px;
   height: 67%;
   width: 70%;
+  font-family: "Oswald", "sans-serif";
+  text-shadow: 1px 1px rgb(75, 5, 75);
+
 }
 
 #x {
@@ -435,6 +450,8 @@ form {
 h5 {
   padding-top: 20px;
   padding-bottom: 10px;
+  font-family: "Oswald", "sans-serif";
+  color: rgb(173, 97, 161);
 }
 
 /*for jQuery*/
@@ -447,6 +464,7 @@ h5 {
   justify-content: center;
   margin-bottom: 5px;
   border-radius: 3px;
+  text-shadow: 1px 1px 2px black;
 }
 
 /*for jQuery*/
@@ -499,7 +517,12 @@ h5 {
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
-    }   
+        overflow: hidden;
+    }
+
+    .start-button {
+        top: 100px;
+    }
 }
 
  @media (min-height: 1366px) and (min-width: 1024px), /*for ipad Pro*/
@@ -509,7 +532,7 @@ h5 {
     }
 
     #start-bg {
-        background-image: url("../images/mobilecover.png");
+        background-image: url("../images/mobile-zen.png");
         background-attachment: fixed;
         background-repeat: no-repeat;
         background-position: center;

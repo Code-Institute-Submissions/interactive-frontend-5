@@ -328,13 +328,11 @@ function sendEmail() {
         $("#success")
           .css("background-color", "blue")
           .html("Your message was sent successfully!");
-        console.log("SUCCESS", response);
       },
       function (error) {
         $("#success")
-          .css("background-color", "blue")
+          .css("background-color", "red")
           .html("Failed to send message. Try again later!");
-        console.log("FAILED", error);
       }
     );
   return false; // To block from loading a new page
@@ -353,36 +351,36 @@ function checkRegEx() {
   if (nameRegex.test(name)) {
     $("#valid-name")
       .addClass("validation")
-      .css("background-color", "green")
+      .css("background-color", "#13ff04c2")
       .html("Correct name");
   } else {
     $("#valid-name")
       .addClass("validation")
-      .css("background-color", "red")
-      .html("Wrong name");
+      .css("background-color", "#ff0000bf")
+      .html("Please provide a valid name");
   }
 
   if (emailRegex.test(email)) {
     $("#valid-email")
       .addClass("validation")
-      .css("background-color", "green")
+      .css("background-color", "#13ff04c2")
       .html("Correct email");
   } else {
     $("#valid-email")
       .addClass("validation")
-      .css("background-color", "red")
+      .css("background-color", "#ff0000bf")
       .html("Wrong email");
   }
 
   if (message.length > 10) {
     $("#valid-message")
       .addClass("validation")
-      .css("background-color", "green")
+      .css("background-color", "#13ff04c2")
       .html("Correct message");
   } else {
     $("#valid-message")
       .addClass("validation")
-      .css("background-color", "red")
+      .css("background-color", "#ff0000bf")
       .html("Wrong message");
   }
 
