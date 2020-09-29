@@ -12,11 +12,8 @@
 /*----------------------tarot game.html--------------------*/
 
 .bg-color {
-    background: linear-gradient(#092468, #fcbccd);
-    background-image: url("../images/space.jpg");
+    background: url("../images/space.jpg") center center no-repeat;
     background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: center;
     background-size: cover;
     min-height: 100vh;
 }
@@ -62,7 +59,6 @@ p > span,
 #about {
     padding-left: 10px;
     padding-right: 10px;
-    background: rgb(238 212 238 / 79%);
 }
 
 .logo {
@@ -345,21 +341,22 @@ button.btn.btn-light:hover {
 }
 
 button.message-button {
-  margin-top: 10px;
-  margin-bottom: 20px;
-  font-size: 18px;
-  text-transform: uppercase;
-  background-color: #cc63c2;
-  border-color: #9313b3;
-  width: 85%;
-  font-family: "Oswald", "sans-serif";
-  text-shadow: 1.5px 1.5px #571455;
-  color: white;
-  font-weight: 500;
-  border-radius: 3px;
-  box-shadow: 2px 2px 5px #571455;
-  padding: 3px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-size: 18px;
+    text-transform: uppercase;
+    background-color: #cc63c2;
+    border-color: #9313b3;
+    width: 85%;
+    font-family: "Oswald", "sans-serif";
+    text-shadow: 1.5px 1.5px #571455;
+    color: white;
+    font-weight: 500;
+    border-radius: 3px;
+    box-shadow: 2px 2px 5px #571455;
+    padding: 3px;
 }
+
 
 .message-button:hover { 
     background: #9f4d97;
@@ -393,7 +390,7 @@ button#btnGroupDrop1.btn.btn-secondary.dropdown-toggle:hover {
     letter-spacing: 2px;
     font-weight: 700;
     font-size: 25px;
-    font-family: 'Oswald', sans-serif;   
+    font-family: 'Oswald', sans-serif;
 }
 
 /*-----------------------Contact pop-up Modal --------------------*/
@@ -537,9 +534,10 @@ h5 {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    overflow: hidden;
 }
 
-#cover-container {
+#cover-container { 
     width: 1100px;
     height: 100vh;
 }
@@ -556,38 +554,25 @@ h5 {
     margin: -30px;
 }
 
-@media screen and (max-width: 800px) {
+
+ @media (min-height: 1366px) and (min-width: 1024px), /*for ipad Pro*/
+ (max-width: 800px) {
     #cover-container { 
         display: none;
     }
-
+    
     #start-bg {
-        background-image: url("../images/mobilecover.png");
+        height: 100vh;
+        background: url("../images/mobile-zen.png") no-repeat center center;
         background-attachment: fixed;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-        overflow: hidden;
-    }
-
-    .start-button {
-        top: 100px;
-    }
-}
-
- @media (min-height: 1366px) and (min-width: 1024px), /*for ipad Pro*/
- (max-width: 700px) {
-       #cover-container { 
-        display: none;
-    }
-
-    #start-bg {
-        background-image: url("../images/mobile-zen.png");
-        background-attachment: fixed;
-        background-repeat: no-repeat;
-        background-position: center;
         background-size: cover;
     } 
+
+    .start-button {
+        position: static;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
 }
 
 /*-------------------hover effects----------------------*/
