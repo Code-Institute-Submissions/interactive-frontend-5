@@ -292,7 +292,7 @@ function popModal() {
 function exit() {
   $(".pop-bg").addClass("d-none");
   $("#form")[0].reset();
-  $(".clear").empty();
+  $(".clear").empty().removeClass("sending sent-message");
 }
 
 //gets the modal and its background
@@ -314,7 +314,7 @@ function windowClick(e) {
 function sendEmail() {
   //a "Sending..." message when the user waits for the message to get loaded & sent
   $("#success").addClass("sent-message");
-  $("#success").css("background-color", "orange").html("Sending...");
+  $("#success").addClass("sending").css("background-color", "rgb(185 27 111)").html("Sending");
 
   emailjs
     .send("gmail", "template_TKAjL7PE", {
@@ -326,13 +326,13 @@ function sendEmail() {
       function (response) {
         //a conformation message that the user's message has been sent
         $("#success")
-          .css("background-color", "blue")
-          .html("Your message was sent successfully!");
+          .css("background-color", "#7d4ede")
+          .html("Your message was sent successfully!").removeClass("sending");
       },
       function (error) {
         $("#success")
-          .css("background-color", "red")
-          .html("Failed to send message. Try again later!");
+          .css("background-color", "#E91E63")
+          .html("Failed to send message. Try again later!").removeClass("sending");
       }
     );
   return false; // To block from loading a new page
@@ -349,39 +349,31 @@ function checkRegEx() {
   var nameRegex = /[a-z]/gim;
 
   if (nameRegex.test(name)) {
-    $("#valid-name")
-      .addClass("validation")
-      .css("background-color", "#13ff04c2")
-      .html("Correct name");
+    $("#valid-name").css("background-color", "rgb(174 255 107)").addClass("validation").html("<i class='fas fa-check'></i>");
+
   } else {
     $("#valid-name")
       .addClass("validation")
-      .css("background-color", "#ff0000bf")
-      .html("Please provide a valid name");
+      .css("background-color", "rgb(232 42 100 / 75%)")
+      .html(`<i class="far fa-times-circle"></i> &nbsp; Please provide name`);
   }
 
   if (emailRegex.test(email)) {
-    $("#valid-email")
-      .addClass("validation")
-      .css("background-color", "#13ff04c2")
-      .html("Correct email");
+    $("#valid-email").css("background-color", "rgb(174 255 107)").addClass("validation").html("<i class='fas fa-check'></i>");
   } else {
     $("#valid-email")
       .addClass("validation")
-      .css("background-color", "#ff0000bf")
-      .html("Wrong email");
+      .css("background-color", "rgb(232 42 100 / 75%)")
+      .html(`<i class="far fa-times-circle"></i> &nbsp; Please provide name`);
   }
 
   if (message.length > 10) {
-    $("#valid-message")
-      .addClass("validation")
-      .css("background-color", "#13ff04c2")
-      .html("Correct message");
+    $("#valid-message").addClass("validation").css("background-color", "rgb(174 255 107)").html("<i class='fas fa-check'></i>");
   } else {
     $("#valid-message")
       .addClass("validation")
-      .css("background-color", "#ff0000bf")
-      .html("Wrong message");
+      .css("background-color", "rgb(232 42 100 / 75%)")
+      .html(`<i class="far fa-times-circle"></i> &nbsp; Please provide name`);
   }
 
   if (nameRegex.test(name) && emailRegex.test(email) && message.length > 10) {

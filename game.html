@@ -49,7 +49,7 @@
         <div class="pop-box">
             <form id="form">
                 <h5 class="text-center">CONTACT ME</h5>
-                <div id="success"></div>
+                <div class="clear" id="success"></div>
                 <input placeholder="Name" type="text" id="name" name="name">
                 <p class="clear" id="valid-name"></p>
                 <input placeholder="Email" type="email" id="email" name="email">
@@ -57,9 +57,9 @@
                 <textarea rows="4" cols="50" id="message" placeholder="Message" name="message"  ></textarea>
                 <p class="clear" id="valid-message"></p>
                 <div class="text-center">
-                    <button type="button" class="btn btn-danger" onclick="checkRegEx()">Send Message</button>
+                    <button type="button" class="message-button" onclick="checkRegEx()">Send Message</button>
                 </div>
-            <p id="x" onclick="exit()">X</p>
+            <p id="x" onclick="exit()"><i class="fas fa-times"></i></p>
             </form>
         </div>
     </div>
