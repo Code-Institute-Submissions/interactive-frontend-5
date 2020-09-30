@@ -19,14 +19,16 @@
     </script>
 
 </head>
-<body class="bg-color">
+<body>
 
-    <!--Sound for Game Play-->
-     <audio id="bounce">
-        <source src="assets/sound/bounce.mp3" type="audio/mp3"> 
-    </audio>
+    <div class="bg-color">
+    <div class="bg-mobile">
+        <!--Sound for Game Play-->
+        <audio id="bounce">
+            <source src="assets/sound/bounce.mp3" type="audio/mp3"> 
+        </audio>
 
-    <!--Nav-->
+        <!--Nav-->
         <nav id="navbar">
             <h5 class="text-left logo"> <a href="index.html">OSHO Zen Tarot</a></h5> 
             <div class="btn-group" role="group">
@@ -63,13 +65,13 @@
         </div>
     </div>
 
-        <!--Instructions-->
+        <!--space for image-->
         <div class="container">
             <div class="row">
-                <div class="col-12">
+                <div class="col-12 hidden-card">
                     <p><span><strong>Instructions:</strong>
-                    Click the cards you want to choose. Then, 
-                    click the chosen cards to view the meaning.</span></p>
+                        Click the cards you want to choose.
+                    </span></p>
                 </div>
             </div>
         </div>
@@ -162,6 +164,8 @@
                 </div>
             </div>
         </div>
+
+        </div><!--bg-mobile-->
 
         <!--The Tarot Game-->
         <div class="container-fluid">
@@ -326,7 +330,8 @@
                 </div><!--/col_3-->
 
             </div><!--/row-->
-        </div><!--/container-->   
+        </div><!--/container-->  
+    </div><!--/bg-color-->
   
 
     <!--Footer-->

@@ -1,5 +1,8 @@
 /*-----------------------THE DEFAULT TAROT GAME(THE CELTIC CROSS) & CARDS DESCRIPTIONS------------------*/
 
+function gamePage() {
+	window.location.href='game.html'
+}
 //copies the cards array in data.js
 let cardsCopy = [].concat(cards);
 
@@ -185,7 +188,7 @@ $(document).ready(function () {
      $("#7").html("7"); 
     $(".key-p7").html("7.INNER VISION REGARDING THE BEING");
      $("#8").html("8"); 
-    $(".key-p8").html("8.AWARNESS (UNDERSTANDING)");
+    $(".key-p8").html("8.AWARNESS/ UNDERSTANDING");
 
      //to change text on About card spread
     $("#about").html("'The Key' spread can open the door to insights regarding hidden, unconscious aspects of a particular issue. It may also be used as a general reading for an insight into your interiority here and now.")

@@ -12,11 +12,24 @@
 /*----------------------tarot game.html--------------------*/
 
 .bg-color {
-    background: url("../images/space.jpg") center center no-repeat;
-    background-attachment: fixed;
+    background: url("../images/space.jpg") center center no-repeat fixed;
     background-size: cover;
     min-height: 100vh;
 }
+
+@media screen and (max-width: 450px) {
+    .bg-color {
+        background: linear-gradient(#092468, #8137c5, #fcbccd);
+        background-size: auto;
+    }
+
+    .bg-mobile {
+        background: url(../images/space.jpg) no-repeat;
+        background-size: contain;
+        width: 100%;
+    }
+}
+
 
 #navbar {
     background: transparent;
@@ -112,6 +125,18 @@ a.dropdown-item  {
     padding: 10px; 
     margin-bottom: 50px;
     margin-top: 20px;
+}
+
+@media screen and (max-width: 361px) {
+    .scroll-cards {
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 321px) {
+    .scroll-cards {
+        margin-top: -13px;
+    }
 }
 
 /* SCROLLBAR */
