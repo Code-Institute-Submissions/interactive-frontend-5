@@ -238,13 +238,20 @@ a.dropdown-item  {
 .mirror-text2 {
     background: rgba(255, 125, 38, 0.76);
     box-shadow: none;
-    font-size: 16px;
+    font-size: 20px;
     text-shadow: 1px 1px #da411d;
     color: #060606;
     border: none;
     text-align: center;
     padding: 5px;
 }
+
+@media screen and (max-width: 800px) {
+    .mirror-text2 {
+        font-size: 15px;
+    }
+}
+
 
 /*for jQuery for changing the card-container size on description click*/
 .card-container2 {

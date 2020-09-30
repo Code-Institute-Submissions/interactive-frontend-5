@@ -30,6 +30,7 @@ function descriptionClick(index) { //this is to retrive the card info from the c
     //for making the other empty card-containers & their meanings smaller 
     $(".card-container").addClass("card-container2");
     $(".card-meaning").addClass("card-meaning2");
+    $(".mirror-text").css("font-size", "15px");
     document.querySelector(".info").innerHTML = clickedCard.description;
     document.querySelector("#card-name").innerHTML = `<i class="fab fa-centos"></i> &nbsp; ${clickedCard.name} `;
     document.querySelector(".image").innerHTML = `<img src="${clickedCard.imgPath}" alt="front-card">`;
@@ -80,6 +81,7 @@ function backToReading() {
     $(".card-info").addClass("d-none"); 
     $(".image").addClass("d-none");
     $(".instructions").removeClass("hidden-card");
+    $(".mirror-text2").css("font-size", "");
     $(".card-container").removeClass("card-container2");
     $(".card-meaning").removeClass("card-meaning2");
 }
@@ -207,6 +209,7 @@ $(document).ready(function () {
     $(".mirror").removeClass("hidden-card").show(); //shows the card containers & meanings for "The Key" 
     $(".mirrorhide").show().addClass("hidden-card");
     $(".mirror-text").removeClass("hidden-card");
+    $(".mirror-text2").css("font-size", "");
 
     //to give new nr id to card containers
     $(".card-nr").removeAttr("id");
