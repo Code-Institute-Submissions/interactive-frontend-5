@@ -26,6 +26,7 @@ function descriptionClick(index) { //this is to retrive the card info from the c
     $(".btn-light").removeClass("d-none"); //to show back to reading button
     $(".game").addClass("col-xl-4");
     $(".col-12").removeClass("d-none"); // adds new cols for card image and description
+    $(".instructions").addClass("hidden-card");
     //for making the other empty card-containers & their meanings smaller 
     $(".card-container").addClass("card-container2");
     $(".card-meaning").addClass("card-meaning2");
@@ -78,6 +79,7 @@ function backToReading() {
     $(".game").removeClass("col-xl-4");
     $(".card-info").addClass("d-none"); 
     $(".image").addClass("d-none");
+    $(".instructions").removeClass("hidden-card");
     $(".card-container").removeClass("card-container2");
     $(".card-meaning").removeClass("card-meaning2");
 }

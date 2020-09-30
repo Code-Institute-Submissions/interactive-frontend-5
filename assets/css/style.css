@@ -17,7 +17,7 @@
     min-height: 100vh;
 }
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 500px) {
     .bg-color {
         background: linear-gradient(#092468, #8137c5, #fcbccd);
         background-size: auto;
@@ -40,6 +40,16 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 50px;
+}
+
+@media screen and (min-width: 540px) {
+    #navbar {
+        margin-bottom: 0;
+    }
+
+    .space {
+        display: none;
+    }
 }
 
 .logo > a {
@@ -123,7 +133,7 @@ a.dropdown-item  {
     overflow: auto; 
     white-space: nowrap; 
     padding: 10px; 
-    margin-bottom: 50px;
+    margin-bottom: 25px;
     margin-top: 20px;
 }
 
@@ -359,6 +369,13 @@ button.btn.btn-light {
   border: 1px solid #0a7738;
   box-shadow: 2px 2px 5px #033819;
   margin-bottom: 20px;
+  margin-top: -20px;
+}
+
+@media screen and (max-width: 415px) {
+    button.btn.btn-light {
+        margin-top: -50px;
+    }
 }
 
 button.btn.btn-light:hover {
