@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
 
 * {
     margin: 0;
@@ -53,7 +54,7 @@
 }
 
 .logo > a {
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 27px;
     color: #c1e2ff;
@@ -426,13 +427,16 @@ button#btnGroupDrop1.btn.btn-secondary.dropdown-toggle:hover {
     padding: 2px;
     border-radius: 2px;
     border: 3px solid #343030;
-    width: 260px;
+    width: 300px;
     background: #fedcd2;
     color: darkred;
     letter-spacing: 2px;
     font-weight: 700;
     font-size: 25px;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Bungee', cursive;
+    outline: none;
+    box-shadow: 2px 2px 5px black;
+    cursor: pointer;
 }
 
 /*-----------------------Contact pop-up Modal --------------------*/
@@ -596,16 +600,25 @@ h5 {
     margin: -30px;
 }
 
+@media screen and (min-width: 801px) {
+    .header-mobile {
+        display: none;
+    }
+
+    .text-mobile {
+        display: none;
+    }
+}
 
  @media (min-height: 1366px) and (min-width: 1024px), /*for ipad Pro*/
- (max-width: 800px) {
+ (max-width: 800px) /*for mobile*/ {
     #cover-container { 
         display: none;
     }
     
     #start-bg {
         height: 100vh;
-        background: url("../images/mobile-zen.png") no-repeat center center;
+        background: url("../images/mobile-zen.jpg") no-repeat center center;
         background-attachment: fixed;
         background-size: cover;
     } 
@@ -614,6 +627,29 @@ h5 {
         position: static;
         margin: 0 auto;
         margin-top: 20px;
+    }
+
+    .index-nav {
+    padding-top: 5px;
+    background: #b42125;
+    }
+
+    #play {
+        width: 100%;
+        margin-top: -15px;
+        font-size: 20px;
+    }
+
+    .header-mobile {
+        font-weight: bolder;
+        color: white;
+        display: block;
+    }
+
+    .text-mobile {
+        color: white;
+        font-size: 14px;
+        display: block;
     }
 }
 
@@ -653,6 +689,7 @@ p > span,
 }
 
 /*------------All Cards-----------*/
+
 .front-card {
     box-shadow: none;
     padding: 4px;
@@ -670,4 +707,6 @@ img.front-card {
 .card-info {
     margin-bottom: 40px;
 }
+
+
 
