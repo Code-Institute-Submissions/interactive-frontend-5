@@ -1,6 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap');
 
 * {
     margin: 0;
@@ -531,9 +532,11 @@ form {
 h5 {
   padding-top: 20px;
   padding-bottom: 10px;
-  font-family: "Oswald", "sans-serif";
+  font-family: 'Oswald', sans-serif;
   color: rgb(173, 97, 161);
   text-shadow: 1px 1px #571455;
+  font-weight: 700;
+  letter-spacing: 1px;
 }
 
 /*for jQuery*/
@@ -578,7 +581,8 @@ h5 {
 }
 
 .fa-times:hover {
-    color: #8aa0bd;
+    color: #836ecc;
+    text-shadow: 1.5px 1.5px #836ecc;
 }
 
 /*copied code for dot animation here> https://stackoverflow.com/questions/13014808/is-there-anyway-to-animate-an-ellipsis-with-css-animations*/
@@ -766,5 +770,33 @@ img.front-card {
     margin-bottom: 40px;
 }
 
+/*-------------------footer----------------------*/
+
+.btn.btn-light.contact {
+    margin-top: 0;
+    margin-bottom: 0;
+    border: 1px solid #29162a;
+    background: #ffde4c;
+    box-shadow: 2px 2px 5px black;
+}
+
+.btn.btn-light.contact:hover {
+    background: #cfb53e;
+}
+
+footer {
+    background: #2f1545;
+}
+
+.copy {
+    color: white;
+    padding: 7px;
+}
+
+h4 {
+    font-size: 20px;
+    color: white;
+    padding-top: 7px;
+}
 
 
