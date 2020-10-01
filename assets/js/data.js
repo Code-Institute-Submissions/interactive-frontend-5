@@ -1414,7 +1414,8 @@ const cards = [
                 of life, then what? Then you will look very embarrassed. Nowhere to go...you have 
                 reached to the final destination--and in the journey you have lost everything. You 
                 had to lose everything. So standing naked at the final destination, you will look 
-                all around like an idiot: what was the point? You were hurrying so hard, and you were `,
+                all around like an idiot: what was the point? You were hurrying so hard, and you were 
+                worrying so hard, and this is the outcome. `,
     imgPath: "assets/images/Traveling-name.jpg"
   },
        {
