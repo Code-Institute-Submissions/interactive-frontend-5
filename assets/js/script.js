@@ -30,9 +30,9 @@ function descriptionClick(index) { //this is to retrive the card info from the c
     //for making the other empty card-containers & their meanings smaller 
     $(".card-container").addClass("card-container2");
     $(".card-meaning").addClass("card-meaning2");
-    $(".mirror-text").css("font-size", "15px");
+    $(".mirror-text2").css("font-size", "13px");
     document.querySelector(".info").innerHTML = clickedCard.description;
-    document.querySelector("#card-name").innerHTML = `<i class="fab fa-centos"></i> &nbsp; ${clickedCard.name} `;
+    document.querySelector("#card-name").innerHTML = `<i class="fab fa-centos"></i> ${clickedCard.name} `;
     document.querySelector(".image").innerHTML = `<img src="${clickedCard.imgPath}" alt="front-card">`;
 }
 
