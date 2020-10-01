@@ -383,7 +383,7 @@ function checkRegEx() {
     $("#valid-message")
       .addClass("validation")
       .css("background-color", "rgb(232 42 100 / 75%)")
-      .html(`<i class="far fa-times-circle"></i> &nbsp; Please provide text`);
+      .html(`<i class="far fa-times-circle"></i> &nbsp; Please provide more text`);
   }
 
   if (nameRegex.test(name) && emailRegex.test(email) && message.length > 10) {
