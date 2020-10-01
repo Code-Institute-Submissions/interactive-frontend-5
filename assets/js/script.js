@@ -69,7 +69,7 @@ function clickBackCards() {
 }
 
 $(document).ready(function () {
-    clickBackCards()
+    clickBackCards();
  });
 
 
@@ -153,7 +153,7 @@ $(document).ready(function () {
     $(".diamond-p5").html("5.THE SOLUTION: UNDERSTANDING");
 
     //to change text on About card spread
-    $("#about").html("'The Diamond' spread can be helpful in bringing more clarity to a specific issue.")
+    $("#about").html("'The Diamond' spread can be helpful in bringing more clarity to a specific issue.");
   });
 });
 
@@ -197,7 +197,7 @@ $(document).ready(function () {
     $(".key-p8").html("8.AWARNESS/ UNDERSTANDING");
 
      //to change text on About card spread
-    $("#about").html("'The Key' spread can open the door to insights regarding hidden, unconscious aspects of a particular issue. It may also be used as a general reading for an insight into your interiority here and now.")
+    $("#about").html("'The Key' spread can open the door to insights regarding hidden, unconscious aspects of a particular issue. It may also be used as a general reading for an insight into your interiority here and now.");
   });
 });
 
@@ -258,7 +258,7 @@ $(document).ready(function () {
     $(".text2").html("You now");
     $(".text3").html("Your partner now");
      //to change text on About card speard
-    $("#about").html("'The Mirror' spread is a more in depth approach to gaining insights into your relating with the other, whether the boss, the lover, the friend, the sister, the parent…. It offers an understanding of the life processes of each individual, as well as insights into what is happening between you.")
+    $("#about").html("'The Mirror' spread is a more in depth approach to gaining insights into your relating with the other, whether the boss, the lover, the friend, the sister, the parent…. It offers an understanding of the life processes of each individual, as well as insights into what is happening between you.");
   });
 });
 
@@ -281,7 +281,7 @@ $(document).ready(function () {
     $(".front-card:hidden").show()//shows all front cards
     $(".about-spread").parent().addClass('d-none');
 
-     const div = document.querySelector('.back-cards')
+     const div = document.querySelector('.back-cards');
 
     //My mentor created this loop for me & and I added more code to it
     //This is to display the front cards in the "All Cards" scroll
