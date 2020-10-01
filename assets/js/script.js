@@ -110,6 +110,7 @@ function resetGame() {
     $("#about").html("").css({"background":"", "box-shadow":""}); //to restore bg on about text
     $(".front-card").hide();
     $(".about-spread").parent().removeClass('d-none');
+    $(".instructions").removeClass("hidden-card");
 
     if (selectedGame == "All Cards") {  //to put back the click event on the back cards that got removed when clicking the "All Cards" link
         clickBackCards();
