@@ -32,7 +32,6 @@
     }
 }
 
-
 #navbar {
     background: transparent;
     color: rgb(247, 226, 168); 
@@ -722,6 +721,7 @@ h5 {
 
 /*-------------------hover effects----------------------*/
 
+/*copied code for grow hover effect here: https://ianlunn.github.io/Hover/ */
 /* Grow */
 .card-back,
 .card-container,

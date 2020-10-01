@@ -284,7 +284,7 @@ $(document).ready(function () {
      const div = document.querySelector('.back-cards');
 
     //My mentor created this loop for me & and I added more code to it
-    //This is to display the front cards in the "All Cards" scroll
+    //This is to display the front cards in the "All Cards" scroll & adding onclick for description
     for (const [index, card] of cards.entries()) {
         div.innerHTML += `<img class="front-card" onclick="handleClick(${index})" src="${card.imgPath}"/>`
     }
@@ -332,7 +332,7 @@ function sendEmail() {
       message_html: document.querySelector("#message").value,
       from_email: document.querySelector("#email").value,
     })
-    .then(  //the, "then", "function(response/error)" code was used from the Code Institute lesson JSEmail
+    .then(  //the, "then", "function(response/error), "return false" code was used from the Code Institute lesson JSEmail
       function (response) {
         //a conformation message that the user's message has been sent
         $("#success")
