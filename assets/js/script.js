@@ -23,7 +23,7 @@ let selectedGame;
 //when clicking the front cards to view description
 function descriptionClick(index) { //this is to retrive the card info from the cards array by index
     const clickedCard = storeRandomCards[index];
-    $(".btn-light").removeClass("d-none"); //to show back to reading button
+    $(".BTR").removeClass("d-none"); //to show back to reading button
     $(".game").addClass("col-xl-4");
     $(".col-12").removeClass("d-none"); // adds new cols for card image and description
     $(".instructions").addClass("hidden-card");
@@ -31,6 +31,7 @@ function descriptionClick(index) { //this is to retrive the card info from the c
     $(".card-container").addClass("card-container2");
     $(".card-meaning").addClass("card-meaning2");
     $(".mirror-text2").css("font-size", "13px");
+
     document.querySelector(".info").innerHTML = clickedCard.description;
     document.querySelector("#card-name").innerHTML = `<i class="fab fa-centos"></i> ${clickedCard.name} `;
     document.querySelector(".image").innerHTML = `<img src="${clickedCard.imgPath}" alt="front-card">`;
@@ -76,7 +77,7 @@ $(document).ready(function () {
 
 //for taking the user back to only see the reading
 function backToReading() {
-    $(".btn-light").addClass("d-none"); 
+    $(".BTR").addClass("d-none"); 
     $(".game").removeClass("col-xl-4");
     $(".card-info").addClass("d-none"); 
     $(".image").addClass("d-none");
@@ -97,7 +98,7 @@ function resetGame() {
 
     $("img:hidden").show(); // to put back the hidden back cards
     //to remove Back to Reading button, big card image & card info
-    $(".btn-light").addClass("d-none"); 
+    $(".BTR").addClass("d-none"); 
     $(".game").removeClass("col-xl-4");
     $(".image, .card-info").addClass("d-none"); 
     //to restore card container, meaning size & styling
@@ -330,7 +331,7 @@ function sendEmail() {
       message_html: document.querySelector("#message").value,
       from_email: document.querySelector("#email").value,
     })
-    .then(
+    .then(  //the, "then", "function(response/error)" code was used from the Code Institute lesson JSEmail
       function (response) {
         //a conformation message that the user's message has been sent
         $("#success")
@@ -372,7 +373,7 @@ function checkRegEx() {
     $("#valid-email")
       .addClass("validation")
       .css("background-color", "rgb(232 42 100 / 75%)")
-      .html(`<i class="far fa-times-circle"></i> &nbsp; Please provide name`);
+      .html(`<i class="far fa-times-circle"></i> &nbsp; Please provide email`);
   }
 
   if (message.length > 10) {
@@ -381,7 +382,7 @@ function checkRegEx() {
     $("#valid-message")
       .addClass("validation")
       .css("background-color", "rgb(232 42 100 / 75%)")
-      .html(`<i class="far fa-times-circle"></i> &nbsp; Please provide name`);
+      .html(`<i class="far fa-times-circle"></i> &nbsp; Please provide text`);
   }
 
   if (nameRegex.test(name) && emailRegex.test(email) && message.length > 10) {

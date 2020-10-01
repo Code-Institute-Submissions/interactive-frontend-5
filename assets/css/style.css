@@ -505,9 +505,14 @@ form {
   margin: 0 auto;
   border: 4px solid #be6cab;
   border-radius: 3px;
-  height: 67%;
-  width: 70%;
+  width: 50%;
   text-shadow: 1px 1px rgb(75, 5, 75);
+}
+
+@media screen and (max-width: 914px) {
+    form {
+        width: 90%;
+    }
 }
 
 #x {
@@ -791,12 +796,18 @@ footer {
 .copy {
     color: white;
     padding: 7px;
+    margin-bottom: 0;
 }
 
 h4 {
-    font-size: 20px;
     color: white;
     padding-top: 7px;
+}
+
+@media screen and (max-width: 414px) {
+    h4 { 
+    font-size: 20px !important;
+    }
 }
 
 
