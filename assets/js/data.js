@@ -1,17 +1,20 @@
 const cards = [
   {
     name: "Abundance",
-    description: `In the East people have condemned the body, condemned matter, called matter 
+    description: `
+                In the East people have condemned the body, condemned matter, called matter 
                 "illusory", maya - it does not really exist, it only appears to exist; it 
                 is made of the same stuff as dreams are made of. They denied the world, 
                 and that is the reason for the East remaining poor, sick, in starvation.
-
+                <br>
+                <br>
                 Half of humanity has been accepting the inner world but denying the outer 
                 world. The other half of humanity has been accepting the material world and 
                 denying the inner world. Both are half, and no man who is half can be contented. 
                 You have to be whole: rich in the body, rich in science; rich in meditation, 
                 rich in consciousness. Only a whole person is a holy person, according to me.
-
+                <br>
+                <br>
                 I want Zorba and Buddha to meet together. Zorba alone is hollow. His dance has 
                 not an eternal significance, it is momentary pleasure. Soon he will be tired of 
                 it. Unless you have inexhaustible sources, available to you from the cosmos 
@@ -28,25 +31,28 @@ const cards = [
                 relationships with others. Whenever we move into the new and unknown 
                 with the trusting spirit of a child, innocent and open and vulnerable, 
                 even the smallest things of life can become the greatest adventures.
-
-                osho:
+                <br>
+                <br>
                 Zen says truth has nothing to do with authority, truth has nothing to do with 
                 tradition, truth has nothing to do with the past - truth is a radical, personal 
                 realization. You have to come to it.
-
+                <br>
+                <br>
                 Knowledge is certain; the search for personal knowing is very, very hazardous. 
                 Nobody can guarantee it. If you ask me if I can guarantee anything, I say 
                 I cannot guarantee you anything. I can only guarantee danger, that much is
                 certain. I can only guarantee you a long adventure with every possibility 
                 of going astray and never reaching the goal. But one thing is certain: the 
                 very search will help you to grow.
-
+                <br>
+                <br>
                 I can guarantee only growth. Danger will be there, sacrifice will be there; 
                 you will be moving every day into the unknown, into the uncharted, and 
                 there will be no map to follow, no guide to follow. Yes, there are 
                 millions of dangers and you can go astray and you can get lost, but 
                 that is the only way one grows.
-
+                <br>
+                <br>
                 Insecurity is the only way to grow, to face danger is the only way to grow, 
                 to accept the challenge of the unknown is the only way to grow.`,
     imgPath: "assets/images/Adventure-name.jpg"
@@ -56,12 +62,14 @@ const cards = [
     description: `When you are alone you are not alone, you are simply lonely - and there 
                 is a tremendous difference between loneliness and aloneness. When you 
                 are lonely you are thinking of the other, you are missing the other.
-
+                <br>
+                <br>
                 Loneliness is a negative state. You are feeling that it would have 
                 been better if the other were there - your friend, your wife, your 
                 mother, your beloved, your husband. It would have been good if the 
                 other were there, but the other is not. Loneliness is absence of the other.
-
+                <br>
+                <br>
                 Aloneness is the presence of oneself. Aloneness is very positive. 
                 It is a presence, overflowing presence. You are so full of presence 
                 that you can fill the whole universe with your presence and there is 
@@ -73,12 +81,14 @@ const cards = [
     description: `Mind can never be intelligent - only no-mind is intelligent. 
                 Only no-mind is original and radical. Only no-mind is revolutionary - 
                 revolution in action.
-
+                <br>
+                <br>
                 This mind gives you a sort of stupor. Burdened by the memories of 
                 the past, burdened by the projections of the future, you go on 
                 living - at the minimum. You don't live at the maximum. Your 
                 flame remains very dim.
-
+                <br>
+                <br>
                 Once you start dropping thoughts, the dust that you have collected 
                 in the past, the flame arises - clean, clear, alive, young. 
                 Your whole life becomes a flame, and a flame without any smoke. 
@@ -89,19 +99,22 @@ const cards = [
     name: "Beyond Illusion",
     description: `This is the only distinction between the dream and the real: reality allows you 
                 to doubt, and the dream does not allow you to doubt....
-
+                <br>
+                <br>
                 To me, the capacity to doubt is one of the greatest blessings to humanity. 
                 The religions have been enemies because they have been cutting the very roots 
                 of doubt, and there is a reason why they have been doing that: because they 
                 want people to believe in certain illusions that they have been preaching....
-
+                <br>
+                <br>
                 Why have the people like Gautam Buddha been so insistent that the whole 
                 existence - except your witnessing self, except your awareness - is just 
                 ephemeral, made of the same stuff as dreams are made of? They are not 
                 saying that these trees are not there. They are not saying that these 
                 pillars are not there. Don't misunderstand because of the word "illusion".... 
                 It has been translated as illusion, but illusion is not the right word.
-
+                <br>
+                <br>
                 Illusion does not exist. Reality exists. Maya is just in between - it almost exists. 
                 As far as day-to-day activities are concerned, it can be taken as reality. 
                 Only in the ultimate sense, from the peak of your illumination, does it 
@@ -113,7 +126,8 @@ const cards = [
     description: `To transform breakdowns into breakthroughs is the whole function of a master. 
                 The psychotherapist simply patches you up. That is his function. He is not 
                 there to transform you. You need a meta-psychology, the psychology of the buddhas.
-
+                <br>
+                <br>
                 It is the greatest adventure in life to go through a breakdown consciously. 
                 It is the greatest risk because there is no guarantee that the breakdown will 
                 become a breakthrough. It does become, but these things cannot be guaranteed. 
@@ -122,7 +136,8 @@ const cards = [
                 into it with your small capacity, of course there is danger. But without 
                 facing this danger nobody has ever become integrated, nobody has ever become 
                 an individual, indivisible.
-
+                <br>
+                <br>
                 Zen, or meditation, is the method which will help you to go through the chaos, 
                 through the dark night of the soul, balanced, disciplined, alert. The dawn is 
                 not far away, but before you can reach the dawn, the dark night has to be passed 
@@ -136,7 +151,9 @@ const cards = [
                 for them. Look at life--do you see sadness anywhere? Have you ever seen a tree 
                 depressed? Have you seen a bird anxiety-ridden? Have you seen an animal neurotic? 
                 No, life is not like that, not at all. Only man has gone wrong somewhere, and 
-                he has gone wrong somewhere because he thinks himself to be very wise, very clever. 
+                he has gone wrong somewhere because he thinks himself to be very wise, very clever.
+                <br>
+                <br> 
                 Your cleverness is your disease. Don't be too wise. Always remember to stop; 
                 don't go to the extreme. A little foolishness and a little wisdom is good, and 
                 the right combination makes you a buddha.`,
@@ -149,7 +166,8 @@ const cards = [
                 death, the wheel of time. It moves like a wheel: birth is followed by death, 
                 death is followed by birth; love is followed by hate, hate is followed by 
                 love; success is followed by failure, failure is followed by success.
-
+                <br>
+                <br>
                 Just see! If you can watch just for a few days, you will see a pattern 
                 emerging, a wheel pattern. One day, a fine morning, you are feeling so good 
                 and so happy, and another day you are so dull, so dead that you start 
@@ -172,6 +190,8 @@ const cards = [
                 clinging to the past is absolute stupidity. It is no longer there, so 
                 you are crying for spilled milk. What is gone is gone! And don't cling 
                 to the present because that is also going and soon it will be past. 
+                <br>
+                <br>
                 Don't cling to the future--hopes, imaginations, plans for tomorrow--because 
                 tomorrow will become today, will become yesterday. Everything is going 
                 to become yesterday. Everything is going to go out of your hands. 
@@ -195,13 +215,15 @@ const cards = [
     description: `This is the way of Zen, not to say things to their completion. This 
                 has to be understood; it is a very important methodology. Not to say 
                 everything means to give an opportunity to the listener to complete it.
-
+                <br>
+                <br>
                 All answers are incomplete. The master has only given you a direction... 
                 By the time you reach the limit, you will know what is going to remain. 
                 This way, if somebody is trying to understand Zen intellectually he will 
                 fail. It is not an answer to the question but something more than the 
                 answer. It is indicating the very reality....
-
+                <br>
+                <br>
                 The buddha nature is not something far away - your very consciousness is 
                 buddha nature. And your consciousness can witness these things which 
                 constitute the world. The world will end but the mirror will remain, 
@@ -218,7 +240,10 @@ const cards = [
                 try to understand why you hanker for compromise. Sooner or later you will be able to 
                 understand that compromise is not going to help. And compromise may be a way of not 
                 going in either direction, or it may be just a repression of your confusion. It will 
-                assert itself. Never repress anything, be clear-cut about your situation. And if you 
+                assert itself. 
+                <br>
+                <br>
+                Never repress anything, be clear-cut about your situation. And if you 
                 are confused, remember that you are confused. This will be the first clear-cut thing 
                 about you: that you are confused. You have started on the journey.`,
     imgPath: "assets/images/Compromise-name.jpg"
@@ -228,14 +253,16 @@ const cards = [
     description: `Unless you drop your personality you will not be able to find your 
                 individuality. Individuality is given by existence; personality is 
                 imposed by the society. Personality is social convenience.
-
+                <br>
+                <br>
                 Society cannot tolerate individuality, because individuality will not 
                 follow like a sheep. Individuality has the quality of the lion; the 
                 lion moves alone. The sheep are always in the crowd, hoping that 
                 being in the crowd will feel cozy. Being in the crowd one feels more 
                 protected, secure. If somebody attacks, there is every possibility 
                 in a crowd to save yourself. But alone? - only the lions move alone.
-
+                <br>
+                <br>
                 And every one of you is born a lion, but the society goes on conditioning 
                 you, programming your mind as a sheep. It gives you a personality, a cozy 
                 personality, nice, very convenient, very obedient. Society wants slaves, 
@@ -252,7 +279,9 @@ const cards = [
                 of material things. They will get tired, they will get old, they will die. 
                 But your consciousness, for which Bodhidharma uses the word 
                 'no-mind'--Gautam Buddha has also used the word 'no-mind'--is something 
-                beyond body and mind, something beyond everything; that no-mind is eternal. 
+                beyond body and mind, something beyond everything; that no-mind is eternal.
+                <br>
+                <br> 
                 It comes into expression, and goes again into the unknown. 
                 This movement from the unknown to the known, and from the known to the unknown, 
                 continues for eternity, unless somebody becomes enlightened. 
@@ -269,7 +298,8 @@ const cards = [
                 If you are uncontrolled, flowing, alive, then you are not nervous. There is no 
                 question of being nervous - whatsoever happens, happens. You have no expectations 
                 for the future, you are not performing. Then why should you be nervous?
-
+                <br>
+                <br>
                 To control that mind, one has to remain so cold and frozen that no life energy 
                 is allowed to move into your limbs, into your body. If energy is allowed to move, 
                 those repressions will surface. That's why people have learned how to be cold, 
@@ -287,7 +317,8 @@ const cards = [
                 flower. And the seed cannot even believe that he has the potentiality to 
                 become a beautiful flower. Long is the journey, and it is always safer 
                 not to go on that journey because unknown is the path, nothing is guaranteed.
-
+                <br>
+                <br>
                 Nothing can be guaranteed. Thousand and one are the hazards of the journey, 
                 many are the pitfalls - and the seed is secure, hidden inside a hard core. 
                 But the seed tries, it makes an effort; it drops the hard shell which 
@@ -295,7 +326,8 @@ const cards = [
                 the struggle with the soil, with the stones, with the rocks. And 
                 the seed was very hard and the sprout will be very, very soft 
                 and dangers will be many.
-
+                <br>
+                <br>
                 There was no danger for the seed, the seed could have survived for 
                 millennia, but for the sprout many are the dangers. But the sprout 
                 starts towards the unknown, towards the sun, towards the source of 
@@ -308,16 +340,19 @@ const cards = [
     name: "Creativity",
     description: `Creativity is the quality that you bring to the activity that you are doing. 
                 It is an attitude, an inner approach - how you look at things....
-
+                <br>
+                <br>
                 Not everybody can be a painter - and there is no need also. If everybody is a 
                 painter the world will be very ugly; it will be difficult to live! And not 
                 everybody can be a dancer, and there is no need. But everybody can be creative.
-
+                <br>
+                <br>
                 Whatsoever you do, if you do it joyfully, if you do it lovingly, if your act 
                 of doing is not purely economical, then it is creative. If you have something 
                 growing out of it within you, if it gives you growth, it is spiritual, it is 
                 creative, it is divine. You become more divine as you become more creative.
-
+                <br>
+                <br>
                 All the religions of the world have said God is the creator. I don't know 
                 whether he is the creator or not, but one thing I know: the more creative you 
                 become, the more godly you become. When your creativity comes to a climax, 
@@ -334,6 +369,8 @@ const cards = [
                 to carry his character around himself. That character is like an armor; 
                 his protection, his security; his whole life is invested in that character. 
                 And he always reacts to situations through the character, not directly. 
+                <br>
+                <br>
                 If you ask him a question, his answer is ready-made. That is the sign 
                 of a hard person--he is dull, stupid, mechanical. He may be a good 
                 computer, but he is not a man. You do something and he reacts in a 
@@ -350,7 +387,8 @@ const cards = [
                 dignity, that the whole existence will miss you. The stars and sun and 
                 moon, the trees and birds and earth - everything in the universe will 
                 feel a small place is vacant which cannot be filled by anybody except you.
-
+                <br>
+                <br>
                 This gives you a tremendous joy, a fulfillment that you are related to 
                 existence, and existence cares for you. Once you are clean and clear, 
                 you can see tremendous love falling on you from all dimensions.`,
@@ -384,11 +422,13 @@ const cards = [
     name: "Flowering",
     description: `Zen wants you living, living in abundance, living in totality, living intensely - 
                 not at the minimum as Christianity wants you, but at the maximum, overflowing.
-
+                <br>
+                <br>
                 Your life should reach to others. Your blissfulness, your benediction, your ecstasy 
                 should not be contained within you like a seed. It should open like a flower and spread 
                 its fragrance to all and sundry - not only to the friends but to the strangers too.
-
+                <br>
+                <br>
                 This is real compassion, this is real love: sharing your enlightenment, sharing your 
                 dance of the beyond.`,
     imgPath: "assets/images/Flowering-name.jpg"
@@ -401,7 +441,10 @@ const cards = [
                 on you. Then it is always a friendship, a friendliness. It never becomes a 
                 relationship, it is always a relatedness. You relate, but you don't create a 
                 marriage. Marriage is out of fear, relatedness is out of love. You relate; as 
-                long as things are moving beautifully, you share. And if you see that the moment 
+                long as things are moving beautifully, you share. 
+                <br>
+                <br>
+                And if you see that the moment 
                 has come to depart because your paths separate at this crossroad, you say 
                 good-bye with great gratitude for all that the other has been to you, for all 
                 the joys and all the pleasures and all the beautiful moments that you have 
@@ -418,7 +461,10 @@ const cards = [
                 to be the first, it wants to be the last. Remember, Jesus says: Those who are 
                 the last here will be the first in my kingdom of God. He is talking about the 
                 watercourse way of Tao--not mentioning it, but talking about it. Be the last, 
-                be non-ambitious. Ambition means going uphill. Water goes down, it searches for 
+                be non-ambitious. 
+                <br>
+                <br>
+                Ambition means going uphill. Water goes down, it searches for 
                 the lowest ground, it wants to be a nonentity. It does not want to declare itself 
                 unique, exceptional, extraordinary. It has no ego idea.`,
     imgPath: "assets/images/GoingWithTheFlow-name.jpg"
@@ -433,7 +479,10 @@ const cards = [
                 with good, with godliness, more than you can possibly conceive. It is 
                 almost like light. Your room is dark, just bring light in. Even a small 
                 candle will do, and the whole darkness disappears. And once you have a 
-                candle you know where the door is.You don't have to think about it: 
+                candle you know where the door is.
+                <br>
+                <br>
+                You don't have to think about it: 
                 "Where is the door?" Only blind people think about where the door is. 
                 People who have eyes and the light is there, they don't think. 
                 Have you ever thought, "Where is the door?" You simply get up and go out. 
@@ -453,7 +502,10 @@ const cards = [
                 How can you enjoy life if you are continuously feeling guilty? if you are 
                 continuously going to the church to confess that you have done this wrong 
                 and that wrong? And wrong and wrong and wrong...your whole life seems to 
-                be made of sins. How can you live joyously? It becomes impossible to 
+                be made of sins. 
+                <br>
+                <br>
+                How can you live joyously? It becomes impossible to 
                 delight in life. You become heavy, loaded. Guilt sits on your chest like 
                 a rock, it crushes you; it does not allow you to dance. How can you dance? 
                 How can guilt dance? How can guilt sing? How can guilt love? How can guilt 
@@ -480,17 +532,20 @@ const cards = [
                 waiting to hurt you; everybody is engaged in safeguarding his own wound. 
                 Who has got the energy? But still it happens, because you are so ready to 
                 be wounded, so ready, just waiting on the brink for anything.
-
+                <br>
+                <br>
                 You cannot touch a man of Tao. Why? - because there is no one to be touched. 
                 There is no wound. He is healthy, healed, whole. This word whole is 
                 beautiful. The word heal comes from the whole, and the word holy also 
                 comes from the whole. He is whole, healed, holy.
-
+                <br>
+                <br>
                 Be aware of your wound. Don't help it to grow, let it be healed; and it 
                 will be healed only when you move to the roots. The less the head, the 
                 more the wound will heal; with no head there is no wound. Live a headless 
                 life. Move as a total being, and accept things.
-
+                <br>
+                <br>
                 Just for twenty-four hours, try it - total acceptance, whatsoever happens. 
                 Someone insults you, accept it; don't react, and see what happens. 
                 Suddenly you will feel an energy flowing in you that you have not felt before.`,
@@ -506,7 +561,10 @@ const cards = [
                 in the self means to draw a boundary line around you. To be in the self 
                 means to make a distinction between 'this I am' and 'that I am not'. The 
                 definition, the boundary, between "I" and "not I" is what the self is--the 
-                self isolates. And it makes you frozen--you are no longer flowing. If you 
+                self isolates.
+                <br>
+                <br>
+                And it makes you frozen--you are no longer flowing. If you 
                 are flowing the self cannot exist. Hence people have become almost like 
                 ice-cubes. They don't have any warmth, they don't have any love--love is 
                 warmth and they are afraid of love. If warmth comes to them they will 
@@ -517,22 +575,24 @@ const cards = [
      {
     name: "Inner Voice",
     description: `If you have found your truth within yourself there is nothing more in this 
-    whole existence to find. Truth is functioning through you. When you open 
-    your eyes, it is truth opening his eyes. When you close your eyes, it is 
-    truth who is closing its eyes.
-
-    This is a tremendous meditation. If you can simply understand the device, 
-    you don't have to do anything; whatever you are doing is being done by truth. 
-    You are walking, it is truth; you are sleeping, it is truth resting; you are 
-    speaking, it is truth speaking; you are silent, it is truth that is silent.
-
-    This is one of the most simple meditation techniques. Slowly, slowly everything 
-    settles by this simple formula, and then there is no need for the technique. 
-    When you are cured, you throw away the meditation, you throw away the medicine. 
-    Then you live as truth - alive, radiant, contented, blissful, a song unto yourself. 
-    Your whole life becomes a prayer without any words, or better to say a prayerfulness, 
-    a grace, a beauty which does not belong to our mundane world, a ray of 
-    light coming from the beyond into the darkness of our world.`,
+                whole existence to find. Truth is functioning through you. When you open 
+                your eyes, it is truth opening his eyes. When you close your eyes, it is 
+                truth who is closing its eyes.
+                <br>
+                <br>
+                This is a tremendous meditation. If you can simply understand the device, 
+                you don't have to do anything; whatever you are doing is being done by truth. 
+                You are walking, it is truth; you are sleeping, it is truth resting; you are 
+                speaking, it is truth speaking; you are silent, it is truth that is silent.
+                <br>
+                <br>
+                This is one of the most simple meditation techniques. Slowly, slowly everything 
+                settles by this simple formula, and then there is no need for the technique. 
+                When you are cured, you throw away the meditation, you throw away the medicine. 
+                Then you live as truth - alive, radiant, contented, blissful, a song unto yourself. 
+                Your whole life becomes a prayer without any words, or better to say a prayerfulness, 
+                a grace, a beauty which does not belong to our mundane world, a ray of 
+                light coming from the beyond into the darkness of our world.`,
     imgPath: "assets/images/InnerVoice-name.jpg"
   },
      {
@@ -552,14 +612,16 @@ const cards = [
                 exists. If that bridge is broken through some accident, through some physiological 
                 defect or something else, the person becomes split, the person becomes two persons 
                 and the phenomenon of schizophrenia or split personality happens.
-
+                <br>
+                <br>
                 If the bridge is broken - and the bridge is very fragile - then you become two, you 
                 behave like two persons. In the morning you are very loving, very beautiful; in 
                 the evening you are very angry, absolutely different. You don't remember your morning...
                 how can you remember? Another mind was functioning - and the person becomes two persons. 
                 If this bridge is strengthened so much that the two minds disappear as two and become one, 
                 then integration, then crystallization, arises.
-
+                <br>
+                <br>
                 What George Gurdjieff used to call the crystallization of being is nothing but these 
                 two minds becoming one, the meeting of the male and the female within, the meeting 
                 of yin and yang, the meeting of the left and right, the meeting of logic and illogic, 
@@ -573,7 +635,8 @@ const cards = [
                 follower, an imitator. You have to be an original individual; you have to find 
                 your innermost core on your own, with no guide, no guiding scriptures. It is a 
                 dark night, but with the intense fire of inquiry you are bound to come to the sunrise.
-
+                <br>
+                <br>
                 Everybody who has burned with intense inquiry has found the sunrise. Others only
                 believe. Those who believe are not religious, they are simply avoiding the great
                 adventure of religion by believing.`,
@@ -616,7 +679,10 @@ const cards = [
                 Certainly, to be full of spring yourself is far more beautiful than the autumn 
                 dew falling on the lotus leaves. That is one of the most beautiful things to 
                 watch: when autumn dew falls on the lotus leaves and shine in the morning sun 
-                like real pearls. But of course it is a momentary experience. As the sun rises, 
+                like real pearls. 
+                <br>
+                <br>
+                But of course it is a momentary experience. As the sun rises, 
                 the autumn dew starts evaporating.... This temporary beauty cannot be compared, 
                 certainly, with an eternal spring in your being. You look back as far as you can 
                 and it has always been there. You look forward as much as you can, and you will 
@@ -630,14 +696,16 @@ const cards = [
                 strange things that you have gathered from everywhere. Such a small 
                 çhead...and no space to live in! And that rubbish goes on moving in 
                 your head; your head goes on spinning and weaving - it keeps you occupied.
-
+                <br>
+                <br>
                 Just think what kind of thoughts go on inside your mind. One day just 
                 sit, close your doors, and write down for half an hour whatsoever is 
                 passing in your mind, and you will understand what I mean and you 
                 will be surprised what goes on inside your mind. It remains in the 
                 background, it is constantly there, it surrounds you like a cloud. 
                 With this cloud you cannot know reality; you cannot attain to spiritual perception.
-
+                <br>
+                <br>
                 This cloud has to be dropped. And it is just with your decision to drop 
                 it that it will disappear. You are clinging to it - the cloud is not 
                 interested in you, remember it.`,
@@ -652,7 +720,10 @@ const cards = [
                 now; wherever he is, his whole consciousness, his whole being, is involved in the 
                 reality of here and in the reality of now. That's the only right direction. Only 
                 such a man can enter into the golden gate. The present is the golden gate. Here-now 
-                is the golden gate. ...And you can be in the present only if you are not ambitious--no 
+                is the golden gate. 
+                <br>
+                <br>
+                ...And you can be in the present only if you are not ambitious--no 
                 accomplishment, no desire to achieve power, money, prestige, even enlightenment, because 
                 all ambition leads you into the future. Only a non-ambitious man can remain in the present. 
                 A man who wants to be in the present has not to think, has just to see and enter the gate. 
@@ -669,7 +740,8 @@ const cards = [
                 morality has come out of your awareness, not out of a certain discipline, 
                 then it is a totally different matter. Then you will respond in every 
                 situation out of your awareness. And whatever you do will be good.
-
+                <br>
+                <br>
                 Awareness cannot do anything that is bad. That is the ultimate beauty of 
                 awareness, that anything that comes out of it is simply beautiful, is simply 
                 right, and without any effort and without any practice. So rather than cutting 
@@ -683,13 +755,15 @@ const cards = [
     description: `When you open up to the ultimate, immediately it pours into you. You are no longer 
                 an ordinary human being - you have transcended. Your insight has become the insight 
                 of the whole existence. Now you are no longer separate - you have found your roots.
-
+                <br>
+                <br>
                 Otherwise, ordinarily, everybody is moving without roots, not knowing from where 
                 their heart goes on receiving energy, not knowing who goes on breathing in them, 
                 not knowing the life juice that is running inside them. It is not the body, 
                 it is not the mind - it is something transcendental to all duality, that is 
                 called bhagavat - the bhagavat in the ten directions ....
-
+                <br>
+                <br>
                 Your inner being, when it opens, first experiences two directions: the height, 
                 the depth. And then slowly, slowly, as this becomes your established situation, 
                 you start looking around, spreading into all other eight directions. And once 
@@ -705,7 +779,8 @@ const cards = [
                 That's why I would like to make it "no-thingness" - because the nothing 
                 is not just nothing, it is all. It is vibrant with all possibilities. 
                 It is potential, absolute potential. It is unmanifest yet, but it contains all.
-
+                <br>
+                <br>
                 In the beginning is nature, in the end is nature, so why in the middle do 
                 you make so much fuss? Why, in the middle, becoming so worried, so anxious, 
                 so ambitious - why create such despair? Nothingness to nothingness is the whole journey.`,
@@ -723,7 +798,10 @@ const cards = [
                 a bliss, surrounds you, arises in you. You feel fulfilled. There is no 
                 need to wait for these moments--these moments can become your natural 
                 life. These extraordinary moments can become ordinary moments - that 
-                is the whole effort of Zen. You can live an extraordinary life in a 
+                is the whole effort of Zen. 
+                <br>
+                <br>
+                You can live an extraordinary life in a 
                 very ordinary life: cutting wood, chopping wood, carrying water from 
                 the well, you can be tremendously at ease with yourself. Cleaning the 
                 floor, cooking food, washing the clothes, you can be perfectly at 
@@ -736,13 +814,15 @@ const cards = [
     description: `Have you ever seen night going? Very few people even become aware of things which 
                 are happening every day. Have you ever seen the evening coming? The midnight 
                 and its song? The sunrise and its beauty?
-
+                <br>
+                <br>
                 We are behaving almost like blind people. In such a beautiful world we are 
                 living in small ponds of our own misery. It is familiar, so even if somebody 
                 wants to pull you out, you struggle. You don't want to be pulled out of your 
                 misery, of your suffering. Otherwise there is so much joy all around, you 
                 have just to be aware of it and to become a participant, not a spectator.
-
+                <br>
+                <br>
                 Philosophy is speculation, Zen is participation. Participate in the night 
                 leaving, participate in the evening coming, participate in the stars and 
                 participate in the clouds; make participation your lifestyle and the whole 
@@ -757,7 +837,8 @@ const cards = [
                 that death brings. One simply is lost in an oblivion and then suddenly 
                 finds a new womb and forgets completely about the old body. There is a 
                 discontinuity. This darkness, this unconsciousness creates the discontinuity.
-
+                <br>
+                <br>
                 The East has been working hard to penetrate these barriers. And ten 
                 thousand years' work has not been in vain. Everybody can penetrate 
                 to the past life, or many past lives. But for that you have to go 
@@ -775,8 +856,10 @@ const cards = [
                 is time to bring the flowers and when it is time to let go of all the leaves 
                 and stand naked against the sky. They are still beautiful in that nakedness, 
                 waiting for the new foliage with a great trust that the old has gone, and 
-                the new will soon be coming, and the new leaves will start growing. We have 
-                forgotten to wait, we want everything in a hurry. It is a great loss to 
+                the new will soon be coming, and the new leaves will start growing. 
+                <br>
+                <br>
+                We have forgotten to wait, we want everything in a hurry. It is a great loss to 
                 humanity.... In silence and waiting something inside you goes on growing--your 
                 authentic being. And one day it jumps and becomes a flame, and your whole 
                 personality is shattered; you are a new man. And this new man knows what 
@@ -789,7 +872,8 @@ const cards = [
                 burden on your heart disappears. All the fear of death, of life, of 
                 love - everything disappears. One starts living with a very light 
                 weight or almost no weight. So weightless one becomes, one can fly in the open sky.
-
+                <br>
+                <br>
                 Zen's greatest contribution is to give you an alternative to the 
                 serious man. The serious man has made the world, the serious man 
                 has made all the religions. He has created all the philosophies, 
@@ -806,7 +890,10 @@ const cards = [
                 is cunningness, all that he needs is a facade to hide behind. Your politicians live double 
                 lives, your priests live double lives--one from the front door, the other from the back door.
                 And the back-door life is their real life. Those front-door smiles are just false, those 
-                faces looking so innocent are just cultivated. If you want to see the reality of the 
+                faces looking so innocent are just cultivated. 
+                <br>
+                <br>
+                If you want to see the reality of the 
                 politician you will have to see him from his back door. There he is in his nudity, as he 
                 is, and so is the priest. These two kinds of cunning people have dominated humanity. And 
                 they found out very early on that if you want to dominate humanity, make it weak, make it 
@@ -821,7 +908,8 @@ const cards = [
     description: `Mind can accept any boundary anywhere. But the reality is that, by its very nature, 
                 existence cannot have any boundary, because what will be beyond the boundary? - 
                 again another sky.
-
+                <br>
+                <br>
                 That's why I am saying skies upon skies are available for your flight. Don't be 
                 content easily. Those who remain content easily remain small: small are their joys, 
                 small are their ecstasies, small are their silences, small is their being. 
@@ -837,7 +925,10 @@ const cards = [
                 fresher than today? Tomorrow you will be older, your courage will be less; tomorrow you 
                 will be more experienced, your cunningness will be more; tomorrow death will come 
                 closer--you will start wavering and being more afraid. Never postpone for the tomorrow. 
-                And who knows? Tomorrow may come or may not come. If you have to decide you have to 
+                And who knows? Tomorrow may come or may not come.
+                <br>
+                <br>
+                If you have to decide you have to 
                 decide right now. Dr. Vogel, the dentist, finished his examination on a pretty young 
                 patient. "Miss Baseman," he said, "I'm afraid I'm going to have to pull out your wisdom 
                 teeth!" "Oh, my!" exclaimed the girl. "I'd rather have a baby!" "Well," said Dr. Vogel, 
@@ -855,7 +946,10 @@ const cards = [
                 other, because the other is the screen. When you are in love the person seems 
                 beautiful, no comparison. When you hate, the same person seems the ugliest, 
                 and you never become aware of how the same person can be the ugliest and the 
-                same person can be the most beautiful.... So the only way to reach to truth 
+                same person can be the most beautiful.... 
+                <br>
+                <br>
+                So the only way to reach to truth 
                 is to learn how to be immediate in your vision, how to drop the help of the mind. 
                 This agency of the mind is the problem, because mind can create only dreams.... 
                 Through your excitement the dream starts looking like reality. If you are 
@@ -882,12 +976,14 @@ const cards = [
     description: `Listening is one of the basic secrets of entering into the temple of God. 
                 Listening means passivity. Listening means forgetting yourself completely - 
                 only then can you listen.
-
+                <br>
+                <br>
                 When you listen attentively to somebody, you forget yourself. If you cannot 
                 forget yourself, you never listen. If you are too self-conscious about 
                 yourself, you simply pretend that you are listening - you don't listen. 
                 You may nod your head; you may sometimes say yes and no, but you are not listening.
-
+                <br>
+                <br>
                 When you listen, you become just a passage, a passivity, a receptivity, 
                 a womb: you become feminine. And to arrive one has to become feminine. 
                 You cannot reach God as aggressive invaders, conquerors. 
@@ -917,7 +1013,10 @@ const cards = [
                 contradictory.... But because this split is against his nature, deep down somewhere 
                 hidden the unity still survives. Because the soul of man is one, all the conditionings 
                 at the most destroy the periphery of the man. But the center remains untouched--that's 
-                how man continues to live. But his life has become a hell. The whole effort of Zen 
+                how man continues to live. But his life has become a hell. 
+                <br>
+                <br>
+                The whole effort of Zen 
                 is how to drop this schizophrenia, how to drop this split personality, how to drop 
                 the divided mind of man, how to become undivided, integrated, centered, crystallized. 
                 The way you are, you cannot say that you are. You don't have a being. 
@@ -934,7 +1033,8 @@ const cards = [
                 By reaching to the third center in meditation, you have become so overflowing 
                 with love, with compassion, and you want to share. It happens at the fourth 
                 center, the heart.
-
+                <br>
+                <br>
                 That's why even in the ordinary world people think love comes out of the 
                 heart. For them it is just hearsay, they have heard it; they don't know it 
                 because they have never reached to their heart. But the meditator finally 
@@ -949,12 +1049,14 @@ const cards = [
     name: "Silence",
     description: `The energy of the whole has taken possession of you. You are possessed, 
                 you are no more, the whole is.
-
+                <br>
+                <br>
                 This moment, as the silence penetrates in you, you can understand the 
                 significance of it, because it is the same silence that Gautam Buddha 
                 experienced. It is the same silence that Chuang Tzu or Bodhidharma or 
                 Nansen.... The taste of the silence is the same.
-
+                <br>
+                <br>
                 Time changes, the world goes on changing, but the experience of silence, 
                 the joy of it, remains the same. That is the only thing you can rely upon, 
                 the only thing that never dies. It is the only thing that you can call your very being.`,
@@ -966,7 +1068,8 @@ const cards = [
                 Once you have learned the quality, then you need not do any particular 
                 meditation; then the meditation has to spread all over your life. 
                 Walking is Zen, sitting is Zen.
-
+                <br>
+                <br>
                 Then what will be the quality? Watchfully, alert, joyously, unmotivated, 
                 centered, loving, flowing, one walks. And the walking is sauntering. 
                 Loving, alert, watchful, one sits, unmotivated - not sitting for 
@@ -975,7 +1078,8 @@ const cards = [
                 under a tree and the breeze comes and cools you. Each moment one has to 
                 be at ease with oneself - not trying to improve, not cultivating anything, 
                 not practicing anything.
-
+                <br>
+                <br>
                 Walking is Zen, sitting is Zen. Talking or silent, moving, unmoving, the essence 
                 is at ease. The essence is at ease: that is the key word. The essence is at 
                 ease: that is the key statement. Do whatsoever you are doing, but at the 
@@ -1052,7 +1156,10 @@ const cards = [
                 the essential remains essential, they are not convertible. And striving 
                 towards truth is nothing but creating more confusion. The truth has not 
                 to be achieved. It cannot be achieved, it is already the case. Only the 
-                lie has to be dropped. All aims and ends and ideals and goals and ideologies, 
+                lie has to be dropped. 
+                <br>
+                <br>
+                All aims and ends and ideals and goals and ideologies, 
                 religions and systems of improvement and betterment, are lies. Beware of 
                 them. Recognize the fact that, as you are, you are a lie. Manipulated, 
                 cultivated by others. Striving after truth is a distraction and a postponement. 
@@ -1070,13 +1177,15 @@ const cards = [
                 other type of creator, the mystic, creates himself. He doesn't work with objects,
                 he works with the subject; he works on himself, his own being. And he is the 
                 real creator, the real poet, because he makes himself into a masterpiece.
-
+                <br>
+                <br>
                 You are carrying a masterpiece hidden within you, but you are standing in the way. 
                 Just move aside, then the masterpiece will be revealed. Everyone is a masterpiece, 
                 because God never gives birth to anything less than that. Everyone carries that 
                 masterpiece hidden for many lives, not knowing who they are and just trying on 
                 the surface to become someone.
-
+                <br>
+                <br>
                 Drop the idea of becoming someone, because you are already a masterpiece. You cannot 
                 be improved. You have only to come to it, to know it, to realize it. God himself 
                 has created you; you cannot be improved.`,
@@ -1092,7 +1201,10 @@ const cards = [
                 point. Ordinarily you think you have fallen in love with a woman or with a man 
                 because she is beautiful, he is beautiful. That is not the truth. The truth is 
                 just the opposite: you have fallen in love because you cannot be alone. You were 
-                going to fall. You were going to avoid yourself somehow or other. And there are 
+                going to fall. 
+                <br>
+                <br>
+                You were going to avoid yourself somehow or other. And there are 
                 people who don't fall in love with women or men--then they fall in love with money. 
                 They start moving into money or into a power trip, they become politicians. That 
                 too is avoiding your aloneness. If you watch man, if you watch yourself deeply, 
@@ -1108,19 +1220,22 @@ const cards = [
                 again, and he trusts you; and you deceive him again, and he trusts you. 
                 Then you will say that he is a fool, he does not learn. His trust is 
                 tremendous; his trust is so pure that nobody can corrupt it.
-
+                <br>
+                <br>
                 Be a fool in the Taoist sense, in the Zen sense. Don´t try to create a 
                 wall of knowledge around you. Whatsoever experience comes to you, let 
                 it happen, and then go on dropping it. Go on cleaning your mind 
                 continuously; go on dying to the past so you remain in the present, 
                 herenow, as if just born, just a babe.
-
+                <br>
+                <br>
                 In the beginning it is going to be very difficult. The world will start 
                 taking advantage of you...let them. They are poor fellows. Even if 
                 you are cheated and deceived and robbed, let it happen, because 
                 that which is really yours cannot be robbed from you, that which 
                 is really yours nobody can steal from you.
-
+                <br>
+                <br>
                 And each time you don´t allow situations to corrupt you, that 
                 opportunity will become an integration inside. Your soul will become 
                 more crystallized.`,
@@ -1134,11 +1249,13 @@ const cards = [
                 Very few people know what love is. Ninety-nine percent of people, unfortunately, think sexuality is 
                 love - it is not. Sexuality is very animal; it certainly has the potential of growing into love, 
                 but it is not actual love, only a potential....
-
+                <br>
+                <br>
                 If you become aware and alert, meditative, then sex can be transformed into love. And if your
                 meditativeness becomes total, absolute, love can be transformed into compassion. Sex is the seed, 
                 love is the flower, compassion is the fragrance.
-
+                <br>
+                <br>
                 Buddha has defined compassion as love plus meditation. When your love is not just a 
                 desire for the other, when your love is not only a need, when your love is a sharing, 
                 when your love is not that of a beggar but an emperor, when your love is not asking 
@@ -1155,14 +1272,16 @@ const cards = [
                 whole work of meditation is to make you aware of all that is "mind" and 
                 disidentify yourself from it. That very separation is the greatest 
                 revolution that can happen to man.
-
+                <br>
+                <br>
                 Now you can do and act on only that which makes you more joyous, 
                 fulfills you, gives you contentment, makes your life a work of art, a 
                 beauty. But this is possible only if the master in you is awake. Right 
                 now the master is fast asleep. And the mind, the servant, is playing the 
                 role of master. And the servant is created by the outside world, it 
                 follows the outside world and its laws.
-
+                <br>
+                <br>
                 Once your awareness becomes a flame, it burns up the whole slavery that the 
                 mind has created. There is no blissfulness more precious than freedom, 
                 than being a master of your own destiny.`,
@@ -1199,7 +1318,8 @@ const cards = [
     description: `People are afraid, very much afraid of those who know themselves. They have a 
                 certain power, a certain aura and a certain magnetism, a charisma that can take out 
                 alive, young people from the traditional imprisonment....
-
+                <br>
+                <br>
                 The enlightened man cannot be enslaved - that is the difficulty - and he cannot 
                 be imprisoned.... Every genius who has known something of the inner is bound to 
                 be a little difficult to be absorbed; he is going to be an upsetting force. 
@@ -1230,14 +1350,16 @@ const cards = [
     description: `What meditation does slowly, slowly, a good shout of the master, unexpectedly, 
                 in the situation where the disciple was asking some question, and the master 
                 jumps and shouts, or hits him, or throws him out of the door, or jumps over him....
-
+                <br>
+                <br>
                 These methods were never known. It was purely the very creative genius of 
                 Ma Tzu, and he made many people enlightened. Sometimes it looks so 
                 hilarious: he threw a man from the window, from a two-storey house, 
                 and the man had come to ask on what to meditate. And Ma Tzu not only 
                 threw him, he jumped after him, fell on him, sat on his chest, and 
                 he said, "Got it?!"
-
+                <br>
+                <br>
                 And the poor fellow said, "Yes" - because if you say "No," he may beat 
                 you or do something else! It is enough - his body is fractured, and 
                 Ma Tzu, sitting on his chest, says, "Got it?!" And in fact he got it, 
@@ -1263,12 +1385,14 @@ const cards = [
                 believe because there is no way to bring those experiences into 
                 objective reality. Neither has the teacher known them - he has 
                 believed them; he transfers his belief to somebody else.
-
+                <br>
+                <br>
                 Zen is not a believer's world. It is not for the faithful ones; it 
                 is for those daring souls who can drop all belief, unbelief, doubt, 
                 reason, mind, and simply enter into their pure existence without boundaries. 
                 But it brings a tremendous transformation.
-
+                <br>
+                <br>
                 Hence, let me say that while others are involved in philosophies, 
                 Zen is involved in metamorphosis, in a transformation. It is authentic 
                 alchemy: it changes you from base metal into gold. But its language has 
@@ -1299,7 +1423,8 @@ const cards = [
                 If you trust, only then can you drop your knowledge, only then can you put 
                 your mind aside. And with trust, something immense opens up. Then this 
                 life is no longer ordinary life, it becomes full of God, overflowing.
-
+                <br>
+                <br>
                 When the heart is innocent and the walls have disappeared, you are bridged 
                 with infinity. And you are not deceived; there is nothing that can be taken 
                 away from you. That which can be taken away from you is not worth keeping, 
@@ -1317,6 +1442,8 @@ const cards = [
                 That you never reach anywhere, that contentment is impossible. Seeing this truth, 
                 that running after desires takes you nowhere, you stop. Not that you make any effort 
                 to stop. If you make any effort to stop it is again running, in a subtle way. 
+                <br>
+                <br>
                 You are still desiring--maybe now it is desirelessness that you desire. 
                 If you are making an effort to go in, you are still going out. Any effort can 
                 only take you out, outwards. All journeys are outward journeys, there is no inward 
@@ -1332,7 +1459,8 @@ const cards = [
                 All the stars and the moon and the sun belong to you. You can disappear into the 
                 blueness of the beyond....Just drop clinging to this cage, move out of the cage 
                 and the whole sky is yours. Open your wings and fly across the sun like an eagle.
-
+                <br>
+                <br>
                 In the inner sky, in the inner world, freedom is the highest value - everything 
                 else is secondary, even blissfulness, ecstasy. There are thousands of flowers, 
                 uncountable, but they all become possible in the climate of freedom.`,
