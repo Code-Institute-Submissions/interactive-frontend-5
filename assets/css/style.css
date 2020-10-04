@@ -589,7 +589,7 @@ h5 {
     text-shadow: 1.5px 1.5px #836ecc;
 }
 
-/*copied code for dot animation here> https://stackoverflow.com/questions/13014808/is-there-anyway-to-animate-an-ellipsis-with-css-animations*/
+/*copied code for dot animation here: https://stackoverflow.com/questions/13014808/is-there-anyway-to-animate-an-ellipsis-with-css-animations*/
 
 .sending {
     font-family: sans-serif;
