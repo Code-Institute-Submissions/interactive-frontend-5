@@ -43,9 +43,9 @@ the page so that the user feels good and gets into a proper state of mind for pl
 The website is colourful with a variety of colours since the Osho Tarot cards are quite colourful and bright. 
 Despite the colour variety, consistency is kept throughout the page with colour matching and fitting colour combinations.  
 - The orange numbers in the card containers, the reddish text-shadow and the greyish and red colours on the scrollbars 
-are picked for matching the back cards. -
-- The blue, purple and pink background colour gradient on the mobile game page was picked to match the colours of the hero image. - 
-- The colours on the buttons are bright with different colours, nicely contrasting against their background to make them more visible. - 
+are picked for matching the back cards. 
+- The blue, purple and pink background colour gradient on the mobile game page was picked to match the colours of the hero image.  
+- The colours on the buttons are bright with different colours, nicely contrasting against their background to make them more visible.  
 
 #### Typography
 The Roboto font is picked for the main text of the page because its elegant and easy to read. Oswald is used for the 
@@ -61,8 +61,8 @@ own energy. At the same time is gives you a sense of being calm and protected by
 it more fun to play the game than just having a background colour only.  
 
 #### Text   
-For making the reading easy, the text is divided into parts and background colour and text-shadow is added to make the text 
-stand out against the colourful background image. Only the most essential text is displayed to 
+The text is divided into parts and background colour and text-shadow is added to make the text 
+stand out against the background image, to make the reading easier. Only the most essential text is displayed to 
 *not overload the reader with too much text*. Some heading and links are decorated with icons to enhance the UX experience and the aesthetics.   
 
 ### Wireframes 
@@ -73,3 +73,31 @@ stand out against the colourful background image. Only the most essential text i
 - **Game mobile** - <a href="https://drive.google.com/file/d/1BbypV1P8wJCFLCeFBD53DSB-ie-5D_5b/view?usp=sharing" target="_blank">View</a>
 - **Description mobile** - <a href="https://drive.google.com/file/d/1xQMbyVIl4wlu9jf-PsnI-nH0LMGGOSnf/view?usp=sharing" target="_blank">View</a>
   
+
+## Features
+Responsive on all device sizes.
+
+### Existing Features
+- **Start Playing Button**. Clicking the button leads the user to the Game page.
+- **Header Logo**. Clicking the logo returns the user to Start.
+- **Card Spread Button**. Clicking the button pops up links that takes the user to other spreads and options.
+- **The Diamond link**. Takes the user to play the Diamond spread. 
+- **The Key link**. Takes the user to play the Key spread. 
+- **The Mirror link**. Takes the user to play the Mirror spread. 
+- **The Celtic Cross link**. Takes the user to play the Celtic Cross spread. 
+- **The All Cards link**. Takes the user to view all front cards. 
+- **Back To Reading Button**. Clicking on the BTR button takes the user back to only see the reading. 
+- **About Spread Section**. Gives users information about the card spread that is currently being played.
+- **Description Section**. The front cards have a onclick attached that takes the user to view the description of the cards. 
+- **Scrollbar**. Allows the back cards and the description text to get scrolled to view more. 
+- **Back cards**. Clicking on the back cards displays front cards in the containers with numbers.
+- **Card meanings**. Clicking on the card meanings on smaller devices makes the meanings bigger.  
+- **Footer Copyright**. To protect copyright.
+- **Footer Contact Button**. Clicking the button pops up a contact form modal.
+
+### Features Left to Implement
+-  More card spreads and commentary text for the descriptions.
+- Option to choose Spanish language of the website.
+
+
+
