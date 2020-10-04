@@ -78,15 +78,15 @@ stand out against the background image, to make the reading easier. Only the mos
 Responsive on all device sizes.
 
 ### Existing Features
-- **Start Playing Button**. Clicking the button leads the user to the Game page.
+- **'Start Playing' Button**. Clicking the button leads the user to the Game page.
 - **Header Logo**. Clicking the logo returns the user to Start.
-- **Card Spread Button**. Clicking the button pops up links that takes the user to other spreads and options.
+- **'Card Spread' Dropdown Button**. Clicking the button pops up links that takes the user to other spreads and options.
 - **The Diamond link**. Takes the user to play the Diamond spread. 
 - **The Key link**. Takes the user to play the Key spread. 
 - **The Mirror link**. Takes the user to play the Mirror spread. 
 - **The Celtic Cross link**. Takes the user to play the Celtic Cross spread. 
 - **The All Cards link**. Takes the user to view all front cards. 
-- **Back To Reading Button**. Clicking on the BTR button takes the user back to only see the reading. 
+- **'Back To Reading' Button**. Clicking on the BTR button takes the user back to only see the reading. 
 - **About Spread Section**. Gives users information about the card spread that is currently being played.
 - **Description Section**. The front cards have a onclick attached that takes the user to view the description of the cards. 
 - **Scrollbar**. Allows the back cards and the description text to get scrolled to view more. 
@@ -116,8 +116,75 @@ Languages Used for this project: **HTML**, **CSS** & **Javascript**.
 
 7.	[Draw.io](https://app.diagrams.net/): – was used to create and design the wireframes. Draw.io was also used to edit the hero-image on the mobile Start page.
 
-8.	[jQuery](https://jquery.com/): – was used as a library for Javascript.
+8.	[jQuery](https://jquery.com/): – was used as a library for Javascript for faster and easier coding.
 
-9.	[Hover.css](http://ianlunn.github.io/Hover/): – was used for hover effect on back/front cards & card meanings.
+9. [jQuery & Popper.js](https://getbootstrap.com/docs/4.5/getting-started/introduction/) – that came with Bootstrap were used for the dropdown button for Card Spread.
+
+10.	[Hover.css](http://ianlunn.github.io/Hover/): – was used for hover effect on back/front cards & card meanings.
+
+### Additional Testing 
+- The website was tested on multiple browsers such as Google Chrome, Microsoft Edge, Firefox and Opera. 
+- Much time was given to test all the card spreads, buttons, links and responsivness. 
+- Family members and friends were asked to view the website on their devices to see if everything was working well and to report 
+any bugs or issues. 
+- The website was tested on various devices such as Desktop, Laptop, Ipad and on various mobile versions of Samsung, Huawei and iPhone.  
+- Code was run throguh the W3C Markup Validation Service and the results can be viewed here: 
+    - **index.html** - <a href="https://drive.google.com/file/d/1uK5S2Mwmh318eItJ47oCmxmqTNtPurQl/view?usp=sharing" target="_blank">Result</a>
+    - **game.html** - <a href="https://drive.google.com/file/d/160xGBUjU017orDBxQlJ4oheDd1AmnfnT/view?usp=sharing" target="_blank">Result</a>
+    - **style.css** - <a href="https://drive.google.com/file/d/1WF8lAlc7DQg-W7aSPPYYcwuVaKD_6mrs/view?usp=sharing" target="_blank">Result</a>
+
+### Known bugs
+The styling on the scrollbars disappears on Firefox and only the default scroll is shown. 
+
+## Deployment
+
+### The project was deployed to GitHub Pages by executing these steps:  
+1.	Log into GitHub, then locate the repository named: **danikrs/interactive-frontend**.
+2.	Under the repository name in the menu, select “Settings”.
+3.	At the Settings page, scroll down to the “GitHub Pages” section.
+4.	Click the drop-down menu named “None” under “Source” and select “Master Branch”. 
+5.	The website is now deployed, and the page automatically refreshes.
+6.	Scroll back down to the “GitHub Pages” section to retrieve the published site link.
+
+### How to clone and run this project locally: 
+1.	First log in to GitHub, then go into the project’s repository by clicking this link [GitHub Repository](https://github.com/danikrs/interactive-frontend)
+2.	Under the repository name, click the green "Code" button.
+3.	Then choose "Clone with HTTPS" and copy the link.
+4.	Open Git Bash in your local IDE.
+5.	Change the current working directory to the location where you want the cloned directory to be made.
+6.	Type git clone, and then paste the URL you copied in Step 3.
+```console
+git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
+```
+7.	Press Enter. Your local clone is now created.
+
+For more information about how to clone a repository click [here](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository)
+
+
+## Credits
+
+**Note**: The content of this website is for educational purposes only.
+
+### Code
+- For making the thumb smaller than the track on scrollbar this [Stackoverflow post](https://stackoverflow.com/questions/26493446/change-size-of-scrollbar-thumb-with-css) was used and edited for my own needs. 
+- For making the animation on dots for sending email this [Stackoverflow post]( https://stackoverflow.com/questions/13014808/is-there-anyway-to-animate-an-ellipsis-with-css-animations) code was used.
+- For making the hover effect on front/back cards & meanings this [Hover.css](https://ianlunn.github.io/Hover/) was used.
+- My mentor created the function on line 267 on script.js for getting card info by index, which I added more code to. This function is again used at line 24 on script.js. 
+- My mentor created the loop to display the front cards in the "All Cards" scroll on line 288 on script.js, which I added more code to. 
+
+### Content
+The text for the Tarot game was found on this [Osho site](https://www.osho.com/iosho/zen-tarot/the-celtic-cross).
+All of the text is from the Osho Zen Tarot book. 
+
+### Media
+The front card images were also found in the [Osho site](https://www.osho.com/iosho/zen-tarot/the-celtic-cross).
+The hero-images were found in Ecosia by using the search engine. 
+
+### Acknowledgements
+- My mentor at Code Institute for his guidance, advice and feedback.
+- The tutor support at Code Institute for tutoring.
+
+
+
 
 
