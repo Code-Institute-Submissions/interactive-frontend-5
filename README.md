@@ -99,5 +99,25 @@ Responsive on all device sizes.
 -  More card spreads and commentary text for the descriptions.
 - Option to choose Spanish language of the website.
 
+## Technologies Used
+
+Languages Used for this project: **HTML**, **CSS** & **Javascript**. 
+1.	[Bootstrap4](https://getbootstrap.com/): – for making the website responsive on all devices and for the styling. 
+
+2.	[Animate.css](https://animate.style/): – for animating the "Start Playing" button. 
+
+3.	[Google Fonts](https://fonts.google.com/): – were used as fonts on the website. 
+
+4.	[Font Awesome](https://fontawesome.com/): – icons were used for aesthetics and enhancing the UX.
+
+5.	[Git](https://git-scm.com/): – was used for pushing the project’s code to GitHub through version control and Git committing. 
+
+6.	[GitHub](https://github.com/): – is used to store the project’s code.
+
+7.	[Draw.io](https://app.diagrams.net/): – was used to create and design the wireframes. Draw.io was also used to edit the hero-image on the mobile Start page.
+
+8.	[jQuery](https://jquery.com/): – was used as a library for Javascript.
+
+9.	[Hover.css](http://ianlunn.github.io/Hover/): – was used for hover effect on back/front cards & card meanings.
 
 
