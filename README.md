@@ -42,10 +42,10 @@ the page so that the user feels good and gets into a proper state of mind for pl
 #### Color Scheme
 The website is colourful with a variety of colours since the Osho Tarot cards are quite colourful and bright. 
 Despite the colour variety, consistency is kept throughout the page with colour matching and fitting colour combinations.  
-    - The orange numbers in the card containers, the reddish text-shadow and the greyish and red colours on the scrollbars 
-    are picked for matching the back cards. 
-    - The blue, purple and pink background colour gradient on the mobile game page was picked to match the colours of the hero image.  
-    - The colours on the buttons are bright with different colours, nicely contrasting against their background to make them more visible.   
+- The orange numbers in the card containers, the reddish text-shadow and the greyish and red colours on the scrollbars 
+are picked for matching the back cards. -
+- The blue, purple and pink background colour gradient on the mobile game page was picked to match the colours of the hero image. - 
+- The colours on the buttons are bright with different colours, nicely contrasting against their background to make them more visible. - 
 
 #### Typography
 The Roboto font is picked for the main text of the page because its elegant and easy to read. Oswald is used for the 
@@ -53,24 +53,23 @@ headings in the contact form for helping it look more stylish. Archivo is used f
 its boldness, and Bungee for the “Start Playing” button for its game-ish inviting look.
 
 #### Images 
-    - The hero image on the Start page is the same image that is on the cover on the Osho Zen Tarot book. This cover 
-    is chosen for its artistic eye-catching look and so that the user can get the feel of having the Osho Tarot book in 
-    front of them and click to look what’s inside of it.  
-    - The hero image on the Game page is to make you feel the infinity of the spiritual cosmos and connect you with your 
-    own energy. At the same time is gives you a sense of being calm and protected by the universe. The background image makes 
-    it more fun to play the game than just having a background colour only.  
+- The hero image on the Start page is the same image that is on the cover on the Osho Zen Tarot book. This cover 
+is chosen for its artistic eye-catching look and so that the user can get the feel of having the Osho Tarot book in 
+front of them and click to look what’s inside of it.  
+- The hero image on the Game page is to make you feel the infinity of the spiritual cosmos and connect you with your 
+own energy. At the same time is gives you a sense of being calm and protected by the universe. The background image makes 
+it more fun to play the game than just having a background colour only.  
 
 #### Text   
 For making the reading easy, the text is divided into parts and background colour and text-shadow is added to make the text 
 stand out against the colourful background image. Only the most essential text is displayed to 
 *not overload the reader with too much text*. Some heading and links are decorated with icons to enhance the UX experience and the aesthetics.   
 
-
 ### Wireframes 
 - **Start** - <a href="https://drive.google.com/file/d/1k0I2ZeovWSQJJXrD4Jkze871-ASz7XSz/view?usp=sharing" target="_blank">View</a>
-- **Game** - <a href="" target="_blank">View</a>
-- **Description** - <a href="" target="_blank">View</a>
-- **Start mobile** - <a href="" target="_blank">View</a>
-- **Game mobile** - <a href="" target="_blank">View</a>
-- **Description mobile** - <a href="" target="_blank">View</a>
+- **Game** - <a href="https://drive.google.com/file/d/1VH7dzRLSU-08ZlM-yWVqkkP94aD2612p/view?usp=sharing" target="_blank">View</a>
+- **Description** - <a href="https://drive.google.com/file/d/10wW3pjLs_ZgLmq6108cjdqXhhQNwXvr2/view?usp=sharing" target="_blank">View</a>
+- **Start mobile** - <a href="https://drive.google.com/file/d/13Ln69NBA_P7FEFuMZJX5bLSUBzHvy-df/view?usp=sharing" target="_blank">View</a>
+- **Game mobile** - <a href="https://drive.google.com/file/d/1BbypV1P8wJCFLCeFBD53DSB-ie-5D_5b/view?usp=sharing" target="_blank">View</a>
+- **Description mobile** - <a href="https://drive.google.com/file/d/1xQMbyVIl4wlu9jf-PsnI-nH0LMGGOSnf/view?usp=sharing" target="_blank">View</a>
   
