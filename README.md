@@ -127,56 +127,56 @@ Languages Used for this project: **HTML**, **CSS** & **Javascript**.
 
 ## Testing
 ### Testing User stories from UX section:
-1.	 As a First time Visitor, I want the purpose of the website to be clear and the navigation easy to use. I want to quickly figure out how to play the game and know more about the Tarot card spread.
-        - a. When visiting the website, the user is welcomed by an intriguing colourful book cover of the Osho Zen Tarot. On the top there is a big animated button that is constantly pulsing, drawing the user’s 
+1.	 **As a First time Visitor, I want the purpose of the website to be clear and the navigation easy to use. I want to quickly figure out how to play the game and know more about the Tarot card spread.**
+        - **a.** When visiting the website, the user is welcomed by an intriguing colourful book cover of the Osho Zen Tarot. On the top there is a big animated button that is constantly pulsing, drawing the user’s 
         attention to click on it to start playing the Tarot.  On entering the Game page, the user sees a nice hero-image with a logo and button menu at the top. Below, the user sees the back cards laid out 
         and below them there is a instructional text clearly visible explaining how to start playing the Tarot.  The back cards have a hover effect and a pointer indicating that they are clickable. 
 	
-        - b. The artistic hero image on the Start page tells clearly what the website is about. There is a different but similar hero-image that appears on small devices that suits the size better.
+        - **b.** The artistic hero image on the Start page tells clearly what the website is about. There is a different but similar hero-image that appears on small devices that suits the size better.
     
-        - c. Below the instructional text is the card spread laid out with position meanings and below the card spread the user sees an About section, explaining what the current laid out card spread is about. 
+        - **c.** Below the instructional text is the card spread laid out with position meanings and below the card spread the user sees an About section, explaining what the current laid out card spread is about. 
 
-2.	As a First time Visitor, I would like to see that I can choose from 79 back cards that is the full card deck and be able to view the front cards and their descriptions as well. I would like to see that 
-    there are some other card spreads that I can choose.
-    - a. Upon entering the Game page the user clearly sees the back cards that have a little shadow behind them to make them more visible. Since there are many cards to choose from, a scrollbar is added to save the 
+2.	**As a First time Visitor, I would like to see that I can choose from 79 back cards that is the full card deck and be able to view the front cards and their descriptions as well. I would like to see that 
+    there are some other card spreads that I can choose.**
+    - **a.** Upon entering the Game page the user clearly sees the back cards that have a little shadow behind them to make them more visible. Since there are many cards to choose from, a scrollbar is added to save the 
         space of the page and so that the user can easily scroll for seeing and selecting all cards. 
     
-    - b. On the top right corner of the page there is a dropdown button called “Card Spread” where the user can find the “All Cards” link that will lead them to view all the front cards and their descriptions 
+    - **b.** On the top right corner of the page there is a dropdown button called “Card Spread” where the user can find the “All Cards” link that will lead them to view all the front cards and their descriptions 
         as well when clicking on them. The front cards like the back cards also have a hover effect and pointer indicating that they are clickable. 
-    - c. On clicking the “Card Spread” button there the user can see clear links with icons and names on other card spreads. The button is bright with contrasting colour against the background and therefore clearly visible. 
+    - **c.** On clicking the “Card Spread” button there the user can see clear links with icons and names on other card spreads. The button is bright with contrasting colour against the background and therefore clearly visible. 
 
-3.	As a First time Visitor, I want the position of the cards already laid out with their respective meanings under them, so that I can start playing right away without having to look up the meanings somewhere else or know how 
-    to lay out the spreads and where to put the cards.
-    - a. Upon entering the page the user directly sees the default card spread which is the “Celtic Cross”, that is made up of card containers with numbers within them, indicating where and in which order the selected cards are going 
+3.	**As a First time Visitor, I want the position of the cards already laid out with their respective meanings under them, so that I can start playing right away without having to look up the meanings somewhere else or know how 
+    to lay out the spreads and where to put the cards.**
+    - **a.** Upon entering the page the user directly sees the default card spread which is the “Celtic Cross”, that is made up of card containers with numbers within them, indicating where and in which order the selected cards are going 
     to be displayed. On clicking the back card, a front card is automatically displayed in the right order within the containers, a bounce sound is played for signalling that a card has been put inside a card container. 
 
-    - b. Under the card containers, there are meanings for each position with the card number, explaining what the position of the card means which makes it easier to do the Tarot reading. The card meanings and containers have background colour for making 
+    - **b.** Under the card containers, there are meanings for each position with the card number, explaining what the position of the card means which makes it easier to do the Tarot reading. The card meanings and containers have background colour for making 
     them more visible against the background image. 
     
-    - c. On smaller devices, the card meaning text, as well as other content, are made smaller for not breaking the card spread layout. For making the reading easier in smaller devices, a focus selector is added to the card meanings for making 
+    - **c.** On smaller devices, the card meaning text, as well as other content, are made smaller for not breaking the card spread layout. For making the reading easier in smaller devices, a focus selector is added to the card meanings for making 
     the text bigger when clicking on them. 
 
-4.	As a First time Visitor, I want to be able to view the description of the front cards by clicking on them, while still having the reading up so that I can easily change to view the other cards'
- descriptions whenever I want. I want to be able to view the front cards in a bigger size and read their descriptions which are clear and easy to read.
-    - a. When hovering over the front card in the container a hover effect and pointer is shown indicating that the cards are clickable. When a front card is clicked the card spread reading is made smaller and pushed to the left, so 3 columns are 
+4.	**As a First time Visitor, I want to be able to view the description of the front cards by clicking on them, while still having the reading up so that I can easily change to view the other cards'
+ descriptions whenever I want. I want to be able to view the front cards in a bigger size and read their descriptions which are clear and easy to read.**
+    - **a.** When hovering over the front card in the container a hover effect and pointer is shown indicating that the cards are clickable. When a front card is clicked the card spread reading is made smaller and pushed to the left, so 3 columns are 
     displayed where one is with the reading, the next is with the front card image in a bigger size and in the last is the description text of the card. 
     
-    - b. On smaller devices, the 3 columns are displayed in rows. When clicking to view the description, the background image is zoomed in too much making it look a bit ugly because the fixed position property does not work on mobile devices. 
+    - **b.** On smaller devices, the 3 columns are displayed in rows. When clicking to view the description, the background image is zoomed in too much making it look a bit ugly because the fixed position property does not work on mobile devices. 
     To fix that the background image is moved to the top in a smaller size and is ending where the back cards are, making the cutting of the image blend better with what comes next, then a gradient background colour matching the background 
     image continues to fill up the rest of the page, which makes it look prettier. 
     
-    - c. The text for the description has a background colour behind to make it easier to read and is divided in sections when needed. The user can easily click to change the descriptions of the front cards by clicking in the minified reading where 
+    - **c.** The text for the description has a background colour behind to make it easier to read and is divided in sections when needed. The user can easily click to change the descriptions of the front cards by clicking in the minified reading where 
     the card spread is, there is an option to go back to only seeing the reading by clicking the ‘Back To Reading’ button which is above the card spread. 
 
-5.	As a Returning Visitor, I want to be able to change the Tarot card spread and see what other spreads there are and easily locate and play them.
-    - a. On clicking the clearly visible “Card Spread” button at the top right, which also has an arrow icon pointing downwards indicating that there is a drop down menu within it, it pops up links with names on different card spreads. When clicking on “The Diamond” link, the user sees the card spread layout for The Diamond spread, the same happens when clicking on “The Key”, “The Mirror” and the “Celtic Cross” link, the user can see different card spread layouts and card meanings. Under each card spread layout the user sees that the text in the About section changes to explain the current layout above it. 
+5.	**As a Returning Visitor, I want to be able to change the Tarot card spread and see what other spreads there are and easily locate and play them.**
+    - **a.** On clicking the clearly visible “Card Spread” button at the top right, which also has an arrow icon pointing downwards indicating that there is a drop down menu within it, it pops up links with names on different card spreads. When clicking on “The Diamond” link, the user sees the card spread layout for The Diamond spread, the same happens when clicking on “The Key”, “The Mirror” and the “Celtic Cross” link, the user can see different card spread layouts and card meanings. Under each card spread layout the user sees that the text in the About section changes to explain the current layout above it. 
 
-6.	As a Returning Visitor, I want to see where I can contact the creator of the Tarot to request for more card spreads or other questions I might have. 
-    - a. At the bottom of the Game page, the user sees the footer with a large white bolded text asking if the user has any questions, below it there is a clearly visible yellow “Contact Me” button. When clicking the button, a contact modal is popped up and the user sees a conventional contact form with a big coloured “Send Message” button which clearly shows how to send a message. 
+6.	**As a Returning Visitor, I want to see where I can contact the creator of the Tarot to request for more card spreads or other questions I might have. **
+    - **a.** At the bottom of the Game page, the user sees the footer with a large white bolded text asking if the user has any questions, below it there is a clearly visible yellow “Contact Me” button. When clicking the button, a contact modal is popped up and the user sees a conventional contact form with a big coloured “Send Message” button which clearly shows how to send a message. 
 
-    - b. When clicking on sending the message without filling out the form a waring text with a red background colour and x icon is shown below the non-valid inputs, indicating that the inputs must be filled in correctly before sending a message.
+    - **b.** When clicking on sending the message without filling out the form a waring text with a red background colour and x icon is shown below the non-valid inputs, indicating that the inputs must be filled in correctly before sending a message.
 
-    - c. When filling out the form correctly a green background colour and v icon is shown under the inputs when clicking the “Send Message” button. When waiting for the message to be sent a “Sending…” text with loading dot animation is shown with a purple background until the message has been sent, then when the message has been sent successfully a text is shown with a blue background to coniform that. 
+    - **c.** When filling out the form correctly a green background colour and v icon is shown under the inputs when clicking the “Send Message” button. When waiting for the message to be sent a “Sending…” text with loading dot animation is shown with a purple background until the message has been sent, then when the message has been sent successfully a text is shown with a blue background to coniform that. 
 
 
 ### Additional Testing 
