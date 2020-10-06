@@ -19,19 +19,6 @@
     min-height: 100vh;
 }
 
-@media screen and (max-width: 500px) {
-    .bg-color {
-        background: linear-gradient(#092468, #8137c5, #fcbccd);
-        background-size: auto;
-    }
-
-    .bg-mobile {
-        background: url(../images/space.jpg) no-repeat;
-        background-size: contain;
-        width: 100%;
-    }
-}
-
 #navbar {
     background: transparent;
     color: rgb(247, 226, 168); 
@@ -41,30 +28,6 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 50px;
-}
-
-@media screen and (min-width: 501px) {
-    #navbar {
-        margin-bottom: 0;
-    }
-
-    .space {
-        display: none;
-    }
-}
-
-.logo > a {
-    font-family: 'Archivo Black', sans-serif;
-    font-weight: 700;
-    font-size: 27px;
-    color: #c1e2ff;
-    text-shadow: 1px 0px 20px #c1e2ff;
-}
-
-@media screen and (max-width: 420px) {
-    .logo > a {
-        font-size: 20px;
-    }
 }
 
 .logo > a:hover {
@@ -141,18 +104,6 @@ a.dropdown-item  {
     padding: 10px; 
     margin-bottom: 25px;
     margin-top: 20px;
-}
-
-@media screen and (max-width: 361px) {
-    .scroll-cards {
-        margin-top: 10px;
-    }
-}
-
-@media screen and (max-width: 321px) {
-    .scroll-cards {
-        margin-top: -13px;
-    }
 }
 
 /* SCROLLBAR */
@@ -251,25 +202,6 @@ a.dropdown-item  {
     padding: 5px;
 }
 
-@media screen and (max-width: 800px) {
-    .mirror-text2 {
-        font-size: 15px;
-    }
-}
-
-@media screen and (max-width: 420px) {
-    .mirror-text2 {
-        font-size: 13px;
-    }
-}
-
-@media screen and (max-width: 320px) {
-    .mirror-text2 {
-        font-size: 10px !important;
-    }
-}
-
-
 /*for jQuery for changing the card-container size on description click*/
 .card-container2 {
     width: 70px !important;
@@ -287,65 +219,6 @@ a.dropdown-item  {
     outline: none;
     transform: scale(1.4, 1.4) !important;
     z-index: 10;
-}
-
-@media screen and (min-width: 767px) {
-    .card-container {
-        width: 130px;
-        height: 185px;
-    }
-
-    .card-meaning {
-        font-size: 14px;
-        width: 130px;
-    }
-}
-
-@media screen and (max-width: 766px) {
-    .card-meaning:focus,
-    .card-meaning2:focus {
-        outline: none;
-        transform: scale(1.3, 1.5) !important;
-        z-index: 10;
-    }
-
-    .card-meaning {
-        overflow-wrap: break-word;
-    }
-}
-
-@media screen and (max-width: 376px) {
-    .card-back,
-    .card-container,
-    .card-container2 {
-        height: 87px !important;
-        width: 61px !important;
-    }
-
-    .card-meaning,
-    .card-meaning2 {
-        font-size: 8.8px !important;
-        width: 61px !important;
-    }
-
-    .mirror-text2 {
-        font-size: 12px;
-    }
-}
-
-@media screen and (max-width: 320px) {
-    .card-back,
-    .card-container,
-    .card-container2 {
-        height: 80px !important;
-        width: 53px !important;
-    }
-
-    .card-meaning,
-    .card-meaning2 {
-        font-size: 7px !important;
-        width: 53px !important;
-    }
 }
 
 /*---------------------description-----------------------*/
@@ -394,12 +267,6 @@ button.btn.btn-light {
   box-shadow: 2px 2px 5px #033819;
   margin-bottom: 20px;
   margin-top: -20px;
-}
-
-@media screen and (max-width: 415px) {
-    button.btn.btn-light {
-        margin-top: -50px;
-    }
 }
 
 button.btn.btn-light:hover {
@@ -508,12 +375,6 @@ form {
   text-shadow: 1px 1px rgb(75, 5, 75);
 }
 
-@media screen and (max-width: 914px) {
-    form {
-        width: 90%;
-    }
-}
-
 #x {
   position: absolute;
   top: 0;
@@ -601,11 +462,21 @@ h5 {
 }
 
 @keyframes dotty {
-  0%   { content: ''; }
-  25%  { content: '.'; }
-  50%  { content: '..'; }
-  75%  { content: '...'; }
-  100% { content: ''; }
+    0% { 
+        content: ''; 
+    }
+    25% { 
+        content: '.'; 
+    }
+    50% { 
+        content: '..'; 
+    }
+    75% { 
+        content: '...'; 
+    }
+    100% { 
+        content: ''; 
+    }
 }
 
 /*---------------------index.html-----------------------*/
@@ -638,85 +509,6 @@ h5 {
 .index-nav:hover {
      background: #8c191d;
      cursor: pointer;
-}
-
-@media screen and (min-width: 801px) {
-    .header-mobile {
-        display: none;
-    }
-
-    .text-mobile {
-        display: none;
-    }
-}
-
- @media (min-height: 1366px) and (min-width: 1024px), /*for ipad Pro*/
- (max-width: 800px) /*for mobile*/ {
-    #cover-container { 
-        display: none;
-    }
-    
-    #start-bg {
-        height: 100vh;
-        background: url("../images/mobile-zen.jpg") no-repeat center center;
-        background-attachment: fixed;
-        background-size: cover;
-    } 
-
-    .index-nav {
-        padding-top: 5px;
-        background: #b42125;
-        position: absolute;
-        bottom: 30px;
-        width: 100%;
-        border: 3px solid black;
-    }
-
-    .start-button {
-        position: absolute;
-        font-size: 20px;
-        margin: 0 auto;
-        top: 10px;
-        width: 100%;
-    }
-
-    #play {
-        width: 300px;
-    }
-
-    .header-mobile {
-        font-weight: bolder;
-        color: white;
-        display: block;
-        font-family: 'Archivo Black', sans-serif;
-        font-size: 30px;
-    }
-
-    p > span,
-    .info,
-    #about {
-        font-size: 16px;
-    }
-}
-
-/*for iPads*/
-@media (min-height: 1366px) and (min-width: 1024px), 
-(min-width: 768px) and (max-width: 799px) { 
-    .index-nav {
-        padding-top: 10px;
-        height: 90px;
-        width: 100%;
-    }
-
-    #play {
-        font-size: 35px;
-        width: 400px;
-        height: 90px;
-    }
-
-    .header-mobile {
-        font-size: 50px;
-    }
 }
 
 /*-------------------hover effects----------------------*/
@@ -802,6 +594,225 @@ footer {
 h4 {
     color: white;
     padding-top: 7px;
+}
+
+/*-------------------media queries----------------------*/
+
+@media screen and (max-width: 500px) {
+    .bg-color {
+        background: linear-gradient(#092468, #8137c5, #fcbccd);
+        background-size: auto;
+    }
+
+    .bg-mobile {
+        background: url(../images/space.jpg) no-repeat;
+        background-size: contain;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 501px) {
+    #navbar {
+        margin-bottom: 0;
+    }
+
+    .space {
+        display: none;
+    }
+}
+
+.logo > a {
+    font-family: 'Archivo Black', sans-serif;
+    font-weight: 700;
+    font-size: 27px;
+    color: #c1e2ff;
+    text-shadow: 1px 0px 20px #c1e2ff;
+}
+
+@media screen and (max-width: 420px) {
+    .logo > a {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 361px) {
+    .scroll-cards {
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 321px) {
+    .scroll-cards {
+        margin-top: -13px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .mirror-text2 {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .mirror-text2 {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .mirror-text2 {
+        font-size: 10px !important;
+    }
+}
+
+@media screen and (min-width: 767px) {
+    .card-container {
+        width: 130px;
+        height: 185px;
+    }
+
+    .card-meaning {
+        font-size: 14px;
+        width: 130px;
+    }
+}
+
+@media screen and (max-width: 766px) {
+    .card-meaning:focus,
+    .card-meaning2:focus {
+        outline: none;
+        transform: scale(1.3, 1.5) !important;
+        z-index: 10;
+    }
+
+    .card-meaning {
+        overflow-wrap: break-word;
+    }
+}
+
+@media screen and (max-width: 376px) {
+    .card-back,
+    .card-container,
+    .card-container2 {
+        height: 87px !important;
+        width: 61px !important;
+    }
+
+    .card-meaning,
+    .card-meaning2 {
+        font-size: 8.8px !important;
+        width: 61px !important;
+    }
+
+    .mirror-text2 {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .card-back,
+    .card-container,
+    .card-container2 {
+        height: 80px !important;
+        width: 53px !important;
+    }
+
+    .card-meaning,
+    .card-meaning2 {
+        font-size: 7px !important;
+        width: 53px !important;
+    }
+}
+
+@media screen and (max-width: 415px) {
+    button.btn.btn-light {
+        margin-top: -50px;
+    }
+}
+
+@media screen and (max-width: 914px) {
+    form {
+        width: 90%;
+    }
+}
+
+@media screen and (min-width: 801px) {
+    .header-mobile {
+        display: none;
+    }
+
+    .text-mobile {
+        display: none;
+    }
+}
+
+ @media (min-height: 1366px) and (min-width: 1024px), /*for ipad Pro*/
+ (max-width: 800px) /*for mobile*/ {
+    #cover-container { 
+        display: none;
+    }
+    
+    #start-bg {
+        height: 100vh;
+        background: url("../images/mobile-zen.jpg") no-repeat center center;
+        background-attachment: fixed;
+        background-size: cover;
+    } 
+
+    .index-nav {
+        padding-top: 5px;
+        background: #b42125;
+        position: absolute;
+        bottom: 30px;
+        width: 100%;
+        border: 3px solid black;
+    }
+
+    .start-button {
+        position: absolute;
+        font-size: 20px;
+        margin: 0 auto;
+        top: 10px;
+        width: 100%;
+    }
+
+    #play {
+        width: 300px;
+    }
+
+    .header-mobile {
+        font-weight: bolder;
+        color: white;
+        display: block;
+        font-family: 'Archivo Black', sans-serif;
+        font-size: 30px;
+    }
+
+    p > span,
+    .info,
+    #about {
+        font-size: 16px;
+    }
+}
+
+/*for iPads*/
+@media (min-height: 1366px) and (min-width: 1024px), 
+(min-width: 768px) and (max-width: 799px) { 
+    .index-nav {
+        padding-top: 10px;
+        height: 90px;
+        width: 100%;
+    }
+
+    #play {
+        font-size: 35px;
+        width: 400px;
+        height: 90px;
+    }
+
+    .header-mobile {
+        font-size: 50px;
+    }
 }
 
 @media screen and (max-width: 414px) {

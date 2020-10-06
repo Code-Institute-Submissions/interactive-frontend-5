@@ -1,87 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Game - Osho Zen Tarot</title>
-
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="shortcut icon" type="image/jpg" href="assets/images/zenicon.png">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
-
-    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js">
-    </script>
-    <script>
-        (function(){
-            emailjs.init("user_AVWl7AxkQOq582h8jglh3");
-        })();
-    </script>
-
-</head>
-<body>
-
-    <div class="bg-color">
-    <div class="bg-mobile">
-        <!--Sound for Game Play-->
-        <audio id="bounce">
-            <source src="assets/sound/bounce.mp3" type="audio/mp3"> 
-        </audio>
-
-        <!--Nav-->
-        <nav id="navbar">
-            <h5 class="text-left logo"> <a href="index.html">OSHO Zen Tarot</a></h5> 
-            <div class="btn-group" role="group">
-                <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Card Spread
-                </button>
-                <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
-                    <a class="dropdown-item the-diamond" href="#"><i class="fas fa-gem"></i> &nbsp; The Diamond</a>
-                    <a class="dropdown-item the-key" href="#"><i class="fab fa-keycdn"></i> &nbsp; The Key</a>
-                    <a class="dropdown-item the-mirror" href="#"><i class="fas fa-hands"></i> &nbsp; The Mirror</a>
-                    <a class="dropdown-item celtic-cross" href="#"><i class="fas fa-cross"></i> &nbsp; The Celtic Cross</a>
-                    <a class="dropdown-item all-cards" href="#"><i class="fas fa-th"></i> &nbsp; All Cards</a>
-                </div>
-            </div>  
-        </nav>
-
-    <!--Contact Modal-->
-    <div class="pop-bg d-none">
-        <div class="pop-box">
-            <form id="form">
-                <h5 class="text-center">CONTACT ME</h5>
-                <div class="clear" id="success"></div>
-                <input placeholder="Name" type="text" id="name" name="name">
-                <p class="clear" id="valid-name"></p>
-                <input placeholder="Email" type="email" id="email" name="email">
-                <p class="clear" id="valid-email"></p>
-                <textarea rows="4" cols="50" id="message" placeholder="Message" name="message"  ></textarea>
-                <p class="clear" id="valid-message"></p>
-                <div class="text-center">
-                    <button type="button" class="message-button" onclick="checkRegEx()">Send Message</button>
-                </div>
-            <p id="x" onclick="exit()"><i class="fas fa-times"></i></p>
-            </form>
-        </div>
-    </div>
-
-        <!--space for image-->
-        <div class="container">
-            <div class="row">
-                <div class="col-12 space hidden-card">
-                    <p><span><strong>Instructions:</strong>
-                        Click the cards you want to choose.
-                    </span></p>
-                </div>
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Game - Osho Zen Tarot</title>
+      <link rel="stylesheet" href="assets/css/style.css">
+      <link rel="shortcut icon" type="image/jpg" href="assets/images/zenicon.png">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover.css">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+      <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
+      <script>
+         (function(){
+             emailjs.init("user_AVWl7AxkQOq582h8jglh3");
+         })();
+      </script>
+   </head>
+   <body>
+      <div class="bg-color">
+         <div class="bg-mobile">
+            <!--Sound for Game Play-->
+            <audio id="bounce">
+               <source src="assets/sound/bounce.mp3" type="audio/mp3">
+            </audio>
+            <!--Nav-->
+            <nav id="navbar">
+               <h5 class="text-left logo"> <a href="index.html">OSHO Zen Tarot</a></h5>
+               <div class="btn-group" role="group">
+                  <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Card Spread
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+                     <a class="dropdown-item the-diamond" href="#"><i class="fas fa-gem"></i> &nbsp; The Diamond</a>
+                     <a class="dropdown-item the-key" href="#"><i class="fab fa-keycdn"></i> &nbsp; The Key</a>
+                     <a class="dropdown-item the-mirror" href="#"><i class="fas fa-hands"></i> &nbsp; The Mirror</a>
+                     <a class="dropdown-item celtic-cross" href="#"><i class="fas fa-cross"></i> &nbsp; The Celtic Cross</a>
+                     <a class="dropdown-item all-cards" href="#"><i class="fas fa-th"></i> &nbsp; All Cards</a>
+                  </div>
+               </div>
+            </nav>
+            <!--Contact Modal-->
+            <div class="pop-bg d-none">
+               <div class="pop-box">
+                  <form id="form">
+                     <h5 class="text-center">CONTACT ME</h5>
+                     <div class="clear" id="success"></div>
+                     <input placeholder="Name" type="text" id="name" name="name">
+                     <p class="clear" id="valid-name"></p>
+                     <input placeholder="Email" type="email" id="email" name="email">
+                     <p class="clear" id="valid-email"></p>
+                     <textarea rows="4" cols="50" id="message" placeholder="Message" name="message"  ></textarea>
+                     <p class="clear" id="valid-message"></p>
+                     <div class="text-center">
+                        <button type="button" class="message-button" onclick="checkRegEx()">Send Message</button>
+                     </div>
+                     <p id="x" onclick="exit()"><i class="fas fa-times"></i></p>
+                  </form>
+               </div>
             </div>
-        </div>
-
-        <!--Back Cards in Scroll-->
-        <div class="container">
-            <div class="row">
-                <div class="col-12 scroll-cards height-col">
-                    <div class="back-cards"> 
+            <!--space for image-->
+            <div class="container">
+               <div class="row">
+                  <div class="col-12 space hidden-card">
+                     <p><span><strong>Instructions:</strong>
+                        Click the cards you want to choose.
+                        </span>
+                     </p>
+                  </div>
+               </div>
+            </div>
+            <!--Back Cards in Scroll-->
+            <div class="container">
+               <div class="row">
+                  <div class="col-12 scroll-cards height-col">
+                     <div class="back-cards"> 
                         <img src="assets/images/Abundance-back.jpg" class="card-back" alt="card-back">
                         <img src="assets/images/Adventure-back.jpg" class="card-back" alt="card-back">
                         <img src="assets/images/Aloneness-back.jpg" class="card-back" alt="card-back">
@@ -161,204 +153,186 @@
                         <img src="assets/images/TurningIn-back.jpg" class="card-back" alt="card-back">
                         <img src="assets/images/Understanding-back.jpg" class="card-back" alt="card-back">
                         <img src="assets/images/WeAreTheWorld-back.jpg" class="card-back" alt="card-back">
-                    </div>
-                </div>
+                     </div>
+                  </div>
+               </div>
             </div>
-        </div>
-
-        </div><!--bg-mobile-->
-
+         </div>
+         <!--bg-mobile-->
          <!--Instructions-->
-        <div class="container">
+         <div class="container">
             <div class="row">
-                <div class="col-12 instructions">
-                    <p><span><strong>Instructions:</strong>
-                        Click the cards above that you want to choose.
-                    </span></p>
-                </div>
+               <div class="col-12 instructions">
+                  <p><span><strong>Instructions:</strong>
+                     Click the cards above that you want to choose.
+                     </span>
+                  </p>
+               </div>
             </div>
-        </div>
-
-        <!--The Tarot Game-->
-        <div class="container-fluid">
+         </div>
+         <!--The Tarot Game-->
+         <div class="container-fluid">
             <div class="row justify-content-center row-game">
-                <div class="col-12 game">
-
-                    <!--Back to Reading Button-->
-                    <div class="row">  
-                        <div class="col-12">
-                            <button type="button" onclick="backToReading()" class="btn btn-light BTR d-none">Back To Reading</button>
+               <div class="col-12 game">
+                  <!--Back to Reading Button-->
+                  <div class="row">
+                     <div class="col-12">
+                        <button type="button" onclick="backToReading()" class="btn btn-light BTR d-none">Back To Reading</button>
+                     </div>
+                  </div>
+                  <!--card row 1-->
+                  <div class="column">
+                     <div class="card-container card-nr hidden-card">...</div>
+                     <div class="card-container card-nr hidden-card mirror mirrorhide">...</div>
+                     <div class="card-container card-nr key key8 mirror mirror12 hidden-card">...</div>
+                     <div class="card-container card-nr hidden-card mirror mirror-text text1">...</div>
+                     <div class="card-container card-nr" id="10">10</div>
+                  </div>
+                  <!--meaning row 1-->
+                  <div class="column">
+                     <p class="card-meaning hidden-card" tabindex="0">...</p>
+                     <p class="card-meaning hidden-card" tabindex="0">...</p>
+                     <p class="card-meaning key key-p8 mirror mirror-p12 hidden-card" tabindex="0">12.MIRROR</p>
+                     <p class="card-meaning hidden-card" tabindex="0">...</p>
+                     <p class="card-meaning" tabindex="0">10.THE RESULT/ KEY</p>
+                  </div>
+                  <!--card row 2-->
+                  <div class="column">
+                     <div class="card-container card-nr hidden-card">...</div>
+                     <div class="card-container card-nr key key5 hidden-card">...</div>
+                     <div class="card-container card-nr diamond diamond5 key key6 mirror mirror11" id="4">4</div>
+                     <div class="card-container card-nr key key7 hidden-card">...</div>
+                     <div class="card-container card-nr" id="9">9</div>
+                  </div>
+                  <!--meaning row 2-->
+                  <div class="column">
+                     <p class="card-meaning hidden-card" tabindex="0">...</p>
+                     <p class="card-meaning key key-p5 hidden-card" tabindex="0">...</p>
+                     <p class="card-meaning diamond diamond-p5 key key-p6 mirror mirror-p11" tabindex="0">4.CONSCIOUS INFLUENCES</p>
+                     <p class="card-meaning key key-p7 hidden-card" tabindex="0">...</p>
+                     <p class="card-meaning" tabindex="0">9.WISHES/ REFLECTIONS</p>
+                  </div>
+                  <!--card row 3-->
+                  <div class="column">
+                     <div class="card-container card-nr" id="5">5</div>
+                     <div class="card-container card-nr diamond diamond2 mirror mirror3" id="1">1</div>
+                     <div class="card-container card-nr diamond diamond1 key key4 mirror mirror10" id="2">2</div>
+                     <div class="card-container card-nr diamond diamond3 mirror mirror6" id="6">6</div>
+                     <div class="card-container card-nr" id="8">8</div>
+                  </div>
+                  <!--meaning row 3-->
+                  <div class="column">
+                     <p class="card-meaning" tabindex="0">5.OLD HABITS</p>
+                     <p class="card-meaning diamond diamond-p2 mirror mirror-p3" tabindex="0">1.THE TOPIC</p>
+                     <p class="card-meaning diamond diamond-p1 key key-p4 mirror mirror-p10" tabindex="0">2.DARKENING/ OBSTRUCTING</p>
+                     <p class="card-meaning diamond diamond-p3 mirror mirror-p6" tabindex="0">6.NEW HABITS</p>
+                     <p class="card-meaning" tabindex="0">8.EXTERNAL ATTRACTION</p>
+                  </div>
+                  <!--card row 4-->
+                  <div class="column">
+                     <div class="card-container card-nr hidden-card">...</div>
+                     <div class="card-container card-nr keyhide mirror mirror2 hidden-card">...</div>
+                     <div class="card-container mirrorhide card-nr diamond diamond4 key key2" id="3">3</div>
+                     <div class="card-container card-nr key key3 mirror mirror5 hidden-card">...</div>
+                     <div class="card-container card-nr" id="7">7</div>
+                  </div>
+                  <!--meaning row 4-->
+                  <div class="column">
+                     <p class="card-meaning hidden-card" tabindex="0">...</p>
+                     <p class="card-meaning mirror mirror-p2 hidden-card keyhide" tabindex="0">...</p>
+                     <p class="card-meaning mirrorhide diamond diamond-p4 key key-p2" tabindex="0">3.UNCONSCIOUS INFLUENCES</p>
+                     <p class="card-meaning key key-p3 mirror mirror-p5 hidden-card" tabindex="0">...</p>
+                     <p class="card-meaning" tabindex="0">7.PERSONAL FEELINGS</p>
+                  </div>
+                  <!--card row 5-->
+                  <div class="column d-none key-dnone">
+                     <div class="card-container card-nr">...</div>
+                     <div class="card-container card-nr mirror mirror1">...</div>
+                     <div class="card-container card-nr key key1 mirror mirror9">...</div>
+                     <div class="card-container card-nr mirror mirror4">...</div>
+                     <div class="card-container card-nr">...</div>
+                  </div>
+                  <!--meaning row 5-->
+                  <div class="column d-none key-dnone">
+                     <p class="card-meaning" tabindex="0">...</p>
+                     <p class="card-meaning mirror mirror-p1" tabindex="0">...</p>
+                     <p class="card-meaning key key-p1 mirror mirror-p9" tabindex="0">...</p>
+                     <p class="card-meaning mirror mirror-p4" tabindex="0">...</p>
+                     <p class="card-meaning" tabindex="0">...</p>
+                  </div>
+                  <!--card row 6-->
+                  <div class="column d-none">
+                     <div class="card-container card-nr">...</div>
+                     <div class="card-container card-nr mirror mirror-text text2">...</div>
+                     <div class="card-container card-nr mirror mirror8">...</div>
+                     <div class="card-container card-nr mirror mirror-text text3">...</div>
+                     <div class="card-container card-nr">...</div>
+                  </div>
+                  <!--meaning row 6-->
+                  <div class="column d-none">
+                     <p class="card-meaning" tabindex="0">...</p>
+                     <p class="card-meaning" tabindex="0">...</p>
+                     <p class="card-meaning mirror mirror-p8" tabindex="0">...</p>
+                     <p class="card-meaning" tabindex="0">...</p>
+                     <p class="card-meaning" tabindex="0">...</p>
+                  </div>
+                  <!--card row 7-->
+                  <div class="column d-none">
+                     <div class="card-container card-nr">...</div>
+                     <div class="card-container card-nr">...</div>
+                     <div class="card-container card-nr mirror mirror7">...</div>
+                     <div class="card-container card-nr">...</div>
+                     <div class="card-container card-nr">...</div>
+                  </div>
+                  <!--meaning row 7-->
+                  <div class="column d-none">
+                     <p class="card-meaning" tabindex="0">...</p>
+                     <p class="card-meaning" tabindex="0">...</p>
+                     <p class="card-meaning mirror mirror-p7" tabindex="0">...</p>
+                     <p class="card-meaning" tabindex="0">...</p>
+                     <p class="card-meaning" tabindex="0">...</p>
+                  </div>
+                  <!--About card spread-->
+                  <div class="container">
+                     <div class="row">
+                        <div class="col-12 about-spread">
+                           <p> <span id="about">This traditional 'Celtic Cross' spread is used to find clarity
+                              on a specific topic and also for general reading.
+                              In the Osho Zen Tarot, the positions of the cards
+                              have the following meaning: </span>
+                           </p>
                         </div>
-                    </div>
-                    
-                    <!--card row 1-->
-                    <div class="column">
-                        <div class="card-container card-nr hidden-card">...</div>
-                        <div class="card-container card-nr hidden-card mirror mirrorhide">...</div>
-                        <div class="card-container card-nr key key8 mirror mirror12 hidden-card">...</div>
-                        <div class="card-container card-nr hidden-card mirror mirror-text text1">...</div>
-                        <div class="card-container card-nr" id="10">10</div>
-                    </div>
-
-                    <!--meaning row 1-->
-                    <div class="column">
-                        <p class="card-meaning hidden-card" tabindex="0">...</p>
-                        <p class="card-meaning hidden-card" tabindex="0">...</p>
-                        <p class="card-meaning key key-p8 mirror mirror-p12 hidden-card" tabindex="0">12.MIRROR</p>
-                        <p class="card-meaning hidden-card" tabindex="0">...</p>
-                        <p class="card-meaning" tabindex="0">10.THE RESULT/ KEY</p>
-                    </div>
-
-                    <!--card row 2-->
-                    <div class="column">
-                        <div class="card-container card-nr hidden-card">...</div>
-                        <div class="card-container card-nr key key5 hidden-card">...</div>
-                        <div class="card-container card-nr diamond diamond5 key key6 mirror mirror11" id="4">4</div>
-                        <div class="card-container card-nr key key7 hidden-card">...</div>
-                        <div class="card-container card-nr" id="9">9</div>
-                    </div>
-
-                    <!--meaning row 2-->
-                    <div class="column">
-                        <p class="card-meaning hidden-card" tabindex="0">...</p>
-                        <p class="card-meaning key key-p5 hidden-card" tabindex="0">...</p>
-                        <p class="card-meaning diamond diamond-p5 key key-p6 mirror mirror-p11" tabindex="0">4.CONSCIOUS INFLUENCES</p>
-                        <p class="card-meaning key key-p7 hidden-card" tabindex="0">...</p>
-                        <p class="card-meaning" tabindex="0">9.WISHES/ REFLECTIONS</p>
-                    </div>
-
-                    <!--card row 3-->
-                    <div class="column">
-                        <div class="card-container card-nr" id="5">5</div>
-                        <div class="card-container card-nr diamond diamond2 mirror mirror3" id="1">1</div>
-                        <div class="card-container card-nr diamond diamond1 key key4 mirror mirror10" id="2">2</div>
-                        <div class="card-container card-nr diamond diamond3 mirror mirror6" id="6">6</div>
-                        <div class="card-container card-nr" id="8">8</div>
-                    </div>
-
-                    <!--meaning row 3-->
-                    <div class="column">
-                        <p class="card-meaning" tabindex="0">5.OLD HABITS</p>
-                        <p class="card-meaning diamond diamond-p2 mirror mirror-p3" tabindex="0">1.THE TOPIC</p>
-                        <p class="card-meaning diamond diamond-p1 key key-p4 mirror mirror-p10" tabindex="0">2.DARKENING/ OBSTRUCTING</p>
-                        <p class="card-meaning diamond diamond-p3 mirror mirror-p6" tabindex="0">6.NEW HABITS</p>
-                        <p class="card-meaning" tabindex="0">8.EXTERNAL ATTRACTION</p>
-                    </div>
-
-                    <!--card row 4-->
-                    <div class="column">
-                        <div class="card-container card-nr hidden-card">...</div>
-                        <div class="card-container card-nr keyhide mirror mirror2 hidden-card">...</div>
-                        <div class="card-container mirrorhide card-nr diamond diamond4 key key2" id="3">3</div>
-                        <div class="card-container card-nr key key3 mirror mirror5 hidden-card">...</div>
-                        <div class="card-container card-nr" id="7">7</div>
-                    </div>
-
-                    <!--meaning row 4-->
-                    <div class="column">
-                        <p class="card-meaning hidden-card" tabindex="0">...</p>
-                        <p class="card-meaning mirror mirror-p2 hidden-card keyhide" tabindex="0">...</p>
-                        <p class="card-meaning mirrorhide diamond diamond-p4 key key-p2" tabindex="0">3.UNCONSCIOUS INFLUENCES</p>
-                        <p class="card-meaning key key-p3 mirror mirror-p5 hidden-card" tabindex="0">...</p>
-                        <p class="card-meaning" tabindex="0">7.PERSONAL FEELINGS</p>
-                    </div>
-
-                    <!--card row 5-->
-                    <div class="column d-none key-dnone">
-                        <div class="card-container card-nr">...</div>
-                        <div class="card-container card-nr mirror mirror1">...</div>
-                        <div class="card-container card-nr key key1 mirror mirror9">...</div>
-                        <div class="card-container card-nr mirror mirror4">...</div>
-                        <div class="card-container card-nr">...</div>
-                    </div>
-
-                    <!--meaning row 5-->
-                    <div class="column d-none key-dnone">
-                        <p class="card-meaning" tabindex="0">...</p>
-                        <p class="card-meaning mirror mirror-p1" tabindex="0">...</p>
-                        <p class="card-meaning key key-p1 mirror mirror-p9" tabindex="0">...</p>
-                        <p class="card-meaning mirror mirror-p4" tabindex="0">...</p>
-                        <p class="card-meaning" tabindex="0">...</p>
-                    </div>
-
-                    <!--card row 6-->
-                    <div class="column d-none">
-                        <div class="card-container card-nr">...</div> 
-                        <div class="card-container card-nr mirror mirror-text text2">...</div>
-                        <div class="card-container card-nr mirror mirror8">...</div>
-                        <div class="card-container card-nr mirror mirror-text text3">...</div>
-                        <div class="card-container card-nr">...</div>
-                    </div>
-
-                    <!--meaning row 6-->
-                    <div class="column d-none">
-                        <p class="card-meaning" tabindex="0">...</p>
-                        <p class="card-meaning" tabindex="0">...</p>
-                        <p class="card-meaning mirror mirror-p8" tabindex="0">...</p>
-                        <p class="card-meaning" tabindex="0">...</p>
-                        <p class="card-meaning" tabindex="0">...</p>
-                    </div>
-
-                    <!--card row 7-->
-                    <div class="column d-none">
-                        <div class="card-container card-nr">...</div>
-                        <div class="card-container card-nr">...</div>
-                        <div class="card-container card-nr mirror mirror7">...</div>
-                        <div class="card-container card-nr">...</div>
-                        <div class="card-container card-nr">...</div>
-                    </div>
-
-                    <!--meaning row 7-->
-                    <div class="column d-none">
-                        <p class="card-meaning" tabindex="0">...</p>
-                        <p class="card-meaning" tabindex="0">...</p>
-                        <p class="card-meaning mirror mirror-p7" tabindex="0">...</p>
-                        <p class="card-meaning" tabindex="0">...</p>
-                        <p class="card-meaning" tabindex="0">...</p>
-                    </div>
-
-                    <!--About card spread-->
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-12 about-spread">
-                                <p> <span id="about">This traditional 'Celtic Cross' spread is used to find clarity
-                                    on a specific topic and also for general reading.
-                                    In the Osho Zen Tarot, the positions of the cards
-                                    have the following meaning: </span>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div><!--/col_1-->
-
-                <!--Big Card image-->
-                <div class="col-12 col-lg-4 col-md-6 d-none image text-center">
-                </div><!--/col_2-->
-
-                 <!--Description of the Cards-->
-                <div class="col-12 col-xl-4 col-lg-5 col-md-6 d-none card-info">
-                    <p class="text-center" id="card-name"></p>
-                    <p class="info" id="info-right"></p>
-                </div><!--/col_3-->
-
-            </div><!--/row-->
-        </div><!--/container-->  
-    </div><!--/bg-color-->
-  
-
-    <!--Footer-->
-    <footer class="text-center">
-        <h4>Any Questions?</h4> 
-        <button type="button" class="btn btn-light contact" onclick="popModal()">Contact Me</button>  
-        <p class="copy" >Created by &copy; Daniela Krstevska </p>
-    </footer>
-    
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="assets/js/data.js"></script>
-    <script src="assets/js/script.js"></script>
-    <!--Bootstrap js-->
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-   
-</body>
+                     </div>
+                  </div>
+               </div>
+               <!--/col_1-->
+               <!--Big Card image-->
+               <div class="col-12 col-lg-4 col-md-6 d-none image text-center">
+               </div>
+               <!--/col_2-->
+               <!--Description of the Cards-->
+               <div class="col-12 col-xl-4 col-lg-5 col-md-6 d-none card-info">
+                  <p class="text-center" id="card-name"></p>
+                  <p class="info" id="info-right"></p>
+               </div>
+               <!--/col_3-->
+            </div>
+            <!--/row-->
+         </div>
+         <!--/container-->  
+      </div>
+      <!--/bg-color-->
+      <!--Footer-->
+      <footer class="text-center">
+         <h4>Any Questions?</h4>
+         <button type="button" class="btn btn-light contact" onclick="popModal()">Contact Me</button>  
+         <p class="copy" >Created by &copy; Daniela Krstevska </p>
+      </footer>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script src="assets/js/data.js"></script>
+      <script src="assets/js/script.js"></script>
+      <!--Bootstrap js-->
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+   </body>
 </html>
