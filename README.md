@@ -124,12 +124,14 @@ Languages Used for this project: **HTML**, **CSS** & **Javascript**.
 ### Testing User stories from UX section:
 1.   **As a First time Visitor, I want the purpose of the website to be clear and the navigation easy to use. I want to quickly figure out how to play the game and know more about the Tarot card spread.**
         - **a.** When visiting the website, the user is welcomed by an intriguing colorful book cover of the Osho Zen Tarot. On the top there is a big animated button that is constantly pulsing, drawing the user’s 
-                attention to click on it to start playing the Tarot.  On entering the Game page, the user sees a nice hero-image with a logo and button menu at the top. Below, the user sees the back cards laid out 
-                , and below them, there is an instructional text visible explaining how to start playing the Tarot.  The back cards have a hover effect and a pointer indicating that they are clickable. 
+                attention to click on it to start playing the Tarot. On the Start page, there are, besides the "Start Playing" button, an on-click attached to the hero-image that directs the user to the Game page. 
+                In smaller devices, the other on-click is attached to the Osho Zen Tarot text, so that the user has more options to enter the page and doesn't get trapped.  
     
         - **b.** The artistic hero image on the Start page tells clearly what the website is about. There is a different but similar hero-image that appears on small devices that suits the size better.
     
-        - **c.** Below the instructional text is the card spread laid out with position meanings and below the card spread the user sees an About section, explaining what the current laid out card spread is about. 
+        - **c.** On entering the Game page, the user sees a nice hero-image with a logo and button menu at the top. Below, the user sees the back cards laid out, and below them, there is an instructional text visible 
+                explaining how to start playing the Tarot.  The back cards have a hover effect and a pointer indicating that they are clickable.  Below the instructional text is the card spread laid out with position meanings 
+                and below the card spread the user sees an About section, explaining what the current laid out card spread is about. 
 
 2.  **As a First time Visitor, I would like to see that I can choose from 79 back cards that are the full card deck and be able to view the front cards and their descriptions as well. I would like to see that there are some other card spreads' that I can choose.**
     - **a.** Upon entering the Game page the user sees the back cards that have a little shadow behind them to make them more visible. Since there are many cards to choose from, a scrollbar is added to save the 
