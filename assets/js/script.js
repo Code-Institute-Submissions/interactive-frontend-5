@@ -21,7 +21,7 @@ let storeRandomCards = [];
 let selectedGame;
 
 //when clicking the front cards to view description
-function descriptionClick(index) { //this is to retrive the card info from the cards array by index
+function descriptionClick(index) { ////My mentor created this function for getting card info by index, & I added more code to it
     const clickedCard = storeRandomCards[index];
     $(".BTR").removeClass("d-none"); //to show back to reading button
     $(".game").addClass("col-xl-4");
