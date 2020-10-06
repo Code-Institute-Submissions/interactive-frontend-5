@@ -1,8 +1,7 @@
 const cards = [
-  {
+    {
     name: "Abundance",
-    description: `
-                In the East people have condemned the body, condemned matter, called matter 
+    description: `In the East people have condemned the body, condemned matter, called matter 
                 "illusory", maya - it does not really exist, it only appears to exist; it 
                 is made of the same stuff as dreams are made of. They denied the world, 
                 and that is the reason for the East remaining poor, sick, in starvation.
@@ -21,8 +20,8 @@ const cards = [
                 itself...unless you become existential, you cannot become whole. This is my 
                 contribution to humanity: the whole person.`,
     imgPath: "assets/images/Abundance-name.jpg" 
-  },
-  {
+    },
+    {
     name: "Adventure",
     description: `Adventure really has nothing to do with plans and maps and programs 
                 and organization. The Page of Rainbows represents a quality that 
@@ -56,8 +55,8 @@ const cards = [
                 Insecurity is the only way to grow, to face danger is the only way to grow, 
                 to accept the challenge of the unknown is the only way to grow.`,
     imgPath: "assets/images/Adventure-name.jpg"
-  },
-  {
+    },
+    {
     name: "Aloneness",
     description: `When you are alone you are not alone, you are simply lonely - and there 
                 is a tremendous difference between loneliness and aloneness. When you 
@@ -75,8 +74,8 @@ const cards = [
                 that you can fill the whole universe with your presence and there is 
                 no need for anybody.`,
     imgPath: "assets/images/Aloneness-name.jpg"
-  },
-   {
+    },
+    {
     name: "Awareness",
     description: `Mind can never be intelligent - only no-mind is intelligent. 
                 Only no-mind is original and radical. Only no-mind is revolutionary - 
@@ -94,8 +93,8 @@ const cards = [
                 Your whole life becomes a flame, and a flame without any smoke. 
                 That is what awareness is.`,
     imgPath: "assets/images/Awareness-name.jpg"
-  },
-     {
+    },
+    {
     name: "Beyond Illusion",
     description: `This is the only distinction between the dream and the real: reality allows you 
                 to doubt, and the dream does not allow you to doubt....
@@ -120,8 +119,8 @@ const cards = [
                 Only in the ultimate sense, from the peak of your illumination, does it 
                 become unreal, illusory.`,
     imgPath: "assets/images/BeyondIllusion-name.jpg"
-  },
-     {
+    },
+    {
     name: "Breakthrough",
     description: `To transform breakdowns into breakthroughs is the whole function of a master. 
                 The psychotherapist simply patches you up. That is his function. He is not 
@@ -143,8 +142,8 @@ const cards = [
                 not far away, but before you can reach the dawn, the dark night has to be passed 
                 through. And as the dawn comes closer, the night will become darker.`,
     imgPath: "assets/images/Breakthrough-name.jpg"
-  },
-     {
+    },
+    {
     name: "Celebration",
     description: `Life is a moment to celebrate, to enjoy. Make it fun, a celebration, and then you 
                 will enter the temple. The temple is not for the long-faced, it has never been 
@@ -158,8 +157,8 @@ const cards = [
                 don't go to the extreme. A little foolishness and a little wisdom is good, and 
                 the right combination makes you a buddha.`,
     imgPath: "assets/images/Celebration-name.jpg"
-  },
-     {
+    },
+    {
     name: "Change",
     description: `Life repeats itself mindlessly - unless you become mindful, it will go on 
                 repeating like a wheel. That's why Buddhists call it the wheel of life and 
@@ -177,8 +176,8 @@ const cards = [
                 don't see the point why one should go on living.... And it goes on and on, 
                 but you don't see the pattern. Once you see the pattern, you can get out of it.`,
     imgPath: "assets/images/Change-name.jpg"
-  },
-     {
+    },
+    {
     name: "Clinging To The Past",
     description: `These tenses--past, present and future--are not the tenses of time; 
                 they are tenses of the mind. That which is no longer before the mind 
@@ -197,8 +196,8 @@ const cards = [
                 to become yesterday. Everything is going to go out of your hands. 
                 Clinging will simply create misery. You will have to let go.`,
     imgPath: "assets/images/ClingingToThePast-name.jpg"
-  },
-     {
+    },
+    {
     name: "Comparison",
     description: `Comparison brings inferiority, superiority. When you don't compare, all inferiority, 
                 all superiority, disappears. Then you are, you are simply there. A small bush or a 
@@ -209,8 +208,8 @@ const cards = [
                 fits together. It is an organic unity: nobody is higher and nobody is lower, nobody 
                 superior, nobody inferior. Everybody is incomparably unique.`,
     imgPath: "assets/images/Comparison-name.jpg"
-  },
-     {
+    },
+    {
     name: "Completion",
     description: `This is the way of Zen, not to say things to their completion. This 
                 has to be understood; it is a very important methodology. Not to say 
@@ -229,8 +228,8 @@ const cards = [
                 constitute the world. The world will end but the mirror will remain, 
                 mirroring nothing.`,
     imgPath: "assets/images/Completion-name.jpg"
-  },
-     {
+    },
+    {
     name: "Compromise",
     description: `Don't be clever, otherwise you will remain the same, you will not change. 
                 Half-techniques on the path of love and half-techniques on the path of meditation will 
@@ -247,8 +246,8 @@ const cards = [
                 are confused, remember that you are confused. This will be the first clear-cut thing 
                 about you: that you are confused. You have started on the journey.`,
     imgPath: "assets/images/Compromise-name.jpg"
-  },
-     {
+    },
+    {
     name: "Conditioning",
     description: `Unless you drop your personality you will not be able to find your 
                 individuality. Individuality is given by existence; personality is 
@@ -269,8 +268,8 @@ const cards = [
                 not people who are absolutely dedicated to freedom. Society wants slaves 
                 because all the vested interests want obedience.`,
     imgPath: "assets/images/Conditioning-name.jpg"
-  },
-     {
+    },
+    {
     name: "Consciousness",
     description: `We come from the unknown and we go on moving into the unknown. We will come again; 
                 we have been here thousands of times, and we will be here thousands of times. 
@@ -291,8 +290,8 @@ const cards = [
                 the lesson, he is now beyond delusions. He will move from the known for 
                 the first time not into the unknown, but into the unknowable.`,
     imgPath: "assets/images/Consciousness-name.jpg"
-  },
-     {
+    },
+    {
     name: "Control",
     description: `Controlled persons are always nervous because deep down turmoil is still hidden. 
                 If you are uncontrolled, flowing, alive, then you are not nervous. There is no 
@@ -310,8 +309,8 @@ const cards = [
                 each other's energy, they don't allow each other to pour - very afraid, 
                 somehow just managing, cold and dead, in a straitjacket.`,
     imgPath: "assets/images/Control-name.jpg"
-  },
-     {
+    },
+    {
     name: "Courage",
     description: `The seed cannot know what is going to happen, the seed has never known the 
                 flower. And the seed cannot even believe that he has the potentiality to 
@@ -335,8 +334,8 @@ const cards = [
                 carried, but a dream possesses the seed and the seed moves.
                 The same is the path for man. It is arduous. Much courage will be needed.`,
     imgPath: "assets/images/Courage-name.jpg"
-  },
-     {
+    },
+    {
     name: "Creativity",
     description: `Creativity is the quality that you bring to the activity that you are doing. 
                 It is an attitude, an inner approach - how you look at things....
@@ -360,8 +359,8 @@ const cards = [
                 creator because people who have been creative have been closest to him. Love 
                 what you do. Be meditative while you are doing it - whatsoever it is!`,
     imgPath: "assets/images/Creativity-name.jpg"
-  },
-     {
+    },
+    {
     name: "Exhaustion",
     description: `A man who lives through conscience becomes hard. A man who lives 
                 through consciousness remains soft. Why?--because a man who has some 
@@ -379,8 +378,8 @@ const cards = [
                 gets a response, not a reaction. He opens his heart to your question, 
                 exposes himself to your question, responds to it....`,
     imgPath: "assets/images/Exhaustion-name.jpg"
-  },
-     {
+    },
+    {
     name: "Existence",
     description: `You are not accidental. Existence needs you. Without you something will 
                 be missing in existence and nobody can replace it. That's what gives you 
@@ -393,8 +392,8 @@ const cards = [
                 existence, and existence cares for you. Once you are clean and clear, 
                 you can see tremendous love falling on you from all dimensions.`,
     imgPath: "assets/images/Existence-name.jpg"
-  },
-     {
+    },
+    {
     name: "Experiencing",
     description: `You just look around, look into the eyes of a child, or into the eyes 
                 of your beloved, your mother, your friend - or just feel a tree. Have 
@@ -406,8 +405,8 @@ const cards = [
                 so full of flowers in your courtyard, so close to you, beckoning you, 
                 calling you again and again.`,
     imgPath: "assets/images/Experiencing-name.jpg"
-  },
-     {
+    },
+    {
     name: "Fighting",
     description: `One moment it was there, another moment it is gone. One moment we are here, 
                 and another moment we have gone. And for this simple moment, how much fuss 
@@ -417,8 +416,8 @@ const cards = [
                 to possess, trying to boss, trying to dominate - all that politics. And 
                 then the train comes and you are gone forever.`,
     imgPath: "assets/images/Fighting-name.jpg"
-  },
-     {
+    },
+    {
     name: "Flowering",
     description: `Zen wants you living, living in abundance, living in totality, living intensely - 
                 not at the minimum as Christianity wants you, but at the maximum, overflowing.
@@ -432,8 +431,8 @@ const cards = [
                 This is real compassion, this is real love: sharing your enlightenment, sharing your 
                 dance of the beyond.`,
     imgPath: "assets/images/Flowering-name.jpg"
-  },
-     {
+    },
+    {
     name: "Friendliness",
     description: `First meditate, be blissful, then much love will happen of its own accord. 
                 Then being with others is beautiful and being alone is also beautiful. Then 
@@ -450,8 +449,8 @@ const cards = [
                 the joys and all the pleasures and all the beautiful moments that you have 
                 shared with the other. With no misery, with no pain, you simply separate.`,
     imgPath: "assets/images/Friendliness-name.jpg"
-  },
-     {
+    },
+    {
     name: "Going With The Flow",
     description: `When I say "become water" I mean become a flow; don't remain stagnant. Move, 
                 and move like water. Lao Tzu says: The way of the Tao is a watercourse way. 
@@ -468,8 +467,8 @@ const cards = [
                 the lowest ground, it wants to be a nonentity. It does not want to declare itself 
                 unique, exceptional, extraordinary. It has no ego idea.`,
     imgPath: "assets/images/GoingWithTheFlow-name.jpg"
-  },
-     {
+    },
+    {
     name: "Guidance",
     description: `You have to look for guidance because you don't know your inner guide is 
                 hidden inside you. You have to find the inner guide, and that's what I 
@@ -490,8 +489,8 @@ const cards = [
                 groping for the door or hitting your head against the wall. You simply see, 
                 and there is not even a flicker of thought. You simply go out.`,
     imgPath: "assets/images/Guidance-name.jpg"
-  },
-     {
+    },
+    {
     name: "Guilt",
     description: `This moment!...this herenow...is forgotten when you start thinking in 
                 terms of achieving something. When the achieving mind arises, you lose 
@@ -512,8 +511,8 @@ const cards = [
                 live? So the one who thinks he is doing something wrong is guilty, 
                 burdened, dead before death, has already entered into the grave.`,
     imgPath: "assets/images/Guilt-name.jpg"
-  },
-     {
+    },
+    {
     name: "Harmony",
     description: `Listen to your heart, move according to your heart, whatsoever the stake: 
                 A condition of complete simplicity costing not less than everything.... 
@@ -524,8 +523,8 @@ const cards = [
                 God in deep harmony. To reach to that point you will have to find your 
                 heart, your own throb, your own beat.`,
     imgPath: "assets/images/Harmony-name.jpg"
-  },
-     {
+    },
+    {
     name: "Healing",
     description: `You carry your wound. With the ego, your whole being is a wound. And you 
                 carry it around. Nobody is interested in hurting you, nobody is positively 
@@ -550,8 +549,8 @@ const cards = [
                 Someone insults you, accept it; don't react, and see what happens. 
                 Suddenly you will feel an energy flowing in you that you have not felt before.`,
     imgPath: "assets/images/Healing-name.jpg"
-  },
-     {
+    },
+    {
     name: "Ice-olation",
     description: `We are miserable because we are too much in the self. What does it mean 
                 when I say we are too much in the self? And what exactly happens when we 
@@ -571,8 +570,8 @@ const cards = [
                 start melting and the boundaries will disappear. In love the boundaries 
                 disappear; in joy also the boundaries disappear, because joy is not cold.`,
     imgPath: "assets/images/Ice-olation-name.jpg"
-  },
-     {
+    },
+    {
     name: "Inner Voice",
     description: `If you have found your truth within yourself there is nothing more in this 
                 whole existence to find. Truth is functioning through you. When you open 
@@ -594,8 +593,8 @@ const cards = [
                 a grace, a beauty which does not belong to our mundane world, a ray of 
                 light coming from the beyond into the darkness of our world.`,
     imgPath: "assets/images/InnerVoice-name.jpg"
-  },
-     {
+    },
+    {
     name: "Innocence",
     description: `Zen says that if you drop knowledge - and within knowledge everything 
                 is included; your name, your identity, everything, because this has 
@@ -604,8 +603,8 @@ const cards = [
                 This will be a crucifixion of the persona, the personality, and there 
                 will be a resurrection of your innocence. You will become a child again, reborn.`,
     imgPath: "assets/images/Innocence-name.jpg"
-  },
-     {
+    },
+    {
     name: "Integration",
     description: `The conflict is in man. Unless it is resolved there, it cannot be resolved anywhere else. 
                 The politics is within you; it is between the two parts of the mind. A very small bridge 
@@ -627,8 +626,8 @@ const cards = [
                 of yin and yang, the meeting of the left and right, the meeting of logic and illogic, 
                 the meeting of Plato and Aristotle.`,
     imgPath: "assets/images/Integration-name.jpg"
-  },
-     {
+    },
+    {
     name: "Intensity",
     description: `Zen says: Think of all the great words and great teachings as your deadly enemy. 
                 Avoid them, because you have to find your own source. You have not to be a 
@@ -641,8 +640,8 @@ const cards = [
                 believe. Those who believe are not religious, they are simply avoiding the great
                 adventure of religion by believing.`,
     imgPath: "assets/images/Intensity-name.jpg"
-  },
-     {
+    },
+    {
     name: "Laziness",
     description: `When you are lazy, it is a negative taste: you simply feel that you have no 
                 energy, you simply feel dull; you simply feel sleepy, you simply feel dead. 
@@ -654,8 +653,8 @@ const cards = [
                 "I have become a Zen master," or, "I believe in Tao"--but you are not 
                 deceiving anybody else. You will be deceiving only yourself. So be alert.`,
     imgPath: "assets/images/Laziness-name.jpg"
-  },
-       {
+    },
+    {
     name: "Letting Go",
     description: `In existence there is nobody who is superior and nobody who is inferior. 
                 The blade of grass and the great star are absolutely equal.... 
@@ -669,8 +668,8 @@ const cards = [
                 and is just a wave; who has no idea of the "I". The disappearance of 
                 the ''I" is innocence.`,
     imgPath: "assets/images/LettingGo-name.jpg"
-  },
-       {
+    },
+    {
     name: "Maturity",
     description: `The distinction between the grasses and the blossoms is the same as between 
                 you not knowing that you are a buddha, and the moment you know that you are a 
@@ -689,8 +688,8 @@ const cards = [
                 be surprised: it is your very being. Wherever you are it will be there, and the 
                 flowers will continue to shower on you. This is spiritual spring.`,
     imgPath: "assets/images/Maturity-name.jpg"
-  },
-       {
+    },
+    {
     name: "Mind",
     description: `This is the situation of your head: I see cycle-handles and pedals and 
                 strange things that you have gathered from everywhere. Such a small 
@@ -710,8 +709,8 @@ const cards = [
                 it that it will disappear. You are clinging to it - the cloud is not 
                 interested in you, remember it.`,
     imgPath: "assets/images/Mind-name.jpg"
-  },
-       {
+    },
+    {
     name: "Moment To Moment",
     description: `The past is no more and the future is not yet: both are unnecessarily moving 
                 in directions which don't exist. One used to exist, but no longer exists, 
@@ -730,8 +729,8 @@ const cards = [
                 Experience will come, but experience has not to be premeditated.
                 `,
     imgPath: "assets/images/MomentToMoment-name.jpg"
-  },
-       {
+    },
+    {
     name: "Morality",
     description: `Bodhidharma ... far transcends moralists, puritans, so-called good people, 
                 do-gooders. He has touched the very rock bottom of the problem. Unless 
@@ -749,8 +748,8 @@ const cards = [
                 other method than a single method: the method of being alert, of being aware, 
                 of being conscious.`,
     imgPath: "assets/images/Morality-name.jpg"
-  },
-       {
+    },
+    {
     name: "New Vision",
     description: `When you open up to the ultimate, immediately it pours into you. You are no longer 
                 an ordinary human being - you have transcended. Your insight has become the insight 
@@ -771,8 +770,8 @@ const cards = [
                 can look around to the very circumference of the universe. Then your 
                 consciousness starts unfolding in all ten directions, but the road has been one.`,
     imgPath: "assets/images/NewVision-name.jpg"
-  },
-       {
+    },
+    {
     name: "No-Thingness",
     description: `Buddha has chosen one of the really very potential words - shunyata. The 
                 English word, the English equivalent, "nothingness", is not such a beautiful word. 
@@ -785,8 +784,8 @@ const cards = [
                 you make so much fuss? Why, in the middle, becoming so worried, so anxious, 
                 so ambitious - why create such despair? Nothingness to nothingness is the whole journey.`,
     imgPath: "assets/images/No-Thingness-name.jpg"
-  },
-       {
+    },
+    {
     name: "Ordinariness",
     description: `Sometimes it happens that you become one, in some rare moment. Watch the ocean, 
                 the tremendous wildness of it--and suddenly you forget your split, your 
@@ -808,8 +807,8 @@ const cards = [
                 ease--because the whole question is of you doing your action 
                 totally, enjoying, delighting in it.`,
     imgPath: "assets/images/Ordinariness-name.jpg"
-  },
-       {
+    },
+    {
     name: "Participation",
     description: `Have you ever seen night going? Very few people even become aware of things which 
                 are happening every day. Have you ever seen the evening coming? The midnight 
@@ -829,8 +828,8 @@ const cards = [
                 existence becomes such a joy, such an ecstasy. You could not have dreamed of 
                 a better universe.`,
     imgPath: "assets/images/Participation-name.jpg"
-  },
-       {
+    },
+    {
     name: "Past Lives",
     description: `The child can become conscious only if in his past life he has meditated 
                 enough, has created enough meditative energy to fight with the darkness 
@@ -847,8 +846,8 @@ const cards = [
                 deeper in meditation because if you find the door of another life, a 
                 flood of events will come into the mind. It is hard enough even to carry one life....`,
     imgPath: "assets/images/PastLives-name.jpg"
-  },
-       {
+    },
+    {
     name: "Patience",
     description: `We have forgotten how to wait; it is almost an abandoned space. And 
                 it is our greatest treasure to be able to wait for the right moment. 
@@ -865,8 +864,8 @@ const cards = [
                 personality is shattered; you are a new man. And this new man knows what 
                 ceremony is, this new man knows life's eternal juices.`,
     imgPath: "assets/images/Patience-name.jpg"
-  },
-       {
+    },
+    {
     name: "Playfulness",
     description: `The moment you start seeing life as non-serious, a playfulness, all the 
                 burden on your heart disappears. All the fear of death, of life, of 
@@ -882,8 +881,8 @@ const cards = [
                 serious world. It has created a world of its own which is very 
                 playful, full of laughter, where even great masters behave like children.`,
     imgPath: "assets/images/Playfulness-name.jpg"
-  },
-       {
+    },
+    {
     name: "Politics",
     description: `Anybody who can be a good pretender, a hypocrite, will become your leader politically, 
                 will become your priest religiously. All that he needs is hypocrisy, all that he needs 
@@ -902,8 +901,8 @@ const cards = [
                 the picture at all; they leave it to you to humiliate yourself, to destroy yourself. They 
                 have taught you a kind of slow suicide.`,
     imgPath: "assets/images/Politics-name.jpg"
-  },
-       {
+    },
+    {
     name: "Possibilities",
     description: `Mind can accept any boundary anywhere. But the reality is that, by its very nature, 
                 existence cannot have any boundary, because what will be beyond the boundary? - 
@@ -916,8 +915,8 @@ const cards = [
                 But there is no need! This smallness is your own imposition upon your freedom, 
                 upon your unlimited possibilities, upon your unlimited potential.`,
     imgPath: "assets/images/Possibilities-name.jpg"
-  },
-       {
+    },
+    {
     name: "Postponement",
     description: `Postponement is simply stupid. Tomorrow you will also have to decide, so why not today? 
                 And do you think that tomorrow you will be wiser than today? Do you think that tomorrow 
@@ -935,8 +934,8 @@ const cards = [
                 "could you make up your mind so that I can adjust the chair?" Make up your mind. 
                 Don't go on postponing infinitely.`,
     imgPath: "assets/images/Postponement-name.jpg"
-  },
-       {
+    },
+    {
     name: "Projections",
     description: `In a cinema hall, you look at the screen, you never look at the back--the 
                 projector is at the back. The film is not there really on the screen; it is 
@@ -957,8 +956,8 @@ const cards = [
                 whatsoever you see is just your projection. And there are as many worlds 
                 as there are minds, because every mind lives in his own world.`,
     imgPath: "assets/images/Projections-name.jpg"
-  },
-       {
+    },
+    {
     name: "Rebirth",
     description: `In Zen you are coming from nowhere and you are going to nowhere. You are 
                 just now, here, neither coming nor going. Everything passes by you; your 
@@ -970,8 +969,8 @@ const cards = [
                 You become young, you become old; you are alive, you are dead. All these 
                 states are simply reflections in an eternal pool of consciousness.`,
     imgPath: "assets/images/Rebirth-name.jpg"
-  },
-       {
+    },
+    {
     name: "Receptivity",
     description: `Listening is one of the basic secrets of entering into the temple of God. 
                 Listening means passivity. Listening means forgetting yourself completely - 
@@ -992,7 +991,7 @@ const cards = [
                 a receptivity, the door is open - and you wait. Listening is the art for 
                 becoming passive.`,
     imgPath: "assets/images/Receptivity-name.jpg"
-  },
+    },
     {
     name: "Ripeness",
     description: `Only if your meditation has brought you a light that shines in every night 
@@ -1004,8 +1003,8 @@ const cards = [
                 forest. The fruit is always ripe and the time is always the right time. There 
                 is no such thing as wrong time.`,
     imgPath: "assets/images/Ripeness-name.jpg"
-  },
-       {
+    },
+    {
     name: "Schizophrenia",
     description: `Man is split. Schizophrenia is a normal condition of man--at least now. 
                 It may not have been so in the primitive world, but centuries of conditioning, 
@@ -1025,8 +1024,8 @@ const cards = [
                 In this way happiness is not possible; unhappiness is a natural consequence of a 
                 split personality.`,
     imgPath: "assets/images/Schizophrenia-name.jpg"
-  },
-       {
+    },
+    {
     name: "Sharing",
     description: `As you move above to the fourth center - that is the heart - your whole life 
                 becomes a sharing of love. The third center has created the abundance of love. 
@@ -1044,8 +1043,8 @@ const cards = [
                 opens the heart. The heart is just in the middle of all your seven centers - 
                 three centers below, three centers above. You have come exactly to the middle.`,
     imgPath: "assets/images/Sharing-name.jpg"
-  },
-       {
+    },
+    {
     name: "Silence",
     description: `The energy of the whole has taken possession of you. You are possessed, 
                 you are no more, the whole is.
@@ -1061,8 +1060,8 @@ const cards = [
                 the joy of it, remains the same. That is the only thing you can rely upon, 
                 the only thing that never dies. It is the only thing that you can call your very being.`,
     imgPath: "assets/images/Silence-name.jpg"
-  },
-       {
+    },
+    {
     name: "Slowing Down",
     description: `Meditation is a kind of medicine - its use is only for the time being. 
                 Once you have learned the quality, then you need not do any particular 
@@ -1085,8 +1084,8 @@ const cards = [
                 ease: that is the key statement. Do whatsoever you are doing, but at the 
                 deepest core remain at ease, cool, calm, centered.`,
     imgPath: "assets/images/SlowingDown-name.jpg"
-  },
-       {
+    },
+    {
     name: "Sorrow",
     description: `This pain is not to make you sad, remember. That's where people go on 
                 missing.... This pain is just to make you more alert--because people 
@@ -1101,8 +1100,8 @@ const cards = [
                 make you miserable, the pain is to make you more aware! And when you are 
                 aware, misery disappears.`,
     imgPath: "assets/images/Sorrow-name.jpg"
-  },
-       {
+    },
+    {
     name: "Stress",
     description: `All private goals are neurotic. The essential man comes to know, to feel, 
                 "I am not separate from the whole, and there is no need to seek and search 
@@ -1116,8 +1115,8 @@ const cards = [
                 certain. This creates tension in his be-ing: he knows deep down that nothing 
                 is certain.`,
     imgPath: "assets/images/Stress-name.jpg"
-  },
-       {
+    },
+    {
     name: "Success",
     description: `Watch the waves in the ocean. The higher the wave goes, the deeper is 
                 the wake that follows it. One moment you are the wave, another moment you 
@@ -1130,8 +1129,8 @@ const cards = [
                 is a relaxation. A peak is an excitement, and nobody can exist continuously 
                 in an excitement.`,
     imgPath: "assets/images/Success-name.jpg"
-  },
-       {
+    },
+    {
     name: "Suppression",
     description: `In Sanskrit the name is alaya vigyan, the house where you go on throwing into 
                 the basement things that you want to do but you cannot, because of social conditions, 
@@ -1145,8 +1144,8 @@ const cards = [
                 acceptable, while meditation is not--and meditation is the only way to 
                 make you absolutely sane.`,
     imgPath: "assets/images/Suppression-name.jpg"
-  },
-       {
+    },
+    {
     name: "The Burden",
     description: `A man's true life is the way in which he puts off the lie imposed by 
                 others on him. Stripped, naked, natural, he is what he is. This is a 
@@ -1169,8 +1168,8 @@ const cards = [
                 disappears, truth is there in all its beauty and radiance. In the seeing of 
                 the lie it disappears, and what is left is the truth.`,
     imgPath: "assets/images/TheBurden-name.jpg"
-  },
-       {
+    },
+    {
     name: "The Creator",
     description: `There are two types of creators in the world. One type of creator works with 
                 objects - a poet, a painter, they work with objects, they create things. The 
@@ -1190,8 +1189,8 @@ const cards = [
                 be improved. You have only to come to it, to know it, to realize it. God himself 
                 has created you; you cannot be improved.`,
     imgPath: "assets/images/TheCreator-name.jpg"
-  },
-       {
+    },
+    {
     name: "The Dream",
     description: `This has been said again and again, down through the ages. All the religious 
                 people have been saying this: "We come alone into this world, we go alone." 
@@ -1212,8 +1211,8 @@ const cards = [
                 The source is that you are afraid of your aloneness. Everything else is just an 
                 excuse. The real cause is that you find yourself very alone.`,
     imgPath: "assets/images/TheDream-name.jpg"
-  },
-       {
+    },
+    {
     name: "The Fool",
     description: `A fool is one who goes on trusting; a fool is one who goes on trusting against 
                 all his experience. You deceive him, and he trusts you; and you deceive him 
@@ -1240,7 +1239,7 @@ const cards = [
                 opportunity will become an integration inside. Your soul will become 
                 more crystallized.`,
     imgPath: "assets/images/TheFool-name.jpg"
-  },
+    },
     {
     name: "The Lovers",
     description: `These three things are to be taken note of: the lowest love is sex 
@@ -1263,8 +1262,8 @@ const cards = [
                 giving - then add meditation to it and the pure fragrance is released. That is 
                 compassion; compassion is the highest phenomenon.`,
     imgPath: "assets/images/TheLovers-name.jpg"
-  },
-       {
+    },
+    {
     name: "The Master",
     description: `Beyond mind, there is an awareness that is intrinsic, that is not given to you 
                 by the outside, and is not an idea -- and there is no experiment up to now 
@@ -1286,8 +1285,8 @@ const cards = [
                 mind has created. There is no blissfulness more precious than freedom, 
                 than being a master of your own destiny.`,
     imgPath: "assets/images/TheMaster-name.jpg"
-  },
-       {
+    },
+    {
     name: "The Miser",
     description: `The moment you become miserly you are closed to the basic phenomenon of life: 
                 expansion, sharing. The moment you start clinging to things, you have 
@@ -1296,8 +1295,8 @@ const cards = [
                 you; not much money, but a rich you; not many things, but an open being, 
                 available to millions of things.`,
     imgPath: "assets/images/TheMiser-name.jpg"
-  },
-       {
+    },
+    {
     name: "The Outsider",
     description: `So you are feeling yourself an outsider. This is good. This is the transitory 
                 period. Now you have to be alert not to fill yourself with pain and misery. 
@@ -1312,8 +1311,8 @@ const cards = [
                 great awareness, watchfulness, witnessing, and you will find the connection.
                 The buddha is the connection!`,
     imgPath: "assets/images/TheOutsider-name.jpg"
-  },
-       {
+    },
+    {
     name: "The Rebel",
     description: `People are afraid, very much afraid of those who know themselves. They have a 
                 certain power, a certain aura and a certain magnetism, a charisma that can take out 
@@ -1327,8 +1326,8 @@ const cards = [
                 they are in misery, but they are accustomed to the misery. And anybody who is 
                 not miserable looks like a stranger.`,
     imgPath: "assets/images/TheRebel-name.jpg"
-  },
-       {
+    },
+    {
     name: "The Source",
     description: `Zen asks you to come out of the head and go to the basic source.... 
                 It is not that Zen is not aware of the uses of energy in the head, but if all the 
@@ -1344,8 +1343,8 @@ const cards = [
                 where your potential is. You can relax at the source, and it will take you to 
                 your very potential.`,
     imgPath: "assets/images/TheSource-name.jpg"
-  },
-       {
+    },
+    {
     name: "Thunderbolt",
     description: `What meditation does slowly, slowly, a good shout of the master, unexpectedly, 
                 in the situation where the disciple was asking some question, and the master 
@@ -1365,8 +1364,8 @@ const cards = [
                 Ma Tzu, sitting on his chest, says, "Got it?!" And in fact he got it, 
                 because it was so sudden, out of the blue - he could never have conceived it.`,
     imgPath: "assets/images/Thunderbolt-name.jpg"
-  },
-       {
+    },
+    {
     name: "Totality",
     description: `Every moment there is a possibility to be total. Whatsoever you are doing, be absorbed 
                 in it so utterly that the mind thinks nothing, is just there, is just a presence. 
@@ -1377,8 +1376,8 @@ const cards = [
                 not total. Slowly, slowly slip out of those moments. It is just an old habit. 
                 Habits die hard. But they die certainly--if one persists, they die.`,
     imgPath: "assets/images/Totality-name.jpg"
-  },
-       {
+    },
+    {
     name: "Transformation",
     description: `A master in Zen is not simply a teacher. In all the religions there are only teachers. 
                 They teach you about subjects which you don't know, and they ask you to 
@@ -1402,8 +1401,8 @@ const cards = [
                 eluding you your whole life. Suddenly, what Gautam Buddha called 
                 "eighty-four thousand doors" open.`,
     imgPath: "assets/images/Transformation-name.jpg"
-  },
-       {
+    },
+    {
     name: "Traveling",
     description: `Life is a continuity always and always. There is no final destination it is 
                 going towards. Just the pilgrimage, just the journey in itself is life, not 
@@ -1417,8 +1416,8 @@ const cards = [
                 all around like an idiot: what was the point? You were hurrying so hard, and you were 
                 worrying so hard, and this is the outcome. `,
     imgPath: "assets/images/Traveling-name.jpg"
-  },
-       {
+    },
+    {
     name: "Trust",
     description: `Don't waste your life for that which is going to be taken away. Trust life. 
                 If you trust, only then can you drop your knowledge, only then can you put 
@@ -1433,8 +1432,8 @@ const cards = [
                 of its being taken away? It cannot be taken away, there is no possibility. 
                 You cannot lose your real treasure.`,
     imgPath: "assets/images/Trust-name.jpg"
-  },
-       {
+    },
+    {
     name: "Turning In",
     description: `Turning inwards is not a turning at all. Going inwards is not a going at all. 
                 Turning inwards simply means that you have been running after this desire and that, 
@@ -1453,8 +1452,8 @@ const cards = [
                 you are in. This is called turning in. But it is not a turning at all, it is simply 
                 not going out.`,
     imgPath: "assets/images/TurningIn-name.jpg"
-  },
-       {
+    },
+    {
     name: "Understanding",
     description: `You are out of jail, out of the cage; you can open your wings and the whole sky is yours. 
                 All the stars and the moon and the sun belong to you. You can disappear into the 
@@ -1466,8 +1465,8 @@ const cards = [
                 else is secondary, even blissfulness, ecstasy. There are thousands of flowers, 
                 uncountable, but they all become possible in the climate of freedom.`,
     imgPath: "assets/images/Understanding-name.jpg"
-  },
-       {
+    },
+    {
     name: "We Are The World",
     description: `When thousands and thousands of people around the earth are celebrating, 
                 singing, dancing, ecstatic, drunk with the divine, there is no possibility 
@@ -1479,7 +1478,7 @@ const cards = [
                 Only in celebration do we meet the ultimate, the eternal. Only in 
                 celebration do we go beyond the circle of birth and death.`,
     imgPath: "assets/images/WeAreTheWorld-name.jpg"
-  }
+    }
 ]
 
 
