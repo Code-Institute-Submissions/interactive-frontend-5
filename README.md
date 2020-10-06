@@ -116,6 +116,10 @@ Languages Used for this project: **HTML**, **CSS** & **Javascript**.
 
 10. [Hover.css](http://ianlunn.github.io/Hover/): – was used for the hover effect on back/front cards & card meanings.
 
+11. [Grammarly](https://www.grammarly.com/): – was used for correcting grammar on README file.
+
+12. [Free Online HTML Formatter](https://www.freeformatter.com/html-formatter.html/): – was used for formatting the html.
+
 ## Testing
 ### Testing User stories from UX section:
 1.   **As a First time Visitor, I want the purpose of the website to be clear and the navigation easy to use. I want to quickly figure out how to play the game and know more about the Tarot card spread.**
@@ -165,7 +169,7 @@ Languages Used for this project: **HTML**, **CSS** & **Javascript**.
     
     - **b.** On the “All Cards” section, all cards are clicked one by one to see if the correct description comes for each card, and they all match correctly. 
 
-    - **c** To check if the card deck is mixed for each new game, the user selects a back card in the same position in the card deck all the time when shifting back and forth by clicking the links in the Card Spread button to enter new games/spreads. The user 
+    - **c.** To check if the card deck is mixed for each new game, the user selects a back card in the same position in the card deck all the time when shifting back and forth by clicking the links in the Card Spread button to enter new games/spreads. The user 
             sees that every time a different front card is displayed when constantly clicking in the same position in the card deck, so the card deck is mixed in each new game/spread. 
 
 6.  **As a Returning Visitor, I want to be able to change the Tarot card spread and see what other spreads there are and easily locate and play them.**
